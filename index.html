@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<title>S N BATTERY</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+	   <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .battery-button {
+            background-color:blue; /*Primary color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            font-size: 16px;
+            transition: transform 0.3s;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        .battery-button img {
+            width: 50px; /* Adjust image size */
+            height: auto;
+            position: absolute; /* Position the image inside the button */
+            top: 10px; /* Adjust as needed */
+        }
+
+        .battery-button:hover {
+            transform: scale(1.05);
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.8); 
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color:white
+		;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            text-align: center;
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .form-container {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .form-container input, .form-container select {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #218838;
+        }
+		body {
+            font-family: Arial, sans-serif;
+            height: 2000px; /* Example height for demonstration */
+            margin: 0; /* Remove default margin */
+        }
+        .contact-panel {
+            position: fixed;
+            top: 50%; /* Center vertically */
+            right: 20px; /* Fixed position from the right */
+            transform: translateY(-50%); /* Adjust to true center */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1000; /* Ensure it appears above other elements */
+        }
+        .contact-button {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the logo */
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            padding: 5px; /* Smaller padding */
+            border-radius: 50%; /* Circular buttons */
+            margin: 10px 0; /* Space between buttons */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            width: 40px; /* Fixed width */
+            height: 40px; /* Fixed height */
+        }
+        .contact-button:hover {
+            background-color: #128C7E; /* Darker green on hover */
+        }
+        .contact-button.call {
+            background-color: #34b7f1; /* Call button color */
+        }
+        .contact-button.call:hover {
+            background-color: #0084ff; /* Darker blue on hover */
+        }
+        .contact-logo {
+            width: 20px; /* Fixed logo size */
+            height: 20px;
+        }
+		    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Space out images */
+    }
+
+    .gallery-image {
+        width: calc(50% - 10px); /* Two images per row with spacing */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space below images */
+    }
+
+    @media (max-width: 600px) {
+        .gallery-image {
+            width: 100%; /* Full width on small screens */
+        }
+    }
+    </style>
+	  
+	   
+</head>
+    <body>
+	<div class="contact-panel">
+    <a class="contact-button" href="https://wa.me/+919902555479" target="_blank">
+	
+        <img class="contact-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" chat alt="WhatsApp Logo">
+		
+    </a>
+    <a class="contact-button call" href="tel:+919902555479" target="_blank">
+        <img class="contact-logo" src="png-transparent-call-logo-button-interior-design-services-icon-design-designer-call-button-room-web-button-interior-design-services-thumbnail.png" alt="Call Logo">
+    </a>
+</div>
+      <header class="container">
+        <a href="#hero" class="logo clr-transition" style="text-color:blue;text-size:100PX;text-decoration:overline;"> S N BATTERY SALES AND SERVICES</a><br><br><br><br>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#hero" class="nav-link clr-transition"style="text-decoration:overline;">Home</a></li>
+            <li class="nav-item"><a href="#products" class="nav-link clr-transition"style="text-decoration:overline;">Product</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link clr-transition"style="text-decoration:overline;">About</a></li>
+          <li class="nav-item"><a href="#FAQ's" class="nav-link clr-transition"style="text-decoration:overline;">FAQ's</a></li>
+		 
+		  <li class="nav-item"><a href="#contact" class="nav-link clr-transition"style="text-decoration:overline;">Contact</a></li>
+		    <form id="search-form" onsubmit="return searchFunction(event);">
+            <input type="text" id="search-input" placeholder="Search..." required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+          </ul>
+		  
+          <div class="social-links">
+            <ul>
+              <li><i class='bx bxl-instagram nav-icon clr-transition'></i></li>
+              <li><i class='bx bxl-twitter nav-icon clr-transition'></i></li>
+              <li><i class='bx bxl-facebook nav-icon clr-transition'></i></li>
+            </ul>
+            <span class="line-divider clr-transition"></span>
+            <div class="theme-togglers">
+              <i class='bx bxs-sun theme-toggler clr-transition'></i>
+              <i class='bx bxs-moon theme-toggler clr-transition'></i>
+            </div>
+          </div>
+        </nav>
+
+        <div class="menu-togglers">
+          <i class="bx bx-menu menu-toggle clr-transition"></i>
+        </div>
+      </header>
+	   <div class="quote-slideshow">
+            <div class="quote-slide fade">"A battery is the heart of your car. Keep it healthy!"</div>
+            <div class="quote-slide fade">"Invest in quality batteries for a smooth ride!"</div>
+            <div class="quote-slide fade">"Don’t let a dead battery ruin your day. Check it regularly!"</div>
+        </div>
+      <main id="hero" class="main">
+        <section class="section section-one">
+         <br>
+            <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
+            <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
+            <div class="hero-btns-container">
+<a href="tel:9902555479">
+              <button class="button btn-hero btn-primary buy-hero-btn"><i class="bx bx-cart in-btn-icon"></i>CALL</button>
+</a>
+<a href="https://www.google.com/maps/dir//64%2F2+K+Channsandra+Circle+K+Channandra+Main+Road+K+Channasandra,+Post,+Horamavu,+Bengaluru,+Karnataka+560043/@13.0402929,77.5973563,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae114a27e58ef9:0x5b467b60e7c06a52!2m2!1d77.6797582!2d13.0403059?entry=ttu">
+  <button class="button btn-hero btn-second-alt"><i class="bx bx-map in-btn-icon"></i> FIND ME</button>
+
+</a>
+            </div>
+          </div>
+
+          <img src="WhatsApp Image 2024-10-14 at 22.35.53_6078f6f0.jpg"" height="30" width="20" alt="woman licking ice cream and smiling" class="hero-lady-img" loading="lazy">
+        </section>
+
+        <!-- --- section two --- -->
+     
+		  <h2 class="s-two-slogan">Long-Lasting Energy For All Your Devices</h2>
+		  
+            
+			
+            <p class="s-two-definition s-definition">
+             
+            <div><br><br><br>
+
+    </style>
+</head>
+<body>
+<main id="hero" class="main">
+    <section id="products" class="section section-two container">
+        <h1 style="text-align:center;text-decoration:overline;">SHOP BY CATEGORY</h1>
+        <div class="button-group">
+            <button class="battery-button" onclick="showForm('car')">
+                <img src="car.jpg" alt="Car Battery">
+                Car Battery
+            </button>
+             <button class="battery-button" onclick="showModal('bike')">
+                <img src="bike.jpg" alt="Bike Battery">
+                Bike Battery
+            </button>
+            <button class="battery-button" onclick="showModal('inverter')">
+                <img src="inverter.jpeg" alt="Inverter Battery">
+                Inverter Battery
+            </button>
+            <button class="battery-button" onclick="showForm('heavy')">
+                <img src="heavy.jpeg" alt="Heavy Engine Battery">
+                Heavy Engine Battery
+            </button>
+        </div>
+    </section>
+	<div id="bikeModal" class="modal">
+        <span class="close" onclick="closeBikeModal()">&times;</span>
+        <div class="modal-content">
+            <img class="main-image" id="modalImage" src="bike.jpg" alt="Bike Battery Image">
+            <div class="modal-details">
+                <h2>Model: Bike Battery X100</h2>
+                <p>This high-performance bike battery offers exceptional reliability and long-lasting power for your rides.</p>
+                <p><strong>Price: $99.99</strong></p>
+                <p><strong>Recommended For:</strong> Mountain bikes, road bikes, and electric bikes.</p>
+            </div>
+            <div class="additional-images">
+                <h3>Additional Images:</h3>
+                <div class="thumbnail-images">
+                    <img src="bike-thumbnail1.jpg" alt="Thumbnail 1" onclick="changeImage('bike-thumbnail1.jpg')">
+                    <img src="bike-thumbnail2.jpg" alt="Thumbnail 2" onclick="changeImage('bike-thumbnail2.jpg')">
+                    <img src="bike-thumbnail3.jpg" alt="Thumbnail 3" onclick="changeImage('bike-thumbnail3.jpg')">
+                    <img src="bike-thumbnail4.jpg" alt="Thumbnail 4" onclick="changeImage('bike-thumbnail4.jpg')">
+                </div>
+            </div>
+            <div class="more-details">
+                <h3>More Information:</h3>
+                <p><strong>Features:</strong> Lightweight, waterproof, quick charging, and eco-friendly.</p>
+                <p><strong>Warranty:</strong> 2 years.</p>
+                <p><strong>Customer Reviews:</strong> "Excellent performance!" - Jane D.</p>
+                <p><strong>Usage Tips:</strong> Charge regularly for optimal performance.</p>
+            </div>
+        </div>
+    </div>
+	<div id="inverterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('inverterModal')">&times;</span>
+            <h2>Select a Brand</h2>
+            <button class="large-button" onclick="showExideDetails()">Exide</button>
+            <button class="large-button" onclick="showAmaronDetails()">Amaron</button>
+            <button class="large-button" onclick="showLuminousDetails()">Luminous</button>
+        </div>
+    </div>
+
+    <!-- Exide Details Modal -->
+    <div id="inverterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('inverterModal')">&times;</span>
+            <h2>Inverter Battery</h2>
+            <div class="product">
+                <img src="inverter.jpg" alt="Inverter Battery" />
+                <p>Price: $150</p>
+                <p>Description: High capacity inverter battery suitable for home and office use.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Inverter', 'inverter')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="inverter2.jpg" alt="Inverter Battery Image 2" />
+                <p>Price: $160</p>
+                <p>Description: Durable and long-lasting battery for all your inverter needs.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Inverter', 'inverter2')">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exide Details Modal -->
+    <div id="exideModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('exideModal')">&times;</span>
+            <h2>Exide Battery</h2>
+            <div class="product">
+                <img src="exide.jpg" alt="Exide Battery" />
+                <p>Price: $120</p>
+                <p>Description: Reliable and durable battery for all your needs.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Exide', 'exide')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="exide2.jpg" alt="Exide Battery Image 2" />
+                <p>Price: $125</p>
+                <p>Description: High performance battery with exceptional reliability.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Exide', 'exide2')">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amaron Details Modal -->
+    <div id="amaronModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('amaronModal')">&times;</span>
+            <h2>Amaron Battery</h2>
+            <div class="product">
+                <img src="amaron.jpg" alt="Amaron Battery" />
+                <p>Price: $110</p>
+                <p>Description: High performance battery with a longer life span.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Amaron', 'amaron')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="amaron2.jpg" alt="Amaron Battery Image 2" />
+                <p>Price: $115</p>
+                <p>Description: Excellent charge retention and durability.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Amaron', 'amaron2')">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Luminous Details Modal -->
+    <div id="luminousModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('luminousModal')">&times;</span>
+            <h2>Luminous Battery</h2>
+            <div class="product">
+                <img src="luminous.jpg" alt="Luminous Battery" />
+                <p>Price: $130</p>
+                <p>Description: Reliable battery with exceptional performance.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Luminous', 'luminous')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="luminous2.jpg" alt="Luminous Battery Image 2" />
+                <p>Price: $135</p>
+                <p>Description: Long backup time with environment-friendly technology.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Luminous', 'luminous2')">Order Now</button>
+            </div>
+        </div>
+    </div>
+        <div class="form-container" id="battery-form" style="display:none;">
+            <h3>Battery Order Form</h3>
+            <form id="order-form" onsubmit="return displayBatteryInfo(event);">
+                <label for="manufacturer">Manufacturer:</label>
+                <select id="manufacturer" required>
+                    <option value="">Select Manufacturer</option>
+					<option value="KIA">KIA</option>
+                    <option value="MG HECTOR">MG HECTOR</option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Tata motors">Tata motors</option>
+                    <option value="FORD">FORD</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="BMW">BMW</option>
+                    <option value="MINI">MINI</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="JEEP">JEEP</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="VOLVO">VOLVO</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Renault">Renault</option>
+                    <option value="ICML">ICML</option>
+                    <option value="Force motors">Force motors</option>
+                    <option value="BENTLEY">BENTLEY</option>
+                </select>
+
+                   
+
+                <label for="car-model">Car Model:</label>
+                <select id="car-model" required>
+                    <option value="">Select Car Model</option>
+                </select>
+
+                <label for="battery-brand">Battery Brand:</label>
+                <select id="battery-brand" required>
+                    <option value="">Select Battery Brand</option>
+					<option value="ALL Brand">ALL Brand</option>
+                    <option value="Amaron">Amaron</option>
+                    <option value="Exide">Exide</option>
+                    <option value="PowerZONE">PowerZONE</option>
+                    <option value="SF Sonic">SF Sonic</option>
+                    <option value="BOSCH">BOSCH</option>
+                    <option value="Livfast">Livfast</option>
+                </select>
+
+                    
+
+                <label for="state">State:</label>
+                <select id="state" required>
+                    <option value="">Select State</option>
+					
+                    <option value="karnataka">Karnataka</option>
+                    <option value="maharashtra">Maharashtra</option>
+                </select>
+
+
+                <label for="city">City:</label>
+                <select id="city" required>
+                    <option value="">Select City</option>
+					<option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+
+                    
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Overlay for Battery Details -->
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="closeOverlay()">&times;</span>
+                <div id="battery-info"></div> <!-- Container for battery images and descriptions -->
+            </div>
+        </div>
+		<div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="closeOverlay()">&times;</span>
+                <img id="battery-image" src="" alt="Battery">
+                <div id="battery-description" class="description"></div>
+            </div>
+        </div>
+		
+
+        
+        <!-- Modal for Bike Battery -->
+        <div id="bike-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bike')">&times;</span>
+                <h3>Bike Battery Details</h3>
+                <img src="path/to/bike-battery-image.jpg" alt="Bike Battery">
+                <p>Description of the bike battery goes here.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+function showBikeModal() {
+    const bikeModal = document.getElementById("bikeModal");
+    bikeModal.style.display = "block"; // Show the modal
+}
+
+function closeBikeModal() {
+    const bikeModal = document.getElementById("bikeModal");
+    bikeModal.style.display = "none"; // Hide the modal
+}
+
+function changeImage(imageSrc) {
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc; // Change the main image to the clicked thumbnail
+}
+function showModal(type) {
+        if (type === 'inverter') {
+            document.getElementById('inverterModal').style.display = 'block';
+        }
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    function showExideDetails() {
+        closeModal('inverterModal');
+        document.getElementById('exideModal').style.display = 'block';
+    }
+
+    function showAmaronDetails() {
+        closeModal('inverterModal');
+        document.getElementById('amaronModal').style.display = 'block';
+    }
+
+    function showLuminousDetails() {
+        closeModal('inverterModal');
+        document.getElementById('luminousModal').style.display = 'block';
+    }
+
+    function redirectToWhatsApp(brand, image) {
+        const message = `I would like to order the ${brand} Battery (${image}).`;
+        const phoneNumber = "YOUR_WHATSAPP_NUMBER"; // Replace with your WhatsApp number
+        window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    window.onclick = function(event) {
+        const modals = ['inverterModal', 'exideModal', 'amaronModal', 'luminousModal'];
+        modals.forEach(modalId => {
+            const modal = document.getElementById(modalId);
+            if (event.target === modal) {
+                closeModal(modalId);
+            }
+        });
+    };
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const modals = ['inverterModal', 'exideModal', 'amaronModal', 'luminousModal'];
+            modals.forEach(modalId => {
+                closeModal(modalId);
+            });
+        }
+    });
+    
+    const carModels = {
+        "KIA": ["KIA Carnival", "KIA SELTOS DIESEL", "KIA SELTOS PETROL", "KIA SONET PETROL"],
+
+        "MG HECTOR": ["MG HECTOR Petrol", "MG HECTOR Diesel", "MG Glowstar"],
+        "Maruti Suzuki": ["Maruthi suzuki alto 800 petrol", "Maruthi suzuki A star petrol", "Maruthi suzuki Celerio petrol", "Maruthi sazuki ciaz petrol", "Maruthi suzuki ciaz DIESEL", "Maruthi suzuki ciaz diesel hybrid", "maruthi suzuki ciaz petrol hybrid", "Maruthi suzuki swift diesel", "Maruthi suzuki swift petrol", "Maruthi suzuki vitra brezza diesel", "Maruthi suzuki new baleno petrol", "Maruthi suzuki new baleno diesel", "Maruthi suzuki ignis petrol", "Maruthi suzuki ertiga petrol"],
+        "Hyundai": ["Hyundai EON petrol", "Hyundai grand i10 petrol", "Hyundai grand i10 petrol", "Hyundai Creta petrol", "Hyundai creta diesel", "Hyundai Getz 1.6 diesel", "Hyundai i20 sportz petrol", "Hyundai i20 sportz diesel", "Hyundai verna 1.4 diesel", "Hyundai verna 1.4 petrol", "Hyundai xcent diesel", "Hyundai xcent petrol", "Hyundai elite i20 petrol", "Hyundai elite i20 diesel", "Hyundai tucson diesel", "Hyundai tuscon petrol", "Hyundai venue petrol", "Hyundai venue diesel", "Hyundai venue petrol", "Hyundai aura diesel", "Hyundai Elantra 1.6 diesel", "Hyundai i20 sprotz petrol(after 2015)", "Hyundai verna CRDi diesel(after 2017)-Next Gen"],
+        "Honda": ["Honda AMAZE petrol", "Honda AMAZE diesel", "Honda CITY petrol", "Honda CITY disel", "Honda BRIO petrol", "Honda JAZZ petrol", "Honda JAZZ diesel", "Honda Mobilio petrol", "Honda Mobilio diesel", "Honda BR-V-diesel", "Honda BR-V-petrol", "Honda WR-V petrol", "Honda WR-v diesel", "Honda CR-V PETROL", "Honda amaza diesel", "Honda ACCORD petrol", "Honda CIVIC petrol"],
+        "Skoda": ["Skoda Rapid diesel", "Skoda Rapid petrol", "SKODA Octavia diesel", "Skoda Octavia petrol", "Skoda Superb petrol", "Skoda Suberb diesel", "Skoda yeti 2.0 diesel", "Skoda Fabia diesel", "Skoda Fabia petrol", "Skoda Laura diesel", "Skoda Laura petrol", "Skoda Comdi diesel"],
+        "Tata motors": ["TATA NEXON diesel", "TATA NEXON petrol", "TATA HARRIER diesel", "TATA TIAGO Petrol", "TATA TIAGO diesel", "TATA HEXA diesel", "TATA ZEST petrol", "TATA ZEST diesel", "TATA SAFARI STROME diesel", "TATA SAFARI Diesel", "TATA SUMO diesel", "TATA SAFARI DICOR diesel", "TATA INDIGO diesel"],
+        "FORD": ["FORD FIGO diesel", "FORD FIGO PETROL", "FORD ENDEAVOUR 2.5 diesel", "FORD ENDEAVOUR 3.0 diesel", "FORD ECOSTORT diesel", "FORD ECOSTORT PETROL", "FORD FIESTA diesel", "FORD FIESTA petrol", "FORD IKON diesel"],
+        "Fiat": ["Fiat linea diesel", "Fiat linea petrol", "Fiat Grande punto diesel", "Fiat Grande punto petrol", "Fiat AVVENTURA diesel", "Fiat AVVENTURA petrol"],
+        "BMW": ["BMW x1 petrol", "BMW x3 diesel", "BMW 5 series 320d diesel", "BMW 5 series 520d diesel", "BMW 7 series 750li PETROL", "BMW 6 series 650i PETROL", "BMW GT"],
+        "MINI": ["MINICOUNTRYMAN COOPER SD(DIESEL)", "MINI COUNTRYMAN COOPER S JCW INSPIRED(PETROL)", "MINI CLUBMAN COOPER S (PETROL)"],
+        "Audi": ["Audi A3 diesel", "Audi A3 petrol", "Audi A4 petrol", "Audi A4 DIESEL", "Audi A6 petrol", "Audi A6 diesel", "Audi A7 3.0 diesel", "Audi A8 L diesel", "Audi A8 L disel", "Audi Q5 petrol", "Audi Q5 3.0 Quattaro diesel"],
+        "Jaguar": ["Jaguar XE diesel", "Jaguar XF petrol", "Jaguar F TYPE petrol", "Jaguar XF petrol", "Jaguar XJ petrol", "Jaguar XF diesel", "Jaguar XJ diesel "],
+        "JEEP": ["Jeep compass sport petrol", "Jeep wrangler unlimited diesel", "Jeep compass sport diesel", "Jeep compass longitude diesel", "Jeep compass limited petrol", "Jeep comass limited diesel"],
+        "VOLVO": ["Volvo S60 Diesel", "Volvo S60 petrol", "Volvo V60  cross country diesel", "Volvo S60 cross country DIESEL", "Volvo S60 petrol", "Volvo xc60 diesel ", "Volvo S90 diesel", "Volvo XC90 petrol", "Volvo XC40 DIESEL"],
+        "Mahindra": ["Mahindra XUV 500 diesel", "Mahindra Xylo  D2 diesel", "Mahindra Xylo  E2 diesel", "Mahindra TUV 300 diesel", "Mahindra KUV 100 ESS diesel", "MahindraKUV 100 ESS PETROL ", "Mahindra bolera diesel", "Mahindra renault logan 1.5 diesel", "Mahindra ALTURAS G4", "Mahindra renault logan 1.4 petrol", "Mahindra thar 4*4 diesel", "Mahindra scorpio Vlx diesel", "Mahindra bolero new diesel", "Mahindra quanto diesel", "Mahindra verito 1.4 petrol", "Mahindra verito 1.5 diesel", "Mahindra XUV700", "Mahindra renault XUV 300 PETROL", "Mahindra XUV 300 DIESEL"],
+        "Renault": ["Renault pulse diesel", "Renault scala petrol", "Renault scala petrol", "Renault kwid", "Renault lodgy", "Renault captur petrol", "Renault captur diesel", "Renault triber petrol"],
+        "ICML": ["ICML Delite diesel", "ICML Rhino diesel", "ICML winner diesel", "ICML xcitor diesel", "ICML xcitor diesel"],
+        "Force motors": ["Force Motors Minidor", "Force Motors Balwan-330-25Hp", "Force Motors Balwan-400-35Hp", "Force Motors orchard", "Force Motors Balwan-550-52Hp", "Force Motors Balwan-400-35Hp", "Force Motors Balwan-450-40Hp", "Force Motors OX 25", "Force Motors TRAVELLER DIESEL"],
+        "BENTLEY": ["Bentley flying spur petrol", "Bentley continental petrol", "Bentley Bentayga petrol", "Bentley mulsanne petrol"],
+		"Chevrolet": ["Chevrolet Opel Vectra diesel", "Chevrolet opel vectra petrol"  , "Chevrolet enjoy diesel", "Chevrolet forester petrol", "Chevrolet opel corse 1.6 petrol", "Chevrolet opel vectra petrol", "Chevrolet corsa petrol", "Chevrolet opel swing petrol", "Chevrolet optra 1.8 petrol", "Chevrolet optra platnium petrol", "Chevrolet optra royal 1.6 petrol", "Chevrolet SRV petrol", "Chevrolet SRV petrol", "Chevrolet starlite diesel", "Chevrolet 1.4 petrol", "Chevrolet opel 1.6 petrol", "Chevrolet enjoy petrol", "Chevrolet optra 1.6 petrol", "Chevrolet Beat petrol", "Chevrolet optra magnum diesel", "Chevrolet Beat diesel"],                                                
+        "Nissan": ["Nissan Evalia diesel", "Nissan Micra 1.5L diesel", "Nissan Micra 1.2L petrol", "Nissan sunny 1.5L diesel", "Nissan sunny 1.5L diesel", "Nissan Micra 1.5L petrol", "Nissan Micra 1.5L diesel", "Nissan Micra 1.5L diesel", "Nissan Teana 250XL Petrol", "Nissan Micra 1.5L diesel", "Nissan Terrano diesel", "Nissan Terrano petrol", "Nissan Micra 1.5L diesel", "Nissan X trail diesel", "Nissan datsun go petrol", "Nissan evalia diesel", "Nissan Micra petrol", "Nissan Micra 1.5L diesel"],
+        "Volkswagen": ["Volkswagen Beetle 2.0L petrol", "Volkswagen jetta diesel new", "Volkswagen jetta diesel old", "Volkswagen passat diesel", "Volkswagen passat petrol", "Volkswagen phaeton 3.6 v6", "Volkswagen polo 1.2 diesel", "Volkswagen polo 1.2 petrol", "Volkswagen polo 1.6 petrol", "Volkswagen vento 1.6 diesel", "Volkswagen vento 1.6 petrol", "Volkswagen vento old", "Volkswagen passat hybrid", "Volkswagen vento 1.2 diesel", "Volkswagen vento 1.2 petrol", "Volkswagen polo .5 diesel", "Volkswagen tiguan 2.0 diesel"],
+        "Toyota": ["Toyota Corolla petrol", "Toyota camry petrol", "Toyota corolla altis diesel", "Toyota corolla altis petrol", "Toyota etios diesel", "Toyota etios liva petrol", "Toyota etios petrol", "Toyota fortuner D4 diesel", "Toyota innova diesel ", "Toyota innova petrol", "Toyota qualis diesel", "Toyota qualis petrol", "Toyota lexus diesel", "Toyota innova crysta diesel", "Toyota land cruiser prado 4.5 diesel", "Toyota land cruiser petrol", "Toyota new innova special edition diesel"] 
+  };
+
+
+    function showForm() {
+        document.getElementById('battery-form').style.display = 'block';
+        const manufacturerSelect = document.getElementById('manufacturer');
+        manufacturerSelect.onchange = function() {
+            const carModelSelect = document.getElementById('car-model');
+            const selectedManufacturer = this.value;
+            carModelSelect.innerHTML = '<option value="">Select Car Model</option>';
+            if (carModels[selectedManufacturer]) {
+                carModels[selectedManufacturer].forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model;
+                    option.textContent = model;
+                    carModelSelect.appendChild(option);
+                });
+            }
+        };
+    }
+
+    function displayBatteryInfo(event) {
+    event.preventDefault();
+    const carModel = document.getElementById('car-model').value;
+
+    // Enhanced battery details
+     let batteryDetails = {
+        "KIA Carnival": [
+            {
+                modelName: "Exide FEY0-EY105D31L(85 AH)",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6050.<br>Without Old Battery: Rs. 8500 <br> Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5699..<br>Without Old Battery: Rs.8200 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	 "KIA SELTOS DIESEL": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	"KIA SELTOS PETROL": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5099.<br>Without Old Battery: Rs:6499 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:4799..<br>Without Old Battery: Rs:6199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "KIA SONET PETROL": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5099.<br>Without Old Battery: Rs:6499 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:4799..<br>Without Old Battery: Rs:6199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	 "MG HECTOR Diesel": [
+            {
+                modelName: "Exide FEY0-EY105D31L(85 AH)",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6050.<br>Without Old Battery: Rs. 8500 <br> Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5699..<br>Without Old Battery: Rs.8200 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	 "MG Glowstar": [
+            {
+                modelName: "Exide FEY0-EY105D31L(85 AH)",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6050.<br>Without Old Battery: Rs. 8500 <br> Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Car battery replacement in Bangalore.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5699..<br>Without Old Battery: Rs.8200 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Maruthi suzuki alto 800 petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Maruthi suzuki A star petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Maruthi suzuki Celerio petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Maruthi sazuki ciaz petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],  
+	    "Maruthi suzuki ciaz diesel hybrid": [
+            {
+                modelName: "Exide Mileage ML DIN 70(ISS)(70AH)",
+                image: "26.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7500.<br>Without Old Battery: Rs.9200<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON AAM-DR-EFBDIN70L (ISS) (70Ah) Car Battery",
+                image: "27.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6500..<br>Without Old Battery: Rs.8500.<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "maruthi suzuki ciaz petrol hybrid": [
+            {
+                modelName: "Exide Mileage MLN55 (ISS) - 45AH",
+                image: "28.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5900.<br>Without Old Battery: Rs.7500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00050B24L (50Ah)",
+                image: "29.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5199..<br>Without Old Battery: Rs. 6599<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Maruthi suzuki swift petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Maruthi suzuki new baleno petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Maruthi suzuki new baleno diesel": [
+            {
+                modelName: "Exide Mileage MLDIN50(50AH",
+                image: "30.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN50 L(50AH)",
+                image: "31.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6600.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Maruthi suzuki ignis petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Maruthi suzuki ertiga petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Maruthi suzuki ciaz diesel": [
+            {
+                modelName: "Exide Mileage MLDIN50(50AH",
+                image: "30.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN50 L(50AH)",
+                image: "31.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6600.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     
+	      "Maruthi suzuki vitra brezza diesel": [
+            {
+                modelName: "Exide Mileage MLDIN50(50AH",
+                image: "30.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN50 L(50AH)",
+                image: "31.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6600.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Maruthi suzuki swift diesel": [
+            {
+                modelName: "EXIDE MILEAGE(MLDIN66)(66AH)",
+                image: "32.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8599<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN65 (565106590)(65AH)",
+                image: "33.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5750.<br>Without Old Battery: Rs.8199.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Maruthi suzuki ciaz DIESEL": [
+            {
+                modelName: "Exide Mileage MLDIN50(50AH",
+                image: "30.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN50 L(50AH)",
+                image: "31.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6600.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Hyundai EON petrol": [
+            {
+                modelName: "Exide Mileage ML40LBH (40 AH)",
+                image: "34.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4199.<br>Without Old Battery: Rs.5450<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH40B20L (40AH)",
+                image: "35.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3950.<br>Without Old Battery: Rs.5050.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	   "Hyundai grand i10 petrol": [
+            {
+                modelName: "Exide Mileage ML40LBH (40 AH)",
+                image: "34.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4199.<br>Without Old Battery: Rs.5450<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH40B20L (40AH)",
+                image: "35.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3950.<br>Without Old Battery: Rs.5050.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	   
+	   "Hyundai Creta petrol": [
+            {
+                modelName: "Exide Mileage ML45D21LBH (45AH)",
+                image: "36.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH45D20L(50AH)",
+                image: "37.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai creta diesel": [
+            {
+                modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5750.<br>Without Old Battery: Rs.7800<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5350.<br>Without Old Battery: Rs.6800.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai Getz 1.6 diesel": [
+            {
+               modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5750.<br>Without Old Battery: Rs.7800<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5350.<br>Without Old Battery: Rs.6800.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai i20 sportz petrol": [
+            {
+                 modelName: "Exide Mileage ML45D21LBH (45AH)",
+                image: "36.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH45D20L(50AH)",
+                image: "37.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai verna 1.4 diesel": [
+            {
+                 modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5750.<br>Without Old Battery: Rs.7800<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5350.<br>Without Old Battery: Rs.6800.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Hyundai i20 sportz diesel": [
+            {
+                 modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5750.<br>Without Old Battery: Rs.7800<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5350.<br>Without Old Battery: Rs.6800.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Hyundai verna 1.4 petrol": [
+            {
+                modelName: "Exide Mileage ML45D21LBH (45AH)",
+                image: "36.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH45D20L(50AH)",
+                image: "37.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	     "Hyundai xcent diesel": [
+            {
+                 modelName: "Exide Mileage ML45D21LBH (45AH)",
+                image: "36.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH45D20L(50AH)",
+                image: "37.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	     "Hyundai xcent petrol": [
+            {
+                 modelName: "Exide Mileage ML40LBH (40 AH)",
+                image: "34.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4199.<br>Without Old Battery: Rs.5450<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH40B20L (40AH)",
+                image: "35.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3950.<br>Without Old Battery: Rs.5050.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	     "Hyundai elite i20 petrol": [
+            {
+                modelName: "Exide Mileage ML40LBH (40 AH)",
+                image: "34.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4199.<br>Without Old Battery: Rs.5450<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH40B20L (40AH)",
+                image: "35.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3950.<br>Without Old Battery: Rs.5050.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Hyundai elite i20 diesel": [
+            {
+                 modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5750.<br>Without Old Battery: Rs.7800<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5350.<br>Without Old Battery: Rs.6800.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	     "Hyundai tucson diesel": [
+            {
+                modelName: "Exide FEY0-EY105D31L",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249.<br>Without Old Battery: Rs. 8249<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai tuscon petrol": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai venue petrol": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5099.<br>Without Old Battery: Rs:6499 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:4799..<br>Without Old Battery: Rs:6199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Hyundai venue diesel": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Hyundai aura diesel": [
+            {
+                  modelName: "Exide Mileage ML45D21LBH (45AH)",
+                image: "36.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5400.<br>Without Old Battery: Rs.7100<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH45D20L(50AH)",
+                image: "37.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5050.<br>Without Old Battery: Rs.6500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	     "Hyundai Elantra 1.6 diesel": [
+            {
+                modelName: "Exide-EPIQDIN74L-74 Ah Car Battery",
+                image: "61.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.9100.<br>Without Old Battery: Rs.11300<br>Warranty: 77 Months (42 Months full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron Pro Din74 Aam Pr 574102069 (74AH)",
+                image: "62.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.8300.<br>Without Old Battery: Rs.10700.<br>Warranty : 72 Months (36 Months Free + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	 "Hyundai i20 sprotz petrol(after 2015)": [
+            {
+                modelName: "Exide Mileage ML40LBH (40 AH)",
+                image: "34.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4199.<br>Without Old Battery: Rs.5450<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH40B20L (40AH)",
+                image: "35.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3950.<br>Without Old Battery: Rs.5050.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],	
+	    "Hyundai verna CRDi diesel(after 2017)-Next Gen": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Honda AMAZE petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda AMAZE diesel": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda WR-V petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            
+            }
+        ],
+	     "Honda CITY petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            
+            }
+        ],
+	    "Honda CITY disel": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda BRIO petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Honda JAZZ diesel": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Honda JAZZ petrol": [
+            {
+               modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda Mobilio petrol": [
+            {
+               modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda Mobilio diesel": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Honda BR-V-diesel": [
+            {
+               modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda BR-V-petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3500.<br>Without Old Battery: Rs.4500<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3300.<br>Without Old Battery: Rs.4300.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Honda WR-v diesel": [
+            {
+               modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	   "Honda CR-V PETROL": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Honda WR-v diesel": [
+            {
+               modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Honda amaza diesel": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	   "Honda CIVIC petrol": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Honda ACCORD petrol": [
+            {
+                modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6500.<br>Without Old Battery: Rs.8000<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6150.<br>Without Old Battery: Rs.7700.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Rapid diesel": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Rapid petrol": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5099.<br>Without Old Battery: Rs:6499 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:4799..<br>Without Old Battery: Rs:6199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	   "SKODA Octavia diesel": [
+            {
+                 modelName: "Exide-EPIQDIN74L-74 Ah Car Battery",
+                image: "61.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.9100.<br>Without Old Battery: Rs.11300<br>Warranty: 77 Months (42 Months full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron Pro Din74 Aam Pr 574102069 (74AH)",
+                image: "62.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.8300.<br>Without Old Battery: Rs.10700.<br>Warranty : 72 Months (36 Months Free + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Octavia petrol": [
+            {
+                 modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Superb petrol": [
+            {
+                 modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	   "Skoda Suberb diesel": [
+            {
+                modelName: "Exide-EPIQDIN74L-74 Ah Car Battery",
+                image: "61.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.9100.<br>Without Old Battery: Rs.11300<br>Warranty: 77 Months (42 Months full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron Pro Din74 Aam Pr 574102069 (74AH)",
+                image: "62.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.8300.<br>Without Old Battery: Rs.10700.<br>Warranty : 72 Months (36 Months Free + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda yeti 2.0 diesel": [
+            {
+                modelName: "Exide-EPIQDIN74L-74 Ah Car Battery",
+                image: "61.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.9100.<br>Without Old Battery: Rs.11300<br>Warranty: 77 Months (42 Months full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron Pro Din74 Aam Pr 574102069 (74AH)",
+                image: "62.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.8300.<br>Without Old Battery: Rs.10700.<br>Warranty : 72 Months (36 Months Free + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Fabia diesel": [
+            {
+                 modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Fabia petrol": [
+            {
+                 modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5099.<br>Without Old Battery: Rs:6499 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:4799..<br>Without Old Battery: Rs:6199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Laura diesel": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6199.<br>Without Old Battery: Rs.8500 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5799..<br>Without Old Battery: Rs.8199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	   "Skoda Laura petrol": [
+            {
+                 modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5099.<br>Without Old Battery: Rs:6499 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:4799..<br>Without Old Battery: Rs:6199 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	   "Skoda Comdi diesel": [
+            {
+                 modelName: "Exide-EPIQDIN74L-74 Ah Car Battery",
+                image: "61.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.9100.<br>Without Old Battery: Rs.11300<br>Warranty: 77 Months (42 Months full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron Pro Din74 Aam Pr 574102069 (74AH)",
+                image: "62.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.8300.<br>Without Old Battery: Rs.10700.<br>Warranty : 72 Months (36 Months Free + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "TATA NEXON diesel": [
+            {
+                modelName: "Exide FEY0-EY105D31L",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "Skoda Laura diesel": [
+            {
+                modelName: "Exide FEY0-EY105D31L",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    "TATA NEXON petrol": [
+            {
+                modelName: "Exide FEY0-EY105D31L",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs. 6049.<br>Without Old Battery: Rs. 8249.<br>Without Old Battery: Rs. 8249<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	    
+        "MG HECTOR Petrol": [
+            {
+                modelName: "Exide EEZY EGRID 700L (65AH)",
+                image: "21.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.5800.<br>Without Old Battery: Rs.7500<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON GO - 95D26R (AAM-GO-00095D26R) (65Ah)",
+                image: "22.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5300.<br>Without Old Battery: Rs.7200.<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+    };
+	  
+	
+
+    const selectedDetails = batteryDetails[carModel];
+    const batteryImageContainer = document.getElementById('battery-info');
+    batteryImageContainer.innerHTML = '';
+
+    if (selectedDetails) {
+        selectedDetails.forEach(detail => {
+            const detailDiv = document.createElement('div');
+            const orderLink = `https://wa.me/+919902555479?text=I%20want%20to%20order%20${encodeURIComponent(detail.modelName)}%20for%20${encodeURIComponent(carModel)}.%0ADescription:%20${encodeURIComponent(detail.description)}%0APrice:%20${encodeURIComponent(detail.price)}%0AFeatures:%20${encodeURIComponent(detail.features.replace(/\n/g, ' '))}%0ARecommended%20For:%20${encodeURIComponent(detail.recommended.replace(/\n/g, ' '))}`;
+
+            detailDiv.innerHTML = `
+                <img src="${detail.image}" alt="${detail.modelName}" style="width: 100px; height: auto;">
+                <h4 style="color: black;">${detail.modelName}</h4>
+                <p style="color: black;"><strong>Description:</strong> ${detail.description}</p>
+		<p style="color: black;"><strong>Price:</strong><br>${detail.price.replace(/\n/g, '<br>')}</p>
+                <p style="color: black;"><strong>Features:</strong><br>${detail.features.replace(/\n/g, '<br>')}</p>
+		
+                <p style="color: black;"><strong>Recommended For:</strong><br>${detail.recommended.replace(/\n/g, '<br>')}</p><br><br>
+                <a href="${orderLink}" class="large-button" target="_blank">Order Now</a>
+            `;
+            batteryImageContainer.appendChild(detailDiv);
+        });
+
+        // Create and append go back button
+        const backButton = document.createElement('button');
+        backButton.innerText = 'Go Back';
+        backButton.className = 'close-button'; // Add styling class
+        backButton.onclick = function() {
+            document.getElementById('overlay').style.display = 'none'; // Close the overlay
+            // Optionally, navigate to a specific page (e.g., homepage)
+            // window.location.href = 'homepage.html'; // Uncomment to redirect
+        };
+        batteryImageContainer.appendChild(backButton);
+
+        // Show the overlay
+        document.getElementById('overlay').style.display = 'flex';
+    } else {
+        alert("No battery details found for this car model.");
+    }
+}
+
+function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+}
+
+</script>
+
+     <div class="s-two-products">
+            <div class="product product-one">
+              <h3 class="price pos-abs-center">7,000$</h3>
+              <img src="2a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Amaron Inverter Battery
+<b>Amaron</b></h3>
+            </div>
+            <div class="product product-two">
+              <h3 class="price pos-abs-center">1500$</h3>
+              <img src="main.jpeg" alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Exide 12 XL 5 LB Battery
+
+<b>Exide</b></h3>
+            </div>
+            <div class="product product-three">
+              <h3 class="price pos-abs-center">11000$</h3>
+              <img src="3a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Luminous 150Ah Tubular<b>Luminous</b></h3>
+            </div>
+ <div class="product product-four">
+              <h3 class="price pos-abs-center">15000$</h3>
+              <img src="4a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Luminous RC 25000 
+</b></h3>
+            </div>
+ <div class="product product-five">
+              <h3 class="price pos-abs-center">3400$</h3>
+              <img src="5a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Exide Little Champ
+</b></h3>
+            </div>
+ <div class="product product-six">
+              <h3 class="price pos-abs-center">4800$</h3>
+              <img src="6a.jpeg" alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">
+Power Zone PZ6000R Automotive 
+</h3>
+            </div>
+ <div class="product product-seven">
+              <h3 class="price pos-abs-center">5200$</h3>
+              <img src="8a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center"style="text-color:white;">exide 850 va inverter
+
+</h3>
+            </div>
+
+ <div class="product product-eight">
+              <h3 class="price pos-abs-center">16300$</h3>
+              <img src="9a.jpeg" alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">exide inverter battery </h3>
+            </div>
+
+ <div class="product product-nine">
+              <h3 class="price pos-abs-center">7200$</h3>
+              <img src="10a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Exide HD 880 Battery </h3>
+            </div>
+
+ <div class="product product-ten">
+              <h3 class="price pos-abs-center">4700$</h3>
+              <img src="11a.jpeg" alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">
+ Amaron Automotive Batteries 42 B 20 L  
+</h3>
+            </div>
+
+ <div class="product product-eleven">
+              <h3 class="price pos-abs-center">14200$</h3>
+              <img src="12a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center"> Luminous Inverlast Battery </h3>
+            </div>
+<div class="product product-twelve">
+              <h3 class="price pos-abs-center">9000$</h3>
+              <img src="13a.jpeg"alt="battery" loading="lazy">
+              <h3 class="buy-btn pos-abs-center">BUY</h3>
+              <h3 class="name pos-abs-center">Amaron Black BL400 RMF </h3>
+            </div>
+
+
+
+
+
+          </div>
+        </section>
+		 <section id="FAQ's" class="section section-two container">
+          <div class="s-two-upper-info">
+      
+            <p class="s-two-definition s-definition">
+			vice has been providing quality battery solutions for over 10 years.</p>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-button">What Is The Life Of A Car Battery? <span class="plus-minus">+</span></button>
+            <div class="faq-answer">
+                <p>The average lifespan of a car battery is typically between 3 to 5 years, depending on usage, climate, and maintenance.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-button">How Will I Know That My Battery Order Has Been Confirmed? <span class="plus-minus">+</span></button>
+            <div class="faq-answer">
+                <p>After placing an order, you should receive a confirmation email or SMS from S N Battery Service.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-button">Will There Be Any Hidden Charges Like Service Tax for the Battery Purchase? <span class="plus-minus">+</span></button>
+            <div class="faq-answer">
+                <p>Reputable service providers typically disclose all charges upfront. It's best to check their policy or ask customer service.</p>
+            </div>
+        </div>
+		 <div class="faq-item">
+            <button class="faq-button">What Are the General Reasons That Make a Car Battery Weak? <span class="plus-minus">+</span></button>
+            <div class="faq-answer">
+                <p>Common reasons include age, corrosion, extreme temperatures, frequent short trips, and faulty charging systems..</p>
+            </div>
+        </div>
+		
+              
+		  </section>
+
+        <!-- section three -->
+        <section class="section section-three container">
+          <div class="s-three-upper-img-container">
+            <img src="WhatsApp Image 2024-05-17 at 18.20.37_66352887.jpg" "alt="" loading="lazy">
+          </div>
+          <div class="s-three-lower-container">
+            <h3 class="s-three-title">S N BATTERY SALES AND SERVICE (Exide Amaron luminous battery Store)</h3>
+            <p class="s-three-desc s-definition"><i class="bx bx-map in-btn-icon"></i>  64/2 K Channsandra Circle K Channandra Main Road K Channasandra, Post, Horamavu, Bengaluru, Karnataka 560043</p>
+            <span class="s-three-price">Hours: 
+Open 7AM Closes 10 PM
+</span>
+<a href="tel:9902555479"><button class="button ad-buy-btn">CALL</button>
+</a>
+            
+          </div>
+ </div>
+          <div class="s-three-lower-container">
+            <h3 class="s-three-title"style="text-decoration:underline;">Longlasting services for better use</h3>
+<br>
+            <p class="s-three-desc s-definition">Reliable batteries for your every need.</p>
+           <a href="https://g.co/kgs/tWkp5VD">
+            <button class="button ad-buy-btn">CLICK</button>
+</a>
+          </div>
+
+
+
+        </section>
+
+        <!-- section four -->
+        <section id="about" class="section section-four container">
+          <div class="oath-container">
+            <h3 class="s-three-title s-four-title">S N BATTERY</h3>
+            <p class="s-three-desc s-definition">Established in the year 2022, we, “S N Battery”,that is engaged in Trading a wide spectrum of Exide battery,UPS Battery, Amaron Batteries, UPS Inverter, Computer UPS, etc. We have selected our professionals on the basis of their skills and industry knowledge. They work in tandem with the clients to meet their exact need within the promised time frame. Moreover, we offer these products at a very genuine and economical market rate thus acclaiming a fervent interest of our customer.</p>
+
+            <div class="employer-info">
+              <div class="employer">
+                <h4 class="name">Rudresh Gowda</h4>
+                <h5 class="title">Owner</h5>
+              </div>
+              <div class="rate">
+                
+              </div>
+            </div>
+          </div>
+          <div class="waiter-img-container">
+            <img src="am.jpg" alt="">
+          </div>
+        </section>
+
+        <!-- section five -->
+        <section class="section-five container">
+          <div class="promo-card">
+            <div class="promo-info-container">
+              <h2 class="promo-title s-three-title">Battery down! Call us anytime anywhere</h2>
+              <p class="promo-description s-definition">S N BATTERY</p>
+        <a href="tel:9902555479"><button class="button ad-buy-btn">CALL</button></a>
+            </div>
+            <img src="Types_of_Car_Batteries.jpg" alt="woman licking eating cream">
+          </div>
+        </section>
+      </main>
+ <footer id="contact" class="footer container">
+        <h2 class="footer-title">IF ANY QUERIES </h2>
+   
+<a href="mailto:rudreshgowda741@gmail.com?Subject=Hello%20again" target="_top">
+          <button style="background-color:purple;button-size:15PX;">MAIL ME</button>
+</a>
+
+        </form>
+
+      
+
+   
+
+        
+
+        <div class="other-footer-infos-container">
+          <span class="footer-info"><i class="bx bx-map"></i>Address: 64/2 K Channsandra Circle K Channandra Main Road K Channasandra, Post, Horamavu, Bengaluru, Karnataka 560043</span>
+          <span class="footer-info"><i class="bx bx-phone">9902555479</i></span>
+          <span class="footer-info"><i class="bx bx-mail-send"></i>rudreshgowda741@gmail.com</span>
+          <div class="footer-social-links">
+            <ul>
+              <li><i class='bx bxl-instagram-alt nav-icon clr-transition'></i></li>
+              <li><i class='bx bxl-twitter nav-icon clr-transition'></i></li>
+              <li><i class='bx bxl-facebook-square nav-icon clr-transition'></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <span class="lower-footer-elt copy">copyright © 2022 S N Battery</span>
+         
+          <span class="lower-footer-elt policy"><a href="#" class="policy-link">Privacy•Policy</a></span>
+        </div>
+      </footer>
+	  <script>
+        // Slideshow script
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".quote-slide");
+            slides.forEach(slide => slide.style.display = "none");
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+
+        const faqButtons = document.querySelectorAll('.faq-button');
+
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                const plusMinus = button.querySelector('.plus-minus');
+                plusMinus.textContent = plusMinus.textContent === '+' ? '-' : '+';
+            });
+        });
+
+        function searchFunction(event) {
+            event.preventDefault(); // Prevents the default form submission
+            const query = document.getElementById('search-input').value.toLowerCase();
+            alert(`Searching for: ${query}`); // Replace this with actual search functionality
+            // You can implement a search logic here based on your needs
+        }
+    </script>
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+      <script src="battery.js"></script>
+    </body>
+</html>

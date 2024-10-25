@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaron Battery Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            max-width: 300px; /* Adjust size as needed */
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Amaron Battery Details</h1>
+<img src="https://via.placeholder.com/300" alt="Amaron Battery"> <!-- Replace with actual image URL -->
+<p>Description: Amaron Battery Model 1: Long-lasting power.</p>
+<p>Price: $130</p>
+
+<button onclick="goBack()">Go Back</button>
+
+<script>
+    function goBack() {
+        window.history.back(); // Go back to the previous page
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $recipient_email = $_POST['recipient_email'];
+
+    // Now you can use $recipient_email to send the message to the specified recipient
+}
+?>

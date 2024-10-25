@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Details</title>
+    <style>
+        /* Basic styles for the overlays */
+        #overlay, #detail-overlay {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border: 1px solid black;
+            z-index: 1000;
+            width: 80%;
+            max-width: 600px;
+            max-height: 80%;
+            overflow-y: auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        #overlay img, #detail-overlay img {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<main id="hero" class="main">
+    <section id="products" class="section section-two container">
+        <h1 style="text-align:center;text-decoration:overline;">SHOP BY CATEGORY</h1>
+        <div class="button-group">
+            <button class="battery-button" onclick="showForm('car')">
+                <img src="car.jpg" alt="Car Battery">
+                Car Battery
+            </button>
+            <button class="battery-button" onclick="showModal('bike')">
+                <img src="bike.jpg" alt="Bike Battery">
+                Bike Battery
+            </button>
+            <button class="battery-button" onclick="showModal('inverter')">
+                <img src="inverter.jpeg" alt="Inverter Battery">
+                Inverter Battery
+            </button>
+            <button class="battery-button" onclick="showForm('heavy')">
+                <img src="heavy.jpeg" alt="Heavy Engine Battery">
+                Heavy Engine Battery
+            </button>
+        </div>
+    <form id="battery-form" style="display: none;">
+        <label for="manufacturer">Select Manufacturer:</label>
+        <select id="manufacturer">
+            <option value="">Select Manufacturer</option>
+            <option value="KIA">KIA</option>
+            <option value="MG">MG</option>
+			<option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Tata motors">Tata motors</option>
+                    <option value="FORD">FORD</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="BMW">BMW</option>
+                    <option value="MINI">MINI</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="JEEP">JEEP</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="VOLVO">VOLVO</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Renault">Renault</option>
+                    <option value="ICML">ICML</option>
+                    <option value="Force motors">Force motors</option>
+                    <option value="BENTLEY">BENTLEY</option>
+        </select>
+
+        <label for="car-model">Select Car Model:</label>
+        <select id="car-model">
+            <option value="">Select Car Model</option>
+        </select>
+		<label for="battery-brand">Battery Brand:</label>
+                <select id="battery-brand" required>
+                    <option value="">Select Battery Brand</option>
+					<option value="ALL Brand">ALL Brand</option>
+                    <option value="Amaron">Amaron</option>
+                    <option value="Exide">Exide</option>
+                    <option value="PowerZONE">PowerZONE</option>
+                    <option value="SF Sonic">SF Sonic</option>
+                    <option value="BOSCH">BOSCH</option>
+                    <option value="Livfast">Livfast</option>
+                </select>
+                <label for="state">State:</label>
+                <select id="state" required>
+                    <option value="">Select State</option>
+					
+                    <option value="karnataka">Karnataka</option>
+                    <option value="maharashtra">Maharashtra</option>
+                </select>
+
+
+                <label for="city">City:</label>
+                <select id="city" required>
+                    <option value="">Select City</option>
+					<option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+        <button type="submit" onclick="displayBatteryInfo(event)">FIND</button>
+    </form>
+
+    <div id="overlay">
+        <button id="close-button" onclick="closeOverlay()">✖</button>
+        <div id="battery-images"></div>
+    </div>
+
+    <div id="detail-overlay"></div>
+
+    <script>
+        const carModels = {
+        "KIA": ["KIA Carnival", "KIA SELTOS DIESEL", "KIA SELTOS PETROL", "KIA SONET PETROL"],
+
+        "MG HECTOR": ["MG HECTOR Petrol", "MG HECTOR Diesel", "MG Glowstar"],
+        "Maruti Suzuki": ["Maruthi suzuki alto 800 petrol", "Maruthi suzuki A star petrol", "Maruthi suzuki Celerio petr+ol", "Maruthi suzuki Celerio petrol", "Maruthi sazuki ciaz petrol", "Maruthi suzuki ciaz DIESEL", "Maruthi suzuki ciaz diesel hybrid", "maruthi suzuki ciaz petrol hybrid", "Maruthi suzuki swift diesel", "Maruthi suzuki swift petrol", "Maruthi suzuki vitra brezza diesel", "Maruthi suzuki new baleno petrol", "Maruthi suzuki new baleno diesel", "Maruthi suzuki ignis petrol", "Maruthi suzuki ertiga petrol"],
+        "Hyundai": ["Hyundai EON petrol", "Hyundai grand i10 petrol",, "Hyundai grand i10 petrol", "Hyundai Creta petrol", "Hyundai creta diesel", "Hyundai Getz 1.6 diesel", "Hyundai i20 sportz petrol", "Hyundai i20 sportz diesel", "Hyundai verna 1.4 diesel", "Hyundai verna 1.4 petrol", "Hyundai xcent diesel", "Hyundai xcent petrol", "Hyundai elite i20 petrol", "Hyundai elite i20 diesel", "Hyundai tucson diesel", "Hyundai tuscon petrol", "Hyundai venue petrol", "Hyundai venue diesel", "Hyundai venue petrol", "Hyundai aura diesel", "Hyundai Elantra 1.6 diesel", "Hyundai i20 sprotz petrol(after 2015)", "Hyundai verna CRDi diesel(after 2017)-Next Gen"],
+        "Honda": ["Honda AMAZE petrol", "Honda AMAZE diesel", "Honda CITY petrol", "Honda CITY disel", "Honda BRIO petrol", "Honda JAZZ petrol", "Honda JAZZ diesel", "Honda Mobilio petrol", "Honda Mobilio diesel", "Honda BR-V-diesel", "Honda BR-V-petrol", "Honda WR-V petrol", "Honda WR-v diesel", "Honda CR-V PETROL", "Honda amaza diesel", "Honda ACCORD petrol", "Honda CIVIC petrol"],
+        "Skoda": ["Skoda Rapid diesel", "Skoda Rapid petrol", "SKODA Octavia diesel", "Skoda Octavia petrol", "Skoda Superb petrol", "Skoda Suberb diesel", "Skoda yeti 2.0 diesel", "Skoda Fabia diesel", "Skoda Fabia petrol", "Skoda Laura diesel", "Skoda Laura petrol", "Skoda Comdi diesel"],
+        "Tata motors": ["TATA NEXON diesel", "TATA NEXON petrol", "TATA HARRIER diesel", "TATA TIAGO Petrol", "TATA TIAGO diesel", "TATA HEXA diesel", "TATA ZEST petrol", "TATA ZEST diesel", "TATA SAFARI STROME diesel", "TATA SAFARI Diesel", "TATA SUMO diesel", "TATA SAFARI DICOR diesel", "TATA INDIGO diesel"],
+        "FORD": ["FORD FIGO diesel", "FORD FIGO PETROL", "FORD ENDEAVOUR 2.5 diesel", "FORD ENDEAVOUR 3.0 diesel", "FORD ECOSTORT diesel", "FORD ECOSTORT PETROL", "FORD FIESTA diesel", "FORD FIESTA petrol", "FORD IKON diesel"],
+        "Fiat": ["Fiat linea diesel", "Fiat linea petrol", "Fiat Grande punto diesel", "Fiat Grande punto petrol", "Fiat AVVENTURA diesel", "Fiat AVVENTURA petrol"],
+        "BMW": ["BMW x1 petrol", "BMW x3 diesel", "BMW 5 series 320d diesel", "BMW 5 series 520d diesel", "BMW 7 series 750li PETROL", "BMW 6 series 650i PETROL", "BMW GT"],
+        "MINI": ["MINICOUNTRYMAN COOPER SD(DIESEL)", "MINI COUNTRYMAN COOPER S JCW INSPIRED(PETROL)", "MINI CLUBMAN COOPER S (PETROL)"],
+        "Audi": ["Audi A3 diesel", "Audi A3 petrol", "Audi A4 petrol", "Audi A4 DIESEL", "Audi A6 petrol", "Audi A6 diesel", "Audi A7 3.0 diesel", "Audi A8 L diesel", "Audi A8 L disel", "Audi Q5 petrol", "Audi Q5 3.0 Quattaro diesel"],
+        "Jaguar": ["Jaguar XE diesel", "Jaguar XF petrol", "Jaguar F TYPE petrol", "Jaguar XF petrol", "Jaguar XJ petrol", "Jaguar XF diesel", "Jaguar XJ diesel "],
+        "JEEP": ["Jeep compass sport petrol", "Jeep wrangler unlimited diesel", "Jeep compass sport diesel", "Jeep compass longitude diesel", "Jeep compass limited petrol", "Jeep comass limited diesel"],
+        "VOLVO": ["Volvo S60 Diesel", "Volvo S60 petrol", "Volvo V60  cross country diesel", "Volvo S60 cross country DIESEL", "Volvo S60 petrol", "Volvo xc60 diesel ", "Volvo S90 diesel", "Volvo XC90 petrol", "Volvo XC40 DIESEL"],
+        "Mahindra": ["Mahindra XUV 500 diesel", "Mahindra Xylo  D2 diesel", "Mahindra Xylo  E2 diesel", "Mahindra TUV 300 diesel", "Mahindra KUV 100 ESS diesel", "MahindraKUV 100 ESS PETROL ", "Mahindra bolera diesel", "Mahindra renault logan 1.5 diesel", "Mahindra ALTURAS G4", "Mahindra renault logan 1.4 petrol", "Mahindra thar 4*4 diesel", "Mahindra scorpio Vlx diesel", "Mahindra bolero new diesel", "Mahindra quanto diesel", "Mahindra verito 1.4 petrol", "Mahindra verito 1.5 diesel", "Mahindra XUV700", "Mahindra renault XUV 300 PETROL", "Mahindra XUV 300 DIESEL"],
+        "Renault": ["Renault pulse diesel", "Renault scala petrol", "Renault scala petrol", "Renault kwid", "Renault lodgy", "Renault captur petrol", "Renault captur diesel", "Renault triber petrol"],
+        "ICML": ["ICML Delite diesel", "ICML Rhino diesel", "ICML winner diesel", "ICML xcitor diesel", "ICML xcitor diesel"],
+        "Force motors": ["Force Motors Minidor", "Force Motors Balwan-330-25Hp", "Force Motors Balwan-400-35Hp", "Force Motors orchard", "Force Motors Balwan-550-52Hp", "Force Motors Balwan-400-35Hp", "Force Motors Balwan-450-40Hp", "Force Motors OX 25", "Force Motors TRAVELLER DIESEL"],
+        "BENTLEY": ["Bentley flying spur petrol", "Bentley continental petrol", "Bentley Bentayga petrol", "Bentley mulsanne petrol"],
+		"Chevrolet": ["Chevrolet Opel Vectra diesel", "Chevrolet opel vectra petrol"  , "Chevrolet enjoy diesel", "Chevrolet forester petrol", "Chevrolet opel corse 1.6 petrol", "Chevrolet opel vectra petrol", "Chevrolet corsa petrol", "Chevrolet opel swing petrol", "Chevrolet optra 1.8 petrol", "Chevrolet optra platnium petrol", "Chevrolet optra royal 1.6 petrol", "Chevrolet SRV petrol", "Chevrolet SRV petrol", "Chevrolet starlite diesel", "Chevrolet 1.4 petrol", "Chevrolet opel 1.6 petrol", "Chevrolet enjoy petrol", "Chevrolet optra 1.6 petrol", "Chevrolet Beat petrol", "Chevrolet optra magnum diesel", "Chevrolet Beat diesel"],                                                
+        "Nissan": ["Nissan Evalia diesel", "Nissan Micra 1.5L diesel", "Nissan Micra 1.2L petrol", "Nissan sunny 1.5L diesel", "Nissan sunny 1.5L diesel", "Nissan Micra 1.5L petrol", "Nissan Micra 1.5L diesel", "Nissan Micra 1.5L diesel", "Nissan Teana 250XL Petrol", "Nissan Micra 1.5L diesel", "Nissan Terrano diesel", "Nissan Terrano petrol", "Nissan Micra 1.5L diesel", "Nissan X trail diesel", "Nissan datsun go petrol", "Nissan evalia diesel", "Nissan Micra petrol", "Nissan Micra 1.5L diesel"],
+        "Volkswagen": ["Volkswagen Beetle 2.0L petrol", "Volkswagen jetta diesel new", "Volkswagen jetta diesel old", "Volkswagen passat diesel", "Volkswagen passat petrol", "Volkswagen phaeton 3.6 v6", "Volkswagen polo 1.2 diesel", "Volkswagen polo 1.2 petrol", "Volkswagen polo 1.6 petrol", "Volkswagen vento 1.6 diesel", "Volkswagen vento 1.6 petrol", "Volkswagen vento old", "Volkswagen passat hybrid", "Volkswagen vento 1.2 diesel", "Volkswagen vento 1.2 petrol", "Volkswagen polo .5 diesel", "Volkswagen tiguan 2.0 diesel"],
+        "Toyota": ["Toyota Corolla petrol", "Toyota camry petrol", "Toyota corolla altis diesel", "Toyota corolla altis petrol", "Toyota etios diesel", "Toyota etios liva petrol", "Toyota etios petrol", "Toyota fortuner D4 diesel", "Toyota innova diesel ", "Toyota innova petrol", "Toyota qualis diesel", "Toyota qualis petrol", "Toyota lexus diesel", "Toyota innova crysta diesel", "Toyota land cruiser prado 4.5 diesel", "Toyota land cruiser petrol", "Toyota new innova special edition diesel"] 
+  };
+
+        function showForm() {
+            document.getElementById('battery-form').style.display = 'block';
+            const manufacturerSelect = document.getElementById('manufacturer');
+            manufacturerSelect.onchange = function() {
+                const carModelSelect = document.getElementById('car-model');
+                const selectedManufacturer = this.value;
+                carModelSelect.innerHTML = '<option value="">Select Car Model</option>';
+                if (carModels[selectedManufacturer]) {
+                    carModels[selectedManufacturer].forEach(model => {
+                        const option = document.createElement('option');
+                        option.value = model;
+                        option.textContent = model;
+                        carModelSelect.appendChild(option);
+                    });
+                }
+            };
+        }
+
+        function displayBatteryInfo(event) {
+            event.preventDefault();
+            const carModel = document.getElementById('car-model').value;
+
+            let batteryDetails = {
+                "KIA Carnival": {
+                    images: ["13a.jpeg", "13b.jpeg"],
+                    modelNumbers: ["KIA Carnival Standard", "KIA Carnival Premium"],
+                    prices: ["with old battery exchange:$140<br>\nwith old battery exchange:$140", "$170 (with old battery exchange)"],
+                    descriptions: [
+                        "Standard battery for KIA Carnival with reliable performance.",
+                        "High-performance battery designed for optimal efficiency."
+                    ],
+                    features: [
+                        "12V, 70Ah, 3-year warranty",
+                        "12V, 75Ah, 5-year warranty, quick charge"
+                    ],
+                    recommendations: [
+                        "Ideal for urban driving conditions",
+                        "Perfect for long-distance travel and heavy loads"
+                    ],
+                },
+                "MG HECTOR Petrol": {
+                    images: ["path/to/mg_hector_battery.jpg", "path/to/mg_hector_battery2.jpg"],
+                    modelNumbers: ["MG HECTOR Standard", "MG HECTOR Premium"],
+                    prices: ["with old battery exchange:$140<br>\nwith old battery exchange:$140", "$160 (with old battery exchange)"],
+                    descriptions: [
+                        "Reliable battery for MG HECTOR with solid performance.",
+                        "AGM battery with enhanced lifespan."
+                    ],
+                    features: [
+                        "12V, 60Ah, 2-year warranty",
+                        "12V, 65Ah, 4-year warranty, fast charging capability",
+                        "Temperature-resistant design",
+                        "Maintenance-free operation"
+                    ],
+                    recommendations: [
+                        "Best for city commutes",
+                        "Great for those who need reliability for road trips",
+                        "Optimal for families and larger vehicles"
+                    ],
+                },
+            };
+
+            const selectedDetails = batteryDetails[carModel];
+            if (selectedDetails) {
+                const batteryImagesContainer = document.getElementById('battery-images');
+                batteryImagesContainer.innerHTML = '';
+
+                selectedDetails.images.forEach((image, index) => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = image;
+                    imgElement.alt = `${selectedDetails.modelNumbers[index]} Image`;
+                    batteryImagesContainer.appendChild(imgElement);
+
+                    const detailsElement = document.createElement('div');
+                    detailsElement.innerHTML = `
+                        <h3>${selectedDetails.modelNumbers[index]}</h3>
+                        <p><strong>Price:</strong> ${selectedDetails.prices[index]}</p>
+                        <p><strong>Description:</strong> ${selectedDetails.descriptions[index]}</p>
+                        <p><strong>Features:</strong> ${selectedDetails.features.join(', ')}</p>
+                        <p><strong>Recommended For:</strong> ${selectedDetails.recommendations.join(', ')}</p>
+                        <button onclick="redirectToWhatsApp('${selectedDetails.modelNumbers[index]}', '${selectedDetails.prices[index]}', '${selectedDetails.descriptions[index]}')">Order</button>
+                    `;
+                    batteryImagesContainer.appendChild(detailsElement);
+                });
+
+                document.getElementById('overlay').style.display = 'flex';
+            } else {
+                alert("No battery details found for this car model.");
+            }
+        }
+
+        function redirectToWhatsApp(model, price, description) {
+            const message = `I'm interested in the following battery:\n\n` +
+                            `**Model:** ${model}\n` +
+                            `**Price:** ${price}\n` +
+                            `**Description:** ${description}\n` +
+                            `Please provide further details.`;
+            const phoneNumber = '1234567890'; // Replace with your actual WhatsApp number
+            const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        function closeOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        window.onload = function() {
+            showForm();
+        }
+    </script>
+</body>
+</html>
