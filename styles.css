@@ -40,6 +40,51 @@
   --product-bg-clr: #f5fdff;
   --bx-shadow-clr: #2d425333;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.logo {
+    margin: 0; /* Remove margin */
+    padding: 20px 0; /* Adjust padding if needed */
+    text-align: center; /* Center the logo if needed */
+}
+
+.navbar {
+    width: 100%; /* Full width */
+    padding: 0; /* Remove padding */
+}
+
+.nav-items {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.nav-item {
+    margin: 0; /* Remove margin */
+    padding: 10px 0; /* Add some padding for touch targets */
+    text-align: center; /* Center links */
+}
+
+.content-section {
+    width: 100%; /* Full width */
+    padding: 20px; /* Adjust as necessary */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
 
 /* ------------ BASE ------------ */
 body {
