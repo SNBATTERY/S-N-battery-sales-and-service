@@ -118,6 +118,29 @@ body {
             text-align: center;
             color: #333; /* Dark text for headers */
         }
+/* Remove margin from nav items */
+.nav-item {
+    margin: 0; /* Removes all margin */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    .nav-items {
+        padding: 0; /* Optional: Remove padding from the list */
+        list-style: none; /* Remove bullet points if needed */
+    }
+    
+    .nav-item {
+        margin-bottom: 0; /* Ensure no space at the bottom */
+        margin-right: 0; /* Ensure no space to the right */
+    }
+    
+    .nav-items {
+        display: flex; /* Or block, depending on your layout */
+        flex-direction: row; /* Change to 'column' if you want them stacked */
+    }
+}
+
 /* Container for the image row */
 .image-row {
     display: flex;
