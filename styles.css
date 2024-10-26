@@ -139,6 +139,25 @@ body {
     }
 }
 
+/* Basic styles for navigation items */
+.nav-item {
+    margin-right: 15px; /* Adjust as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .nav-item {
+        margin-bottom: 10px; /* Space between items on mobile */
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+}
+
+
 
 ul {
   list-style: none;
