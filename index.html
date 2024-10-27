@@ -10,6 +10,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
 	   <style>
+	@media (max-width: 768px) {
+    
+
+    .navbar {
+        flex-direction: column; /* Stack navbar vertically */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .nav-items {
+        display: flex; /* Display nav items in a row */
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 10px; /* Space between items */
+        width: 100%; /* Full width */
+    }
         body {
             font-family: Arial, sans-serif;
         }
