@@ -9,6 +9,39 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
 	   <style>
+		@media (max-width: 768px) {
+    .contact-panel {
+        flex-direction: column; /* Stack buttons on mobile */
+        gap: 10px; /* Space between stacked buttons */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar vertically */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .nav-items {
+        display: flex; /* Display nav items in a row */
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 10px; /* Space between items */
+        width: 100%; /* Full width */
+    }
+
+    .nav-link {
+        color: #007bff; /* Change text color for nav links on mobile */
+        font-size: 18px; /* Increase font size for readability */
+    }
+
+    .hero-btns-container {
+        flex-direction: column; /* Stack buttons on mobile */
+        gap: 10px; /* Space between stacked buttons */
+    }
+
+    .hook-title, .hook-sub_title, .s-two-slogan {
+        font-size: 1.2em; /* Adjust font size for mobile */
+    }
+		   }   
         body {
             font-family: Arial, sans-serif;
         }
