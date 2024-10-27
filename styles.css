@@ -219,13 +219,13 @@ body {
 }
 
 .nav-items {
-  display: flex;
-  list-style: none;
+        display: flex; /* Display nav items in a row */
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 10px; /* Space between items */
+        width: 100%; /* Full width */
 }
 
-.nav-items li {
-  margin-left: 2rem;
-}
 #battery-details {
     display: flex;
     flex-direction: column;
@@ -338,17 +338,15 @@ body {
     justify-content: space-between;
   }
 
-  .nav-items {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 0;
-    margin: 1rem 0;
-  }
+ .nav-items {
+        display: flex; /* Display nav items in a row */
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 10px; /* Space between items */
+        width: 100%; /* Full width */
+ }
 
-  .nav-items li {
-    margin-left: 0; /* Remove margin for stacked items */
-    margin-bottom: 1rem;
-  }
-
+ 
   .hook-title {
     font-size: 3rem; /* Adjust hero title size */
   }
@@ -546,14 +544,11 @@ header {
   margin-right: 2rem;
 }
 .nav-items {
-  display: flex;
-  margin-right: 5rem;
-}
-.nav-item {
-  margin-right: 3rem;
-}
-.nav-item:last-child {
-  margin-right: 0;
+        display: flex; /* Display nav items in a row */
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 10px; /* Space between items */
+        width: 100%; /* Full width */
 }
 .nav-link {
   color: var(--nav-txt-clr);
@@ -589,13 +584,7 @@ header {
   .theme-toggler {
     color: var(--text-clr-bg);
   }
-  .nav-items {
-    flex-direction: column;
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-  .nav-item {
-    margin: 0.5rem 0;
+  0.5rem 0;
   }
   .nav-link {
     color: var(--text-clr-bg);
