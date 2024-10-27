@@ -1,4 +1,4 @@
-
+79
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 
 *,
@@ -141,22 +141,9 @@ body {
 }
 
 /* Basic styles for navigation items */
-.nav-item {
-    margin-right: 15px; /* Adjust as needed */
-}
+
 
 /* Responsive styles */
-@media (max-width: 600px) {
-    .nav-item {
-        margin-bottom: 10px; /* Space between items on mobile */
-        margin-right: 0; /* Remove right margin on mobile */
-    }
-    
-    .nav-items {
-        display: flex;
-        flex-direction: column; /* Stack items vertically on mobile */
-    }
-}
 
 
 
@@ -340,10 +327,7 @@ body {
     margin: 1rem 0;
   }
 
-  .nav-items li {
-    margin-left: 0; /* Remove margin for stacked items */
-    margin-bottom: 1rem;
-  }
+
 
   .hook-title {
     font-size: 3rem; /* Adjust hero title size */
