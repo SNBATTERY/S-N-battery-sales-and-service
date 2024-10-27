@@ -154,8 +154,11 @@ body {
     }
     
     .nav-items {
-        display: flex;
-        flex-direction: column; /* Stack items vertically on mobile */
+        display: flex; /* Display nav items in a row */
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 10px; /* Space between items */
+        width: 100%; /* Full width */
     }
 }
 
