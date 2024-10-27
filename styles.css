@@ -1,7 +1,5 @@
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 
 *,
@@ -51,7 +49,7 @@ body {
   font-family: "Pompiere", cursive;
   font-size: 1.2rem;
   color: var(--text-clr);
-  background-color: INDIGO;
+  background-color: var(--bg-clr);
   transition: background-color 1000ms;
 }
 .main-content {
@@ -122,293 +120,6 @@ body {
             text-align: center;
             color: #333; /* Dark text for headers */
         }
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif; /* Base font */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    color: #333; /* Text color */
-}
-
-.container {
-    max-width: 1200px; /* Max width for the container */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Horizontal padding */
-}
-
-/* Contact Panel */
-.contact-panel {
-    display: flex; /* Flexbox for layout */
-    justify-content: center; /* Center buttons */
-    gap: 20px; /* Space between buttons */
-    margin: 20px 0; /* Margin around the panel */
-}
-
-.contact-button {
-    display: flex; /* Center image within button */
-    justify-content: center; /* Center image */
-    align-items: center; /* Center image */
-}
-
-.contact-logo {
-    width: 40px; /* Logo width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Header */
-/* General Styles */
-body {
-    font-family: Arial, sans-serif; /* Base font */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    color: #333; /* Text color */
-}
-
-.container {
-    max-width: 1200px; /* Max width for the container */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Horizontal padding */
-}
-
-/* Contact Panel */
-.contact-panel {
-    display: flex; /* Flexbox for layout */
-    justify-content: center; /* Center buttons */
-    gap: 20px; /* Space between buttons */
-    margin: 20px 0; /* Margin around the panel */
-}
-
-.contact-button {
-    display: flex; /* Center image within button */
-    justify-content: center; /* Center image */
-    align-items: center; /* Center image */
-}
-
-.contact-logo {
-    width: 40px; /* Logo width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Header */
-header {
-    margin-bottom: 20px; /* Space below header */
-}
-
-.logo {
-    color: blue; /* Logo color */
-    text-decoration: overline; /* Underline style */
-    font-size: 24px; /* Logo font size */
-}
-
-.navbar {
-    display: flex; /* Flexbox for nav */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-}
-
-.nav-items {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Flexbox for nav items */
-    gap: 15px; /* Space between items */
-}
-
-.nav-link {
-    text-decoration: overline; /* Underline style */
-    color: #333; /* Default text color */
-}
-
-/* Social Links */
-.social-links {
-    display: flex; /* Flexbox for social icons */
-    align-items: center; /* Center icons vertically */
-}
-
-.line-divider {
-    height: 20px; /* Divider height */
-    width: 1px; /* Divider width */
-    background-color: #ccc; /* Divider color */
-    margin: 0 15px; /* Space around divider */
-}
-
-/* Quote Slideshow */
-.quote-slideshow {
-    position: relative; /* Relative positioning for slides */
-    max-width: 600px; /* Max width for slideshow */
-    margin: 20px auto; /* Center slideshow */
-}
-
-.quote-slide {
-    display: none; /* Hide slides initially */
-}
-
-.quote-slide.fade {
-    display: block; /* Show current slide */
-}
-
-/* Main Hero Section */
-.main {
-    padding: 20px; /* Padding around main */
-}
-
-.section {
-    text-align: center; /* Center text */
-}
-
-.hook-title {
-    font-size: 1.5em; /* Title font size */
-}
-
-.hook-sub_title {
-    font-size: 2em; /* Subtitle font size */
-    margin-bottom: 20px; /* Space below subtitle */
-    text-decoration: underline; /* Underline */
-}
-
-.hero-btns-container {
-    display: flex; /* Flexbox for buttons */
-    justify-content: center; /* Center buttons */
-    gap: 10px; /* Space between buttons */
-}
-
-.button {
-    padding: 10px 20px; /* Button padding */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer on hover */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-}
-
-.hero-lady-img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 500px; /* Max width for larger screens */
-    margin-top: 20px; /* Space above image */
-}
-
-/* Section Two */
-.s-two-slogan {
-    text-align: center; /* Center slogan */
-    font-size: 1.8em; /* Slogan font size */
-    margin: 40px 0; /* Margin around slogan */
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    .contact-panel {
-        flex-direction: column; /* Stack buttons on mobile */
-        gap: 10px; /* Space between stacked buttons */
-    }
-
-    .navbar {
-        flex-direction: column; /* Stack navbar vertically */
-        align-items: flex-start; /* Align to start */
-    }
-
-    .nav-items {
-        display: flex; /* Display nav items in a row */
-        flex-direction: row; /* Ensure items are in a row */
-        flex-wrap: wrap; /* Allow items to wrap if necessary */
-        gap: 10px; /* Space between items */
-        width: 100%; /* Full width */
-    }
-
-    .nav-link {
-        color: #007bff; /* Change text color for nav links on mobile */
-        font-size: 18px; /* Increase font size for readability */
-    }
-
-    .hero-btns-container {
-        flex-direction: column; /* Stack buttons on mobile */
-        gap: 10px; /* Space between stacked buttons */
-    }
-
-    .hook-title, .hook-sub_title, .s-two-slogan {
-        font-size: 1.2em; /* Adjust font size for mobile */
-    }
-}
-
-
-.line-divider {
-    height: 20px; /* Divider height */
-    width: 1px; /* Divider width */
-    background-color: #ccc; /* Divider color */
-    margin: 0 15px; /* Space around divider */
-}
-
-/* Theme Toggler */
-.theme-togglers {
-    display: flex; /* Flexbox for togglers */
-    gap: 10px; /* Space between togglers */
-}
-
-/* Quote Slideshow */
-.quote-slideshow {
-    position: relative; /* Relative positioning for slides */
-    max-width: 600px; /* Max width for slideshow */
-    margin: 20px auto; /* Center slideshow */
-}
-
-.quote-slide {
-    display: none; /* Hide slides initially */
-}
-
-.quote-slide.fade {
-    display: block; /* Show current slide */
-}
-
-/* Main Hero Section */
-.main {
-    padding: 20px; /* Padding around main */
-}
-
-.section {
-    text-align: center; /* Center text */
-}
-
-.hook-title {
-    font-size: 1.5em; /* Title font size */
-}
-
-.hook-sub_title {
-    font-size: 2em; /* Subtitle font size */
-    margin-bottom: 20px; /* Space below subtitle */
-    text-decoration: underline; /* Underline */
-}
-
-.hero-btns-container {
-    display: flex; /* Flexbox for buttons */
-    justify-content: center; /* Center buttons */
-    gap: 10px; /* Space between buttons */
-}
-
-.button {
-    padding: 10px 20px; /* Button padding */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer on hover */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-}
-
-.hero-lady-img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 500px; /* Max width for larger screens */
-    margin-top: 20px; /* Space above image */
-}
-
-/* Section Two */
-.s-two-slogan {
-    text-align: center; /* Center slogan */
-    font-size: 1.8em; /* Slogan font size */
-    margin: 40px 0; /* Margin around slogan */
-}
-
-/* Mobile Adjustments */
-
-
-
-
 /* Container for the image row */
 .image-row {
     display: flex;
@@ -430,13 +141,88 @@ header {
     }
 }
 
+/* Basic styles for navigation items */
+.nav-item {
+    margin-right: 15px; /* Adjust as needed */
+}
 
-  
+/* Responsive styles */
+@media (max-width: 600px) {
+    .nav-item {
+        margin-bottom: 10px; /* Space between items on mobile */
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+}
 
 
 
+ul {
+  list-style: none;
+}
+img {
+  height:50%;
+  width: 90%;
+}
+.pos-abs-center {
+  position:absolute;
+}
+.s-definition {
+  font-size: calc(22 * 0.06rem);
+  max-width: 32rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+/* -- transitions -- */
+.clr-transition {
+  transition: color 1000ms;
+}
+.bg-clr__transition {
+  transition: background-color 1s;
+}
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Default font size */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem; /* Padding for larger screens */
+}
 
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 2.5rem; /* Logo size */
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.nav-items li {
+  margin-left: 2rem;
+}
 #battery-details {
     display: flex;
     flex-direction: column;
@@ -479,8 +265,26 @@ body {
 
 
 /* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
 
+.hook-title {
+  font-size: 4rem; /* Hero title size */
+}
 
+.hero-btns-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-btns-container button {
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
 
 /* Product Section */
 .product {
@@ -506,11 +310,59 @@ body {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+  .product-item {
+    width: 45%; /* Adjust for tablet screens */
+  }
+}
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Smaller font for mobile */
+  }
 
- 
+  .container {
+    padding: 1rem; /* Reduce padding */
+  }
 
- 
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-items {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .nav-items li {
+    margin-left: 0; /* Remove margin for stacked items */
+    margin-bottom: 1rem;
+  }
+
+  .hook-title {
+    font-size: 3rem; /* Adjust hero title size */
+  }
+
+  .hero-btns-container {
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 1rem;
+  }
+
+  .product-item {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .footer-title {
+    font-size: 2rem; /* Adjust footer title size */
+  }
+}
 /* Base Styles */
 .container {
     max-width: 1200px;
@@ -676,6 +528,171 @@ button[type="submit"] {
 
 /* ------------------------- */
 
+/* -------- HEADER -------- */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items:left;
+  justify-content: space-between;
+}
+.logo {
+  color: var(--nav-txt-clr);
+  font-size: 2.1rem;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.nav-items {
+  display: flex;
+  margin-right: 5rem;
+}
+.nav-item {
+  margin-right: 3rem;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-link {
+  color: var(--nav-txt-clr);
+  text-decoration: none;
+  font-size: 1.7rem;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--primary-clr-alt);
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 150ms transform;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+.phone-social-links {
+  display: none;
+}
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
+  }
+  .theme-toggler {
+    color: var(--text-clr-bg);
+  }
+  .nav-items {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+  .nav-link {
+    color: var(--text-clr-bg);
+    font-size: 2rem;
+  }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--mobile-menu-bg-clr);
+    position:right;
+    padding: 0.5rem 5rem 1rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    top: 5rem;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms;
+  }
+  .show-nav {
+    transform: scaleX(1);
+  }
+}
+/* ----- ----------- ------ */
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-links ul {
+  display: flex;
+}
+.social-links ul li {
+  margin-right: 1.5rem;
+}
+.social-links ul li:last-child {
+  margin-right: 0;
+}
+.nav-icon {
+  cursor: pointer;
+  color: var(--nav-txt-clr);
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .nav-icon {
+    color: var(--text-clr-bg);
+  }
+}
+.line-divider {
+  height: 0.05rem;
+  width: 1rem;
+  background-color: var(--nav-txt-clr);
+  margin: 0 0.5rem;
+  border-radius: 10rem;
+}
+.theme-togglers {
+  cursor: pointer;
+  display: flex;
+  align-items:right;
+}
+.theme-toggler {
+  color: var(--nav-txt-clr);
+  font-size: 1.5rem;
+  transition: transform 300ms;
+}
+@media screen and (max-width: 768px) {
+  .theme-toggler {
+    color: var(--text-clr-bg);
+  }
+}
+.theme-toggler:hover {
+  transform: rotate(60deg);
+}
+.bxs-moon {
+  display: none;
+}
+.menu-togglers {
+  cursor: pointer;
+  display: none;
+}
+.menu-toggle {
+  color: var(--nav-txt-clr);
+  font-size: 3rem;
+}
+.bx-menu,
+.bx-x {
+  pointer-events: none;
+}
+.bx-x {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-togglers {
+    display: block;
+  }
+}
 
 /* -------- SECTION ONE: Hero section -------- */
 .section-one {
