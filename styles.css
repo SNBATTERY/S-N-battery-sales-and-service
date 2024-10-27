@@ -51,7 +51,7 @@ body {
   font-family: "Pompiere", cursive;
   font-size: 1.2rem;
   color: var(--text-clr);
-  background-color: AZURE;
+  background-color: INDIGO;
   transition: background-color 1000ms;
 }
 .main-content {
