@@ -8,175 +8,10 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
-	 <style>
+	   <style>
         body {
             font-family: Arial, sans-serif;
         }
-		   /* General styles for the navbar */
-/* General styles for the navbar */
-/* General styles for the navbar */
-/* General styles for the navbar */
-/* General styles for the navbar */
-/* General styles for the navbar */
-/* General styles for the navbar */
-/* General logo styles */
-.logo {
-    display: flex; /* Flex layout to align image and text */
-    align-items: center; /* Center vertically */
-    position: relative; /* Position relative for child elements */
-    text-decoration: overline; /* Overline decoration */
-    color: white; /* Text color */
-    font-size: 28px; /* Large font size */
-    font-weight: bold; /* Bold font */
-    letter-spacing: 1px; /* Increase letter spacing */
-    padding: 10px; /* Add some padding */
-    background-color: rgba(0, 123, 255, 0.7); /* Slightly darker background for contrast */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
-}
-
-/* Logo container for positioning */
-.logo-container {
-    position: absolute; /* Position absolute to layer it */
-    left: 10px; /* Align to the left with some margin */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for exact vertical center */
-    z-index: 1; /* Ensure it appears behind the text */
-}
-
-/* Logo image styles */
-.logo-image {
-    width: 40px; /* Adjust size of the logo image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Logo text */
-.logo-text {
-    position: relative; /* Keep text above the image */
-    z-index: 2; /* Ensure text appears above the image */
-    margin-left: 50px; /* Space between text and image */
-}
-
-/* Hover effect */
-.logo:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    .logo {
-        font-size: 24px; /* Adjust size for mobile */
-        padding: 5px; /* Adjust padding for mobile */
-    }
-
-    .logo-image {
-        width: 30px; /* Smaller logo image for mobile */
-    }
-
-    .logo-text {
-        margin-left: 40px; /* Adjust space for mobile */
-    }
-}
-
-/* Styles for nav items */
-/* General styles for the navbar */
-/* General styles for the navbar */
-.navbar {
-    display: flex;
-    flex-direction: row; /* Keep items in a row */
-    justify-content: space-between; /* Space out items evenly */
-    align-items: center; /* Centers items vertically */
-    padding: 5px; /* Reduced padding for mobile */
-    background-color: #fff; /* Background color of navbar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
-
-/* Styles for nav items */
-.nav-items {
-    list-style: none; /* Removes bullet points */
-    display: flex; /* Displays items in a row */
-    padding: 0; /* Removes padding */
-    margin: 0; /* Removes margin */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    width: 100%; /* Full width */
-}
-
-.nav-item {
-    flex: 1; /* Allow items to take equal width */
-    text-align: center; /* Center text within each item */
-}
-
-.nav-link {
-    text-decoration: none; /* Removes underline from links */
-    color: #333; /* Text color */
-    padding: 8px; /* Reduced padding for clickable area */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
-    display: block; /* Make links block elements */
-    font-size: 14px; /* Reduced text size */
-}
-
-/* Hover effect */
-.nav-link:hover {
-    background-color: #007bff; /* Change background on hover */
-    color: #fff; /* Change text color on hover */
-}
-
-/* Styles for social links */
-.social-links {
-    display: flex; /* Displays social links in a row */
-    align-items: center; /* Center items vertically */
-    margin-left: 10px; /* Space between social links and nav items */
-}
-
-.social-links i {
-    font-size: 18px; /* Adjust size of icons */
-    color: #333; /* Default color for social icons */
-    margin-left: 8px; /* Space between icons */
-    transition: color 0.3s; /* Smooth transition for color change */
-}
-
-/* Hover effect for social links */
-.social-links i:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 5px; /* Adjust padding for mobile */
-    }
-
-    .nav-items {
-        width: 100%; /* Full width */
-        justify-content: space-around; /* Space out items evenly */
-    }
-
-    .nav-item {
-        flex: 1; /* Allow items to take equal width */
-        margin: 0; /* Remove margin */
-    }
-
-    .nav-link {
-        padding: 5px; /* Further reduced padding for better fit */
-        white-space: nowrap; /* Prevent text wrapping */
-        text-align: center; /* Center text in nav links */
-        font-size: 12px; /* Further reduced text size */
-    }
-
-    /* Ensure social links fit within the navbar */
-    .social-links {
-        margin-left: 5px; /* Adjust space between nav items and social links */
-        flex-wrap: nowrap; /* Prevent wrapping of social icons */
-    }
-
-    /* Hide search form on mobile */
-    #search-form {
-        display: none; /* Hide search form */
-    }
-}
-
 
         .button-group {
             display: flex;
@@ -348,15 +183,11 @@
         }
     }
     </style>
-	  
 	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16755709831"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16755709831'); </script  
 	 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>  
 </head>
     <body>
 	    <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include"> <script type="application/json"> { "vars": { "gtag_id": "AW-16755709831", "config": { "AW-16755709831": { "groups": "default" } } }, "triggers": { } } </script> </amp-analytics>
-	  
-	   
-
 	<div class="contact-panel">
     <a class="contact-button" href="https://wa.me/+919902555479" target="_blank">
 	
@@ -368,14 +199,7 @@
     </a>
 </div>
       <header class="container">
- <a href="#hero" class="logo clr-transition" style="color: white; text-decoration: overline;">
-    <div class="logo-container">
-        <img src="NAM.jpg" alt="Logo" class="logo-image">
-    </div>
-    <span class="logo-text">S N BATTERY SALES AND SERVICES</span>
-</a>
-
-
+        <a href="#hero" class="logo clr-transition" style="text-color:blue;text-size:100PX;text-decoration:overline;"> S N BATTERY SALES AND SERVICES</a><br><br><br><br>
         <nav class="navbar">
           <ul class="nav-items">
             <li class="nav-item"><a href="#hero" class="nav-link clr-transition"style="text-decoration:overline;">Home</a></li>
@@ -385,13 +209,16 @@
 		 
 		  <li class="nav-item"><a href="#contact" class="nav-link clr-transition"style="text-decoration:overline;">Contact</a></li>
 		    <form id="search-form" onsubmit="return searchFunction(event);">
-            
+            <input type="text" id="search-input" placeholder="Search..." required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
           </ul>
 		  
           <div class="social-links">
             <ul>
-              
-     
+              <li><i class='bx bxl-instagram nav-icon clr-transition'></i></li>
+              <li><i class='bx bxl-twitter nav-icon clr-transition'></i></li>
+              <li><i class='bx bxl-facebook nav-icon clr-transition'></i></li>
             </ul>
             <span class="line-divider clr-transition"></span>
             <div class="theme-togglers">
@@ -402,7 +229,7 @@
         </nav>
 
         <div class="menu-togglers">
-      
+          <i class="bx bx-menu menu-toggle clr-transition"></i>
         </div>
       </header>
 	   <div class="quote-slideshow">
@@ -420,18 +247,18 @@
               <button class="button btn-hero btn-primary buy-hero-btn"><i class="bx bx-cart in-btn-icon"></i>CALL</button>
 </a>
 <a href="https://www.google.com/maps/dir//64%2F2+K+Channsandra+Circle+K+Channandra+Main+Road+K+Channasandra,+Post,+Horamavu,+Bengaluru,+Karnataka+560043/@13.0402929,77.5973563,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae114a27e58ef9:0x5b467b60e7c06a52!2m2!1d77.6797582!2d13.0403059?entry=ttu">
- <br> <button class="button btn-hero btn-second-alt"><i class="bx bx-map in-btn-icon"></i> FIND ME</button><br>
+  <button class="button btn-hero btn-second-alt"><i class="bx bx-map in-btn-icon"></i> FIND ME</button>
 
 </a>
             </div>
           </div>
 
-          <img src="WhatsApp Image 2024-10-14 at 22.35.53_6078f6f0.jpg"height="30" width="20" alt="woman licking ice cream and smiling" class="hero-lady-img" loading="lazy">
+          <img src="WhatsApp Image 2024-10-14 at 22.35.53_6078f6f0.jpg"" height="30" width="20" alt="woman licking ice cream and smiling" class="hero-lady-img" loading="lazy">
         </section>
 
         <!-- --- section two --- -->
      
-		  <h2 class="s-two-slogan" style="color: white; text-decoration: overline;">Long-Lasting Energy For All Your Devices</h2>
+		  <h2 class="s-two-slogan">Long-Lasting Energy For All Your Devices</h2>
 		  
             
 			
@@ -439,8 +266,9 @@
              
             <div><br><br><br>
 
-
-
+    </style>
+</head>
+<body>
 <main id="hero" class="main">
     <section id="products" class="section section-two container">
         <h1 style="text-align:center;text-decoration:overline;">SHOP BY CATEGORY</h1>
