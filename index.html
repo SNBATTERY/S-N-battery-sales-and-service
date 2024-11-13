@@ -692,8 +692,8 @@
 		<p>EXIDE INVAHOMZ IHST1000 100AH BATTERY (100AH)</p>
                 <p>Price:with exchange:6200<br> without exchange:8700</p>
                 <p>Description: Warranty:24 FOC + 24 Pro-rata. Total = 48 Months.</p>
-                <button class="large-button" onclick="redirectToWhatsApp('Exide', 'exide')">Order Now</button>
-            </div><br><br><br><br>
+                <button class="large-button" onclick="redirectToWhatsApp('Exide', '120', 'Reliable and durable battery for all your needs.')">Order Now</button>
+</div>      </div><br><br><br><br>
 		<div class="product">
                 <img src="exide.jpg" alt="Exide Battery" />
                 <p>Price: $120</p>
@@ -911,10 +911,19 @@ function showModal(type) {
         document.getElementById('luminousModal').style.display = 'block';
     }
 
-    function redirectToWhatsApp(brand, image) {
-        const message = `I would like to order the ${brand} Battery (${image}).`;
-        const phoneNumber = "+919902555479"; // Replace with your WhatsApp number
-        window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+
+    function redirectToWhatsApp(productName, price, description) {
+        // Construct the message that will be sent to WhatsApp
+        const message = `I would like to order the following product:\n\nProduct: ${productName}\nPrice: $${price}\nDescription: ${description}\n\nPlease get back to me.`;
+
+        // Encode the message to make sure it's URL safe
+        const encodedMessage = encodeURIComponent(message);
+
+        // WhatsApp API URL with pre-filled message
+        const whatsappURL = `https://wa.me/?text=${encodedMessage}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
     }
 
     window.onclick = function(event) {
