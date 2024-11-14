@@ -609,18 +609,12 @@
                 <img src="car.jpg" alt="Car Battery">
                 Car Battery
             </button>
-             <button class="battery-button" onclick="showModal('bike')">
-                <img src="bike.jpg" alt="Bike Battery">
-                Bike Battery
-            </button>
+            
             <button class="battery-button" onclick="showModal('inverter')">
                 <img src="inverter.jpeg" alt="Inverter Battery">
                 Inverter Battery
             </button>
-            <button class="battery-button" onclick="showForm('heavy')">
-                <img src="heavy.jpeg" alt="Heavy Engine Battery">
-                Heavy Engine Battery
-            </button>
+           
         </div>
     </section>
 	<div id="bikeModal" class="modal">
@@ -688,12 +682,12 @@
             <h2>Exide Battery</h2>
          
 		<div class="product">
-                <img src="201.jpg" alt="Exide Battery" />
-		<p>EXIDE INVAHOMZ IHST1000 100AH BATTERY (100AH)</p>
-                <p>Price:with exchange:6200<br> without exchange:8700</p>
-                <p>Description: Warranty:24 FOC + 24 Pro-rata. Total = 48 Months.</p>
-               <button class="large-button" onclick="redirectToWhatsApp('Exide', 'exide')">Order Now</button>
-             </div><br><br><br><br><br>
+    <img src="201.jpg" alt="Exide Battery" />
+    <p>EXIDE INVAHOMZ IHST1000 100AH BATTERY (100AH)</p>
+    <p>Price: with exchange: 6200<br> without exchange: 8700</p>
+    <p>Description: Warranty: 24 FOC + 24 Pro-rata. Total = 48 Months.</p>
+    <button class="large-button" onclick="redirectToWhatsApp('EXIDE INVAHOMZ IHST1000 100AH BATTERY (100AH)', 'Price: with exchange: 6200, without exchange: 8700', 'Warranty: 24 FOC + 24 Pro-rata. Total = 48 Months.')">Order Now</button>
+</div><br><br><br><br><br>
 		<div class="product">
                 <img src="exide.jpg" alt="Exide Battery" />
                 <p>Price: $120</p>
@@ -911,22 +905,16 @@ function showModal(type) {
         document.getElementById('luminousModal').style.display = 'block';
     }
 
-    function redirectToWhatsApp(productName, price, description) {
-        // Specify the WhatsApp phone number (including country code, without +)
-        const phoneNumber = '+919902555479';  // Replace with the actual phone number
-
-        // Construct the message that will be sent to WhatsApp
-        const message = `I would like to order the following product:\n\nProduct: ${productName}\nPrice: $${price}\nDescription: ${description}\n\nPlease get back to me.`;
-
-        // Encode the message to make sure it's URL safe
-        const encodedMessage = encodeURIComponent(message);
-
-        // WhatsApp API URL with the phone number and pre-filled message
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-        // Redirect to WhatsApp
-        window.open(whatsappURL, '_blank');
-    }
+   function redirectToWhatsApp(productName, price, description) {
+    // Construct the message for WhatsApp
+    const message = encodeURIComponent(`Hello! I would like to order the following product:\n\nProduct: ${productName}\nPrice: ${price}\nDescription: ${description}`);
+    
+    // WhatsApp URL format
+    const whatsappURL = `https://wa.me/9902555479?text=${message}`; // Replace 11234567890 with your WhatsApp business number
+    
+    // Redirect to WhatsApp
+    window.location.href = whatsappURL;
+}
     window.onclick = function(event) {
         const modals = ['inverterModal', 'exideModal', 'amaronModal', 'luminousModal'];
         modals.forEach(modalId => {
