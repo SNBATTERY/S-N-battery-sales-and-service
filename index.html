@@ -15,33 +15,7 @@
 
 
   <!-- JSON-LD Structured Data for Product Snippet -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "car Battery",
-      "image": "100.jpg",
-      "description": "A high-quality, long-lasting rechargeable lithium-ion battery perfect for portable electronics.",
-      "sku": "12345",
-      "brand": {
-        "@type": "Brand",
-        "name": "BatteryShop"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://snbatterysalesandservice.com/",
-        "priceCurrency": "USD",
-        "price": "29.99",
-        "priceValidUntil": "2024-12-31",
-        "itemCondition": "https://schema.org/NewCondition",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "BatteryShop"
-        }
-      }
-    }
-  </script>
+
 
 
 	
@@ -934,6 +908,33 @@
 </main>
 
 <script>
+	  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "car Battery",
+      "image": "100.jpg",
+      "description": "A high-quality, long-lasting rechargeable lithium-ion battery perfect for portable electronics.",
+      "sku": "12345",
+      "brand": {
+        "@type": "Brand",
+        "name": "BatteryShop"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://snbatterysalesandservice.com/",
+        "priceCurrency": "USD",
+        "price": "29.99",
+        "priceValidUntil": "2024-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "BatteryShop"
+        }
+      }
+    }
+
 function showBikeModal() {
     const bikeModal = document.getElementById("bikeModal");
     bikeModal.style.display = "block"; // Show the modal
