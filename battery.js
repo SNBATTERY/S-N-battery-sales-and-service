@@ -107,6 +107,56 @@ function showBatteryDetails(brand) {
             },
         ]
     };
+  
+   <!-- JSON-LD Structured Data for Car Manufacturer (Tesla) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tesla",
+      "url": "https://www.yoursite.com/tesla",
+      "logo": "https://www.yoursite.com/images/tesla-logo.png",
+      "sameAs": "https://www.facebook.com/Tesla",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-555-5555",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Electric Ave.",
+        "addressLocality": "Silicon Valley",
+        "addressRegion": "CA",
+        "postalCode": "94043",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for Tesla Car Model (Product) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Tesla Model S",
+      "image": "https://www.yoursite.com/images/tesla-model-s.jpg",
+      "description": "The Tesla Model S is a luxury electric sedan with a long-range battery and advanced autopilot features.",
+      "sku": "TSL-MODEL-S",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tesla"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.yoursite.com/tesla/model-s",
+        "priceCurrency": "USD",
+        "price": "79999",
+        "priceValidUntil": "2024-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
 
     const detailsContainer = document.getElementById('battery-details');
     detailsContainer.innerHTML = ''; // Clear previous content
