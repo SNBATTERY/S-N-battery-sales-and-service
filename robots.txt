@@ -14,4 +14,4 @@ Allow: /wp-content/themes/
 Allow: /wp-content/plugins/
 
 # Sitemap location to help search engines find your pages
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://snbatterysalesandservice.com/sitemap.xml
