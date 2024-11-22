@@ -1,6 +1,17 @@
 # Allow all search engines to crawl the entire website
 User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Disallow: /wp-admin/
+Allow: /
+
+# Allow Googlebot to crawl everything
+User-agent: Googlebot
 Disallow:
+
+
+
+
 
 # Block certain sections not needed for SEO (like private, admin, etc.)
 Disallow: /wp-admin/
