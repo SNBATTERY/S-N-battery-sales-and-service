@@ -1,20 +1,17 @@
-# Allow all search engines to crawl all pages
+# Allow all search engines to crawl the entire website
 User-agent: *
-Disallow: /private/
-Disallow: /temp/
-Allow: /public/
-Allow: /about.html
-
-# Block a specific bot (e.g., BadBot) from crawling any part of the website
-User-agent: BadBot
-Disallow: /
-
-# Allow Googlebot to access everything, but block other bots
-User-agent: Googlebot
 Disallow:
 
-User-agent: *
-Disallow: /
+# Block certain sections not needed for SEO (like private, admin, etc.)
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /private/
+Disallow: /temp/
 
-# Sitemap location
-Sitemap: https://snbatterysalesandservice.com/sitemap.xml
+# Allow important resources to be indexed
+Allow: /wp-content/uploads/
+Allow: /wp-content/themes/
+Allow: /wp-content/plugins/
+
+# Sitemap location to help search engines find your pages
+Sitemap: https://www.yourwebsite.com/sitemap.xml
