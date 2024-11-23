@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^battery-sales$ /battery-sales [L]
+RewriteRule ^battery-service$ /battery-service [L]

@@ -1,0 +1,6 @@
+location /battery-sales {
+    try_files $uri $uri/ =404;
+}
+location /battery-service {
+    try_files $uri $uri/ =404;
+}
