@@ -26,8 +26,7 @@
         }
 
         .container {
-            width: 100%;
-            max-width: 1200px;
+            width: 80%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -104,57 +103,41 @@
             background-color: darkred;
         }
 
-        /* Fixed Buttons Styles */
-        .home-link, .call-button {
-            position: fixed;
-            bottom: 10px;
-            width: 50%; /* 50% width for each button */
-            left: 50%;
-            transform: translateX(-50%);
+        .home-link {
             text-align: center;
-            z-index: 1000;
-            display: inline-block; /* Make them sit side by side */
-        }
-
-        .home-link button, .call-button {
-            padding: 10px 20px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%; /* Full width inside the container */
+            margin-top: 30px;
         }
 
         .home-link button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
             background-color: #333;
             color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         .home-link button:hover {
             background-color: #555;
         }
 
+        /* Fixed Call Button */
         .call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             background-color: #25D366;
             color: white;
-            font-size: 1rem;
+            padding: 15px 25px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .call-button:hover {
             background-color: #128C7E;
-        }
-
-        /* Ensure the buttons are in the same row, taking 50% each */
-        @media (max-width: 768px) {
-            .home-link, .call-button {
-                width: 48%; /* Slight reduction to give them some spacing */
-                display: inline-block;
-            }
-
-            .home-link button, .call-button {
-                font-size: 1rem; /* Smaller text for mobile */
-                padding: 10px; /* Reduced padding for mobile */
-            }
         }
 
     </style>
@@ -201,7 +184,7 @@
 <body>
 
 <header>
-    <h1>Hyundai Xcent Diesel Battery Replacement</h1>
+    <h1>Hyundai Xcent Diesel Battery Price</h1>
     <p>Explore the best battery replacement options for your Hyundai Xcent Diesel. Choose from Exide and Amaron car batteries, with fast delivery and installation in Bangalore.</p>
 </header>
 
@@ -229,43 +212,49 @@
                 <strong>Recommended for:</strong>
                 <p>Best suited for urban and highway driving.</p>
             </div>
-            <a href="https://wa.me/919902555479?text=I%20am%20interested%20in%20purchasing%20Exide%20Mileage%20ML45D21LBH%20(45AH)%20battery.%20Please%20confirm%20the%20details.%20" class="order-button" target="_blank">Order Now</a>
+            <a href="https://wa.me/919902555479?text=I%20am%20interested%20in%20purchasing%20Exide%20Mileage%20ML45D21LBH%20(45AH)%20battery.%20Please%20confirm%20the%20details.%20" class="order-button" target="_blank">
+                Order Now via WhatsApp
+            </a>
         </div>
 
-        <!-- Product 2: Amaron FLO BH45D20L (45AH) -->
+        <!-- Product 2: Amaron FLO BH45D20L (50AH) -->
         <div class="product-item">
-            <img src="33.jfif" alt="Amaron FLO BH45D20L (45AH)">
-            <h2>Amaron FLO BH45D20L (45AH)</h2>
-            <p>Get your Amaron FLO BH45D20L (45AH) battery replacement with express delivery and installation in 1-2 hours.</p>
+            <img src="37.jfif" alt="Amaron FLO BH45D20L (50AH)">
+            <h2>Amaron FLO BH45D20L (50AH)</h2>
+            <p>Get your Amaron FLO BH45D20L (50AH) car battery replacement with express delivery and installation in 1-2 hours.</p>
             <div class="price">
-                With Old Battery exchange (Same Ah): Rs. 5300<br>
-                Without Old Battery: Rs. 6900<br>
-                Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)
+                With Old Battery exchange (Same Ah): Rs. 5050<br>
+                Without Old Battery: Rs. 6500<br>
+                Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)
             </div>
             <div class="features">
                 <strong>Features:</strong>
                 <ul>
-                    <li>Designed for tough conditions</li>
-                    <li>Long-lasting and efficient</li>
-                    <li>Fast recharging and power delivery</li>
+                    <li>High performance with fast recharge</li>
+                    <li>Resistant to extreme temperatures</li>
                 </ul>
             </div>
             <div class="recommended">
                 <strong>Recommended for:</strong>
-                <p>Ideal for customers looking for a high-performance battery with extended warranty.</p>
+                <p>Ideal for city driving and daily commutes.</p>
             </div>
-            <a href="https://wa.me/919902555479?text=I%20am%20interested%20in%20purchasing%20Amaron%20FLO%20BH45D20L%20(45AH)%20battery.%20Please%20confirm%20the%20details.%20" class="order-button" target="_blank">Order Now</a>
+            <a href="https://wa.me/919902555479?text=I%20am%20interested%20in%20purchasing%20Amaron%20FLO%20BH45D20L%20(50AH)%20battery.%20Please%20confirm%20the%20details.%20" class="order-button" target="_blank">
+                Order Now via WhatsApp
+            </a>
         </div>
+    </div>
+
+    <div class="home-link">
+        <button onclick="window.location.href='https://snbatterysalesandservice.com'">
+            Home Page 
+        </button>
     </div>
 </div>
 
-<!-- Fixed Buttons -->
-<div class="home-link">
-    <button onclick="window.location.href='index.html';">Home Page</button>
-</div>
-<div class="call-button">
-    <button onclick="window.location.href='https://wa.me/919902555479?text=Hello%20I%20need%20assistance';">Call Us Now</button>
-</div>
+<!-- Fixed Call Button -->
+<a href="tel:+919902555479" class="call-button">
+    Call Us Now 
+</a>
 
 </body>
 </html>
