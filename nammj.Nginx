@@ -1,0 +1,19 @@
+# Redirect www and HTTP to non-www HTTPS
+server {
+    listen 80;
+    server_name www.snbatterysalesandservice.com snbatterysalesandservice.com;
+    return 301 https://snbatterysalesandservice.com$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name www.snbatterysalesandservice.com;
+    return 301 https://snbatterysalesandservice.com$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name snbatterysalesandservice.com;
+
+    # Add other configurations here for your website
+}
