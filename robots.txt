@@ -6,8 +6,8 @@ Disallow: /wp-admin/
 Allow: /
 
 # Allow Googlebot to crawl everything
-User-agent: Googlebot
-Disallow:
+User-agent: *
+Allow: /
 
 
 
