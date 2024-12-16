@@ -8,3 +8,6 @@ RewriteRule ^(.*)$ https://snbatterysalesandservice.com/$1 [L,R=301]
 # Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://snbatterysalesandservice.com/$1 [L,R=301]
+# Ensure there are no Redirect or Rewrite rules for /car-battery-replacement
+# Example to remove:
+Redirect 301 /car-battery-replacement https://snbatterysalesandservice.com
