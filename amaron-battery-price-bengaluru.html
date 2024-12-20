@@ -88,16 +88,22 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             background-color: #fafafa;
             color: #333;
+            padding: 0;
+            margin: 0;
         }
 
         /* Navigation Bar */
         nav {
             background-color: #333;
             padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
 
         nav ul {
@@ -123,12 +129,12 @@
         /* Hero Section */
         #hero {
             background-color: #f4f4f4;
-            padding: 60px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
 
         #hero h1 {
-            font-size: 36px;
+            font-size: 40px;
             margin-bottom: 15px;
             color: #333;
         }
@@ -140,8 +146,8 @@
         }
 
         .btn-home {
-            padding: 10px 20px;
-            background-color: #007BFF;
+            padding: 10px 25px;
+            background-color: #28a745;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -150,13 +156,14 @@
         }
 
         .btn-home:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
 
         /* About Section */
         #about {
             padding: 40px 20px;
             text-align: center;
+            background-color: #fff;
         }
 
         #about h2 {
@@ -199,6 +206,7 @@
         #contact {
             padding: 40px 20px;
             text-align: center;
+            background-color: #fff;
         }
 
         #contact h2 {
@@ -232,6 +240,40 @@
 
         footer a:hover {
             color: #007BFF;
+        }
+
+        /* Floating Call and WhatsApp Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-buttons a {
+            padding: 15px;
+            background-color: #25D366; /* WhatsApp green */
+            color: #fff;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .floating-buttons a.call {
+            background-color: #007BFF; /* Call button blue */
+        }
+
+        .floating-buttons a:hover {
+            background-color: #128C7E; /* WhatsApp hover color */
+        }
+
+        .floating-buttons a.call:hover {
+            background-color: #0056b3; /* Call button hover color */
         }
 
     </style>
@@ -283,9 +325,22 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 S N Battery Sales and Service. All rights reserved.</p>
+    <p>&copy; 2018 S N Battery Sales and Service. All rights reserved.</p>
     <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
   </footer>
+
+  <!-- Floating Call and WhatsApp Buttons -->
+  <div class="floating-buttons">
+    <a href="tel:+919902555479" class="call" target="_blank">
+      <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
+    </a>
+    <a href="https://wa.me/919902555479" target="_blank">
+      <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+    </a>
+  </div>
+
+  <!-- Font Awesome Icons (For call and WhatsApp icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
