@@ -117,9 +117,11 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #ffcc00; /* New color for navigation links */
             text-decoration: none;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         nav ul li a:hover {
@@ -146,17 +148,20 @@
         }
 
         .btn-home {
-            padding: 10px 25px;
+            padding: 20px 40px;
             background-color: #28a745;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .btn-home:hover {
             background-color: #218838;
+            transform: scale(1.1);
         }
 
         /* About Section */
@@ -268,6 +273,11 @@
             background-color: #007BFF; /* Call button blue */
         }
 
+        .floating-buttons a img {
+            width: 20px;
+            height: 20px;
+        }
+
         .floating-buttons a:hover {
             background-color: #128C7E; /* WhatsApp hover color */
         }
@@ -332,10 +342,10 @@
   <!-- Floating Call and WhatsApp Buttons -->
   <div class="floating-buttons">
     <a href="tel:+919902555479" class="call" target="_blank">
-      <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
+      <img src="https://snbatterysalesandservice.com/logo.png" alt="Logo"> <!-- Add your logo URL here -->
     </a>
     <a href="https://wa.me/919902555479" target="_blank">
-      <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+      <img src="https://snbatterysalesandservice.com/logo.png" alt="Logo"> <!-- Add your logo URL here -->
     </a>
   </div>
 
