@@ -1134,6 +1134,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-decoration: none;
     cursor: pointer;
 }
+		 
+    /* Floating Buttons Container */
+    .floating-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* WhatsApp Button Styling */
+    .whatsapp-btn {
+        background-color: #25D366; /* WhatsApp green */
+        color: #fff;
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: block;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+        background-color: #128C7E; /* WhatsApp hover color */
+    }
+
+    /* Call Button Styling */
+    .call-btn {
+        background-color: #007BFF; /* Call button blue */
+        color: #fff;
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: block;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .call-btn:hover {
+        background-color: #0056b3; /* Call button hover color */
+    }
+
+    /* Icon Styling */
+    .floating-buttons a i {
+        width: 30px;
+        height: 30px;
+    }
+
+
 
 /* Style for buttons inside the modal */
 .large-button {
@@ -1191,17 +1243,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>  
 	  <meta name="google-site-verification" content="uqI3DINB65LojO7flX6PoDennl5Lwr_Gn1htoJdMy-o" />
 </head>
-     <div class="floating-buttons">
+<!-- Floating WhatsApp and Call Buttons -->
+<div class="floating-buttons">
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/919902555479" target="_blank">
-      <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+    <a href="https://wa.me/919902555479" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
     </a>
 
     <!-- Call Button -->
-    <a href="tel:+919902555479" class="call">
-      <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
+    <a href="tel:+919902555479" class="call-btn">
+        <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
     </a>
-  </div>
+</div>
+
       <header class="container">
       <a href="#hero" class="logo clr-transition" style="color: white; text-decoration: overline;">
     <div class="logo-container">
@@ -6551,34 +6605,12 @@ Open 7AM Closes 10 PM
           </div>
         </section>
       </main>
- <footer id="contact" class="footer container">
-	 <div class="social-sharing">
-  <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=YOUR_TEXT" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2021.svg" alt="Share on Twitter" width="32" height="32" />
-  </a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://snbatterysalesandservice.com/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Share on Facebook" width="32" height="32" />
-  </a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=S N battery sales and service&summary=High quality battery,door step delivery" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.svg" alt="Share on LinkedIn" width="32" height="32" />
-  </a>
+
 </div>
 
         <h2 class="footer-title">IF ANY QUERIES </h2>
    <!-- Email Outreach Form -->
-<div class="email-form">
-  <form action="YOUR_SERVER_SIDE_HANDLER" method="POST">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required>
 
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required placeholder="Describe your backlink request..."></textarea>
-
-    <button type="submit">Send Request</button>
-  </form>
 </div>
 
 <a href="mailto:rudreshgowda741@gmail.com?Subject=Hello%20again" target="_top">
