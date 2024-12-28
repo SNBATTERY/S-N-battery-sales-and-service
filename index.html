@@ -1054,6 +1054,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 10px; /* Space below images */
     }
+		     .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-buttons a {
+            padding: 15px;
+            background-color: #25D366; /* WhatsApp green */
+            color: #fff;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .floating-buttons a.call {
+            background-color: #007BFF; /* Call button blue */
+        }
+
+        .floating-buttons a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .floating-buttons a:hover {
+            background-color: #128C7E; /* WhatsApp hover color */
+        }
+
+        .floating-buttons a.call:hover {
+            background-color: #0056b3; /* Call button hover color */
+        }
+
 
 	    /* Basic modal styling */
 .modal {
@@ -1153,20 +1191,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>  
 	  <meta name="google-site-verification" content="uqI3DINB65LojO7flX6PoDennl5Lwr_Gn1htoJdMy-o" />
 </head>
-    <div class="contact-panel">
-    <a class="contact-button" href="https://wa.me/+919902555479" target="_blank">
-	
-        <img class="contact-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" chat alt="WhatsApp Logo">
-		
+     <div class="floating-buttons">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919902555479" target="_blank">
+      <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
     </a>
-      <a href="tel:+919902555479" class="call">
+
+    <!-- Call Button -->
+    <a href="tel:+919902555479" class="call">
       <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
     </a>
-</div>
+  </div>
       <header class="container">
       <a href="#hero" class="logo clr-transition" style="color: white; text-decoration: overline;">
     <div class="logo-container">
-        <img src="NAM.jpg" alt="Logo" class="logo-image">
+        <img src="namratha.png" alt="Logo" class="logo-image">
     </div>
     <span class="logo-text">S N BATTERY SALES AND SERVICES</span>
 </a>   <nav class="navbar">
