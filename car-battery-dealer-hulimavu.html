@@ -82,7 +82,111 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
-        /* Same CSS styles as provided in the previous code */
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #f4f4f4;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        #hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn-home {
+            padding: 20px 40px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-home:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #007BFF;
+        }
     </style>
 </head>
 <body>
@@ -105,42 +209,6 @@
     <!-- Button Linking to Homepage -->
     <a href="index.html" class="btn-home">Go to Home Page</a>
   </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>S N Battery Sales and Service is a reliable car battery dealer near Hulimavu, offering quality Exide and Amaron battery replacements and installations with fast, dependable services to keep your vehicle running smoothly.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>High-quality Exide and Amaron car batteries</li>
-      <li>Quick replacement and installation of car batteries</li>
-      <li>Doorstep delivery and installation in Hulimavu and nearby areas</li>
-      <li>24/7 customer support for all battery-related services</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Contact S N Battery Sales and Service for all your car battery needs near Hulimavu. We offer doorstep delivery and expert battery installation services for Exide and Amaron batteries.</p>
-  </section>
-
-  <!-- Floating Call and WhatsApp Buttons -->
-  <div class="floating-buttons">
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919902555479" target="_blank">
-      <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
-    </a>
-
-    <!-- Call Button -->
-    <a href="tel:+919902555479" class="call">
-      <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
-    </a>
-  </div>
 
   <!-- Footer -->
   <footer>
