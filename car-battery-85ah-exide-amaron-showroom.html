@@ -288,55 +288,25 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             display: block;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .floating-buttons a.phone {
-            background-color: #007BFF; /* Blue for call */
+            transition: transform 0.3s ease;
         }
 
         .floating-buttons a:hover {
             transform: scale(1.1);
         }
 
-        /* Floating Home Button */
-        .floating-home-button {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: #28a745;
-            color: #fff;
-            border-radius: 50%;
-            padding: 15px;
-            font-size: 24px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+        .floating-buttons .call {
+            background-color: #007BFF; /* Call Blue */
         }
 
-        .floating-home-button a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .floating-home-button:hover {
-            transform: scale(1.1);
-            background-color: #218838;
-        }
-
-        .floating-home-button i {
-            font-size: 30px;
-        }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
+
     <nav>
         <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="https://snbatterysalesandservice.com">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#car-models">Car Models</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -345,24 +315,25 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1>Welcome to S N Battery Sales and Service</h1>
-        <p>Your trusted provider of 85 Ah Exide and Amaron Car Batteries</p>
-        <a href="#services" class="btn-home">Explore Our Services</a>
+        <h1>85 Ah Exide and Amaron Car Batteries</h1>
+        <p>Your trusted source for reliable car batteries in Bangalore</p>
+        <a href="#about" class="btn-home">Home</a>
     </section>
 
-    <!-- About Us Section -->
+    <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>We are the leading dealer of Exide and Amaron car batteries, providing fast delivery and quality services.</p>
+        <p>At S N Battery Sales and Service, we specialize in providing high-quality 85 Ah Exide and Amaron car batteries. We ensure fast delivery and professional installation at affordable prices.</p>
     </section>
 
     <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>Car Battery Sales</li>
-            <li>Installation Services</li>
-            <li>Battery Maintenance</li>
+            <li>Battery Sales (Exide and Amaron)</li>
+            <li>Doorstep Delivery</li>
+            <li>Battery Installation</li>
+            <li>Battery Replacement</li>
         </ul>
     </section>
 
@@ -370,36 +341,34 @@
     <section id="car-models">
         <h2>Compatible Car Models</h2>
         <ul>
-            <li>Honda</li>
-            <li>Maruti Suzuki</li>
             <li>Tata</li>
-            <li>Mahindra</li>
+            <li>Maruti Suzuki</li>
             <li>Hyundai</li>
+            <li>Ford</li>
+            <li>Honda</li>
+            <li>Mahindra</li>
         </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>For more information or to order a battery, please contact us today!</p>
+        <p>Reach out to us for the best car battery deals and services!</p>
+        <p>Phone: +919902555479</p>
+        <p>Email: info@snbatterysalesandservice.com</p>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 S N Battery Sales and Service | <a href="https://snbatterysalesandservice.com/privacy">Privacy Policy</a></p>
+        <p>&copy; 2025 S N Battery Sales and Service. All rights reserved.</p>
+        <p><a href="https://www.facebook.com/SNBatterySalesAndService">Facebook</a> | <a href="https://twitter.com/SNBatteryService">Twitter</a></p>
     </footer>
 
-    <!-- Floating Call & WhatsApp Buttons -->
+    <!-- Floating Call and WhatsApp Buttons -->
     <div class="floating-buttons">
-        <a href="tel:+919902555479" class="phone"><i class="fas fa-phone-alt"></i></a>
-        <a href="https://wa.me/+919902555479" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+919902555479" class="call"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/919902555479" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
 
-    <!-- Floating Home Button -->
-    <div class="floating-home-button">
-        <a href="#hero">
-            <i class="fas fa-home"></i>
-        </a>
-    </div>
 </body>
 </html>
