@@ -36,221 +36,52 @@
     <meta property="og:type" content="product" />
     <meta property="og:site_name" content="S N Battery Sales and Service" />
 
-    <!-- External CSS Link -->
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <!-- Schema Markup for Product -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Amaron GO 36B20L (32 Ah) Car Battery",
+        "image": "https://snbatterysalesandservice.com/amaron_go_36b20l_image.jpg",
+        "description": "Buy Amaron GO 36B20L (32 Ah) car battery online. Get the best price, free delivery, and installation in Bengaluru. Reliable and high-performance battery with a 24-month warranty.",
+        "sku": "36B20L-32AH",
+        "brand": {
+          "@type": "Brand",
+          "name": "Amaron GO"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://snbatterysalesandservice.com/amaron-go-36b20l-32ah-car-battery",
+          "priceCurrency": "INR",
+          "price": "3000",
+          "priceValidUntil": "2025-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "S N Battery Sales and Service"
+          }
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "John Doe"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "100"
         }
+      }
+    </script>
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        header .logo img {
-            width: 80px;
-            height: auto;
-        }
-
-        header .shop-name {
-            font-size: 22px;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        header nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 20px;
-            display: flex;
-            gap: 20px;
-        }
-
-        header nav ul li {
-            display: inline;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        /* Mobile Adjustment for Navigation */
-        @media screen and (max-width: 768px) {
-            header nav ul {
-                flex-direction: column;
-            }
-        }
-
-        .product-details {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-            justify-content: space-between;
-        }
-
-        .product-images img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .product-info {
-            max-width: 50%;
-            padding-left: 20px;
-        }
-
-        .product-info h1 {
-            color: #333;
-        }
-
-        .product-info p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        .product-info h3 {
-            margin-top: 20px;
-            color: #333;
-        }
-
-        .product-info ul {
-            padding-left: 20px;
-            color: #555;
-        }
-
-        .product-info ul li {
-            margin-bottom: 8px;
-        }
-
-        .btn-buy-now {
-            display: inline-block;
-            background-color: #28a745;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-
-        .btn-buy-now:hover {
-            background-color: #218838;
-        }
-
-        .home-button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-top: 15px;
-            transition: background-color 0.3s;
-        }
-
-        .home-button:hover {
-            background-color: #0056b3;
-        }
-
-        .recommended-products {
-            padding: 20px;
-            background-color: #f8f8f8;
-            margin-top: 40px;
-        }
-
-        .recommended-products h2 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .recommended-products ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .recommended-products ul li {
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        /* Mobile View Adjustments */
-        @media screen and (max-width: 768px) {
-            .product-details {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .product-info {
-                max-width: 100%;
-                padding-left: 0;
-            }
-
-            .product-images img {
-                max-width: 90%;
-            }
-
-            .btn-buy-now {
-                font-size: 16px;
-                padding: 12px 25px;
-            }
-
-            .recommended-products ul {
-                padding-left: 20px;
-            }
-        }
-
-        .floating-buttons a {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            padding: 15px;
-            background-color: #25d366;
-            color: #fff;
-            border-radius: 50%;
-            font-size: 24px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            z-index: 1000;
-            display: inline-block;
-        }
-
-        .floating-buttons a.btn-call {
-            bottom: 70px;
-            background-color: #007bff;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        /* Smooth scroll for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
 
@@ -277,12 +108,12 @@
 <!-- Product Details Section -->
 <section id="product-details" class="product-details">
     <div class="product-images">
-        <img src="99.jpg" alt="Amaron GO 36B20L (32 Ah) Car Battery">
+        <img src="https://snbatterysalesandservice.com/amaron_go_36b20l_image.jpg" alt="Amaron GO 36B20L (32 Ah) Car Battery">
     </div>
     <div class="product-info">
         <h1>Amaron GO 36B20L (32 Ah) Car Battery</h1>
         <p><strong>Price:</strong> ₹3000</p>
-        <p><strong>Description:</strong> The Amaron GO 36B20L (32 Ah) car battery provides excellent performance, reliability, and efficiency. Ideal for vehicles requiring a compact, high-capacity battery. Comes with a 24-month warranty and free delivery/installation in Bengaluru.</p>
+        <p><strong>Description:</strong> The Amaron GO 36B20L (32 Ah) car battery offers powerful performance, long-lasting reliability, and quick starts for your vehicle. Designed for Indian roads and conditions, it comes with a 24-month warranty and free delivery/installation in Bengaluru.</p>
 
         <!-- Product Features -->
         <h3>Product Features:</h3>
@@ -290,35 +121,54 @@
             <li>Capacity: 32 Ah</li>
             <li>Brand: Amaron GO</li>
             <li>Type: Lead-Acid Battery</li>
-            <li>Warranty: 60 months</li>
+            <li>Warranty: 24 months</li>
             <li>Free Delivery and Installation in Bengaluru</li>
         </ul>
 
-        <!-- Buy Now Button -->
-        <a href="#buy" class="btn-buy-now">Buy Now</a>
+        <!-- Buy Button that redirects to WhatsApp -->
+        <a href="https://wa.me/919902555479?text=I%20would%20like%20to%20buy%20the%20Amaron%20GO%2036B20L%20%2832%20Ah%29%20Car%20Battery%20for%20%E2%82%B93000.%20Please%20provide%20more%20details." class="btn-buy-now" target="_blank">Buy Now</a>
+
+        <!-- Go to Home Button -->
+        <a href="https://snbatterysalesandservice.com/" class="home-button" target="_blank">OTHER PRODUCT</a>
     </div>
 </section>
 
 <!-- Recommended Products Section -->
 <section class="recommended-products">
-    <h2>Recommended Products</h2>
+    <h2>Recommended Car Models for Amaron GO 36B20L (32 Ah) Battery</h2>
     <ul>
-        <li><a href="#">Amaron 36B20L - 34 Ah</a></li>
-        <li><a href="#">Exide 36B20L - 32 Ah</a></li>
-        <li><a href="#">Amaron FLO 34B20L - 38 Ah</a></li>
+        <li>Tata Altroz</li>
+        <li>Honda Amaze</li>
+        <li>Hyundai i20</li>
+        <li>Maruti Suzuki Baleno</li>
+        <li>Mahindra Thar</li>
     </ul>
 </section>
 
-<!-- Floating WhatsApp Button -->
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any queries, feel free to contact us at:</p>
+    <p>Phone: +91 9902555479</p>
+</section>
+
+<!-- Floating Buttons for Quick Contact -->
 <div class="floating-buttons">
-    <a href="https://wa.me/919000000000" target="_blank" class="btn-whatsapp">📲</a>
-    <a href="tel:+919000000000" class="btn-call">📞</a>
+    <a href="tel:+919902555479" class="btn-call">
+        <i class="fas fa-phone-alt"></i> 
+    </a>
+    <a href="https://wa.me/919902555479" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> 
+    </a>
 </div>
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2018 S N Battery Sales and Service. All rights reserved. <br> <a href="https://www.snbatterysalesandservice.com/privacy-policy">Privacy Policy</a> | <a href="https://www.snbatterysalesandservice.com/terms">Terms of Service</a></p>
+    <p>&copy; 2018 S N Battery Sales and Service. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a></p>
 </footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
 </body>
 </html>
