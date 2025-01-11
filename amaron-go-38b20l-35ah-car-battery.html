@@ -98,6 +98,7 @@
 
     <!-- External CSS Link -->
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -114,12 +115,12 @@
             justify-content: center;
             align-items: center;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
-        /* Adjust the logo size */
         header .logo img {
-            width: 80px;  /* Set the desired smaller width for the logo */
-            height: auto;  /* Maintain the aspect ratio */
+            width: 80px;
+            height: auto;
         }
 
         header .shop-name {
@@ -132,11 +133,12 @@
             list-style-type: none;
             padding: 0;
             margin-top: 20px;
+            display: flex;
+            gap: 20px;
         }
 
         header nav ul li {
             display: inline;
-            margin-right: 20px;
         }
 
         header nav ul li a {
@@ -144,20 +146,30 @@
             text-decoration: none;
         }
 
+        /* Mobile Adjustment for Navigation */
+        @media screen and (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+            }
+        }
+
         .product-details {
             display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
             justify-content: space-between;
-            padding: 40px 20px;
         }
 
         .product-images img {
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             height: auto;
             border-radius: 8px;
         }
 
         .product-info {
             max-width: 50%;
+            padding-left: 20px;
         }
 
         .product-info h1 {
@@ -218,6 +230,33 @@
         .recommended-products ul li {
             margin-bottom: 10px;
             color: #555;
+        }
+
+        /* Mobile View Adjustments */
+        @media screen and (max-width: 768px) {
+            .product-details {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .product-info {
+                max-width: 100%;
+                padding-left: 0;
+            }
+
+            .product-images img {
+                max-width: 90%;
+            }
+
+            .btn-buy-now {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+
+            .recommended-products ul {
+                padding-left: 20px;
+            }
         }
 
         .floating-buttons a {
@@ -283,11 +322,11 @@
 <!-- Product Details Section -->
 <section id="product-details" class="product-details">
     <div class="product-images">
-        <img src="99.jpg" alt="Amaron GO 38B20L (35 Ah) Car Battery">
+        <img src="98.jpg" alt="Amaron GO 38B20L (35 Ah) Car Battery">
     </div>
     <div class="product-info">
         <h1>Amaron GO 38B20L (35 Ah) Car Battery</h1>
-        <p><strong>Price:</strong> ₹4000</p>
+        <p><strong>Price:</strong> ₹3300</p>
         <p><strong>Description:</strong> The Amaron GO 38B20L (35 Ah) car battery offers powerful performance, long-lasting reliability, and quick starts for your vehicle. Designed for Indian roads and conditions, it comes with a 24-month warranty and free delivery/installation in Bengaluru.</p>
 
         <!-- Product Features -->
@@ -328,10 +367,10 @@
 <!-- Floating Buttons for Quick Contact -->
 <div class="floating-buttons">
     <a href="tel:+919902555479" class="btn-call">
-        <i class="fas fa-phone-alt"></i> 
+        <i class="fas fa-phone-alt"></i> Call Us
     </a>
     <a href="https://wa.me/919902555479" target="_blank" class="btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> 
+        <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
 </div>
 
