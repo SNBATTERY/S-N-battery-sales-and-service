@@ -3,545 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Page for Car Battery Replacement in Bengaluru. Explore top car battery brands like Exide and Amaron with fast delivery and installation services.">
-    <meta name="keywords" content="Home Page, Car Battery Replacement Bengaluru, Exide Car Battery, Amaron Car Battery, Battery Installation Bangalore, Car Battery Price Bengaluru">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:url" content="https://snbatterysalesandservice.com/battery">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Home Page - Car Battery Replacement in Bengaluru">
-    <meta property="og:description" content="Explore reliable car battery replacement services in Bengaluru with Exide and Amaron batteries. Fast delivery and installation.">
-    <meta property="og:image" content="https://snbatterysalesandservice.com/namratha.png">
+    <link rel="canonical" href="https://snbatterysalesandservice.com/battery">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find the best car batteries and battery services at S N Battery Sales and Service in Bengaluru. We offer delivery and installation for all your car battery needs.">
+    <meta name="keywords" content="Car Batteries, Amaron, Exide, Car Battery Delivery, Car Battery Installation, Car Battery Near Me, Car Battery Store Bengaluru">
     <meta name="robots" content="index, follow">
 
-    <title>Home Page - Car Battery Replacement in Bengaluru | Exide & Amaron</title>
-    <link rel="icon" href="https://snbatterysalesandservice.com/namratha.png" type="image/png">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Best Car Batteries in Bengaluru | S N Battery Sales and Service">
+    <meta property="og:description" content="Explore a wide range of car batteries from trusted brands like Amaron and Exide at S N Battery Sales and Service. Get fast delivery and installation in Bengaluru.">
+    <meta property="og:url" content="https://snbatterysalesandservice.com/battery">
+    <meta property="og:image" content="https://snbatterysalesandservice.com/images/logo.png">
 
-    <!-- Font Awesome Icons (For WhatsApp and Call icons) -->
+    <title>S N Battery Sales and Service - Car Batteries in Bengaluru</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://snbatterysalesandservice.com/favicon.ico">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-
-         <style>
-        /* Reset some default styles */
+    <style>
+        /* Resetting the basic styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             color: #333;
-            padding: 0;
-            margin: 0;
         }
 
-        /* Navigation Bar */
-        nav {
+        /* Header and Navigation */
+        header {
             background-color: #333;
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+            font-size: 28px;
         }
 
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
         nav ul {
             list-style: none;
-            display: flex;
-            justify-content: center;
+            display: inline-flex;
+            gap: 20px;
         }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
         nav ul li a {
-            color: #ffcc00; /* New color for navigation links */
+            color: #ffcc00;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 16px;
             text-transform: uppercase;
         }
-
         nav ul li a:hover {
-            color: #007BFF;
+            color: #28a745;
         }
 
         /* Hero Section */
         #hero {
-            background-color: #f4f4f4;
-            padding: 100px 20px;
+            padding: 60px 20px;
+            background-color: #007BFF;
+            color: #fff;
             text-align: center;
         }
-
-        #hero h1 {
+        #hero h2 {
             font-size: 40px;
-            margin-bottom: 15px;
-            color: #333;
+            font-weight: bold;
         }
-
         #hero p {
             font-size: 18px;
-            color: #555;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
-
-        .btn-home {
-            padding: 20px 40px;
+        .btn-primary {
             background-color: #28a745;
             color: #fff;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 24px;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 18px;
             font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
         }
-
-        .btn-home:hover {
+        .btn-primary:hover {
             background-color: #218838;
-            transform: scale(1.1);
         }
 
-        /* About Section */
-        #about {
-            padding: 40px 20px;
+        /* Product List Section */
+        #products {
+            padding: 50px 20px;
             text-align: center;
             background-color: #fff;
         }
-
-        #about h2 {
+        #products h2 {
             font-size: 30px;
-            margin-bottom: 20px;
             color: #333;
+            margin-bottom: 40px;
         }
-
-        #about p {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Services Section */
-        #services {
-            background-color: #f9f9f9;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        #services h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        #services ul {
-            list-style: none;
-            padding: 0;
-            font-size: 18px;
-            color: #555;
-        }
-
-        #services ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Contact Section */
-        #contact {
-            padding: 40px 20px;
-            text-align: center;
+        .product-card {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
             background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
         }
-
-        #contact h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px 8px 0 0;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            padding: 20px;
+            font-size: 24px;
             color: #333;
         }
-
-        #contact p {
-            font-size: 18px;
+        .product-card p {
+            font-size: 16px;
+            padding: 0 20px 20px;
             color: #555;
+        }
+        .product-card a {
+            display: block;
+            padding: 12px 0;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 0 0 8px 8px;
+            font-size: 16px;
+        }
+        .product-card a:hover {
+            background-color: #218838;
         }
 
         /* Footer */
         footer {
             background-color: #333;
-            color: #fff;
+            color: white;
             padding: 20px;
             text-align: center;
+            margin-top: 50px;
         }
-
-        footer p {
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            color: #007BFF;
-        }
-
-        /* Floating Call and WhatsApp Buttons */
-        .floating-buttons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .floating-buttons a {
-            padding: 15px;
-            background-color: #25D366; /* WhatsApp green */
-            color: #fff;
-            border-radius: 50%;
-            font-size: 24px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            display: block;
-            transition: background-color 0.3s ease;
-        }
-
-        .floating-buttons a.call {
-            background-color: #007BFF; /* Call button blue */
-        }
-
-        .floating-buttons a img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .floating-buttons a:hover {
-            background-color: #128C7E; /* WhatsApp hover color */
-        }
-
-        .floating-buttons a.call:hover {
-            background-color: #0056b3; /* Call button hover color */
-        }
-
     </style>
-       
-
-    <!-- Schema Markup for Cities and Delivery Areas -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Car Battery Sales and Service",
-          "provider": {
-            "@type": "Organization",
-            "name": "S N Battery Sales and Service",
-            "url": "https://snbatterysalesandservice.com",
-            "logo": "https://snbatterysalesandservice.com/logo.png"
-          },
-          "areaServed": {
-            "@type": "Place",
-            "name": "Bangalore",
-            "containedInPlace": {
-              "@type": "Place",
-              "name": "India"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "12.9716",
-              "longitude": "77.5946"
-            }
-          },
-          "availableService": [
-            {"@type": "Place", "name": "A F station Yelahanka"},
-            {"@type": "Place", "name": "Adugodi"},
-            {"@type": "Place", "name": "Agara"},
-            {"@type": "Place", "name": "Agram"},
-            {"@type": "Place", "name": "Air Force hospital"},
-            {"@type": "Place", "name": "Amruthahalli"},
-            {"@type": "Place", "name": "Anandnagar"},
-            {"@type": "Place", "name": "Anekal"},
-            {"@type": "Place", "name": "Anekalbazar"},
-            {"@type": "Place", "name": "Arabic College"},
-            {"@type": "Place", "name": "Aranya Bhavan"},
-            {"@type": "Place", "name": "Ashoknagar"},
-            {"@type": "Place", "name": "Attibele"},
-            {"@type": "Place", "name": "Attur"},
-            {"@type": "Place", "name": "Austin Town"},
-            {"@type": "Place", "name": "Avalahalli"},
-            {"@type": "Place", "name": "Avani Sringeri mutt"},
-            {"@type": "Place", "name": "Avenue Road"},
-            {"@type": "Place", "name": "B Sk ii stage"},
-            {"@type": "Place", "name": "Bsf Campus yelahanka"},
-            {"@type": "Place", "name": "Bagalgunte"},
-            {"@type": "Place", "name": "Bagalur"},
-            {"@type": "Place", "name": "Balepete"},
-            {"@type": "Place", "name": "Banashankari"},
-            {"@type": "Place", "name": "Banashankari III stage"},
-            {"@type": "Place", "name": "Banaswadi"},
-            {"@type": "Place", "name": "Bandikodigehalli"},
-            {"@type": "Place", "name": "Bangalore Air port"},
-            {"@type": "Place", "name": "Bangalore Bazaar"},
-            {"@type": "Place", "name": "Bangalore City"},
-            {"@type": "Place", "name": "Bangalore Corporation building"},
-            {"@type": "Place", "name": "Bangalore Dist offices bldg"},
-            {"@type": "Place", "name": "Bangalore Fort"},
-            {"@type": "Place", "name": "Bangalore Sub fgn post"},
-            {"@type": "Place", "name": "Bangalore"},
-            {"@type": "Place", "name": "Bannerghatta"},
-            {"@type": "Place", "name": "Bannerghatta Road"},
-            {"@type": "Place", "name": "Bapujinagar"},
-            {"@type": "Place", "name": "Basavanagudi"},
-            {"@type": "Place", "name": "Basavaraja Market"},
-            {"@type": "Place", "name": "Basaveshwaranagar"},
-            {"@type": "Place", "name": "Basaveswaranagar II stage"},
-            {"@type": "Place", "name": "Bellandur"},
-            {"@type": "Place", "name": "Benson Town"},
-            {"@type": "Place", "name": "Bestamaranahalli"},
-            {"@type": "Place", "name": "Bettahalsur"},
-            {"@type": "Place", "name": "Bhashyam Circle"},
-            {"@type": "Place", "name": "Bhattarahalli"},
-            {"@type": "Place", "name": "Bidaraguppe"},
-            {"@type": "Place", "name": "Bidrahalli"},
-            {"@type": "Place", "name": "Bangalore Viswavidalaya"},
-            {"@type": "Place", "name": "Bommanahalli"},
-            {"@type": "Place", "name": "Brigade Road"},
-            {"@type": "Place", "name": "Byatarayanapura"},
-            {"@type": "Place", "name": "C.V.raman nagar"},
-            {"@type": "Place", "name": "Cmp Centre and school"},
-            {"@type": "Place", "name": "Crpf Campus yelahanka"},
-            {"@type": "Place", "name": "Chamrajendrapet"},
-            {"@type": "Place", "name": "Chamrajpet"},
-            {"@type": "Place", "name": "Chamrajpet Bazar"},
-            {"@type": "Place", "name": "Chandra Lay out"},
-            {"@type": "Place", "name": "Chickpet"},
-            {"@type": "Place", "name": "Chikkabettahalli"},
-            {"@type": "Place", "name": "Chikkajala"},
-            {"@type": "Place", "name": "Chikkalasandra"},
-            {"@type": "Place", "name": "Chikkanahalli"},
-            {"@type": "Place", "name": "Chunchanakuppe"},
-            {"@type": "Place", "name": "Cubban Road"},
-            {"@type": "Place", "name": "Dasarahalli"},
-            {"@type": "Place", "name": "Deepanjalinagar"},
-            {"@type": "Place", "name": "Devanagundi"},
-            {"@type": "Place", "name": "Devarjeevanahalli"},
-            {"@type": "Place", "name": "Devasandra"},
-            {"@type": "Place", "name": "Dharmaram College"},
-            {"@type": "Place", "name": "Doddagubbi"},
-            {"@type": "Place", "name": "Doddajala"},
-            {"@type": "Place", "name": "Doddakallasandra"},
-            {"@type": "Place", "name": "Doddanekkundi"},
-            {"@type": "Place", "name": "Domlur"},
-            {"@type": "Place", "name": "Dommasandra"},
-            {"@type": "Place", "name": "Doorvaninagar"},
-            {"@type": "Place", "name": "Dr. ambedkar veedhi"},
-            {"@type": "Place", "name": "Electronics City"},
-            {"@type": "Place", "name": "Fraser Town"},
-            {"@type": "Place", "name": "G.K.v.k."},
-            {"@type": "Place", "name": "Gaviopuram Extension"},
-            {"@type": "Place", "name": "Gaviopuram Guttanahalli"},
-            {"@type": "Place", "name": "Gayathrinagar"},
-            {"@type": "Place", "name": "Girinagar"},
-            {"@type": "Place", "name": "Goraguntepalya"},
-            {"@type": "Place", "name": "Goripalya"},
-            {"@type": "Place", "name": "Government Electric factory"},
-            {"@type": "Place", "name": "Govindapalya"},
-            {"@type": "Place", "name": "Gunjur"},
-            {"@type": "Place", "name": "H M t"},
-            {"@type": "Place", "name": "H.A. farm"},
-            {"@type": "Place", "name": "H.A.l ii stage"},
-            {"@type": "Place", "name": "H.K.p. road"},
-            {"@type": "Place", "name": "Hsr Layout"},
-            {"@type": "Place", "name": "Hampinagar"},
-            {"@type": "Place", "name": "Handenahalli"},
-            {"@type": "Place", "name": "Harogadde"},
-            {"@type": "Place", "name": "Hebbal Kempapura"},
-            {"@type": "Place", "name": "Hennagara"},
-            {"@type": "Place", "name": "Highcourt"},
-            {"@type": "Place", "name": "Hongasandra"},
-            {"@type": "Place", "name": "Hoodi"},
-            {"@type": "Place", "name": "Horamavu"},
-            {"@type": "Place", "name": "Hosakerehalli"},
-            {"@type": "Place", "name": "Hosur Road"},
-            {"@type": "Place", "name": "Hulimangala"},
-            {"@type": "Place", "name": "Hulimavu"},
-            {"@type": "Place", "name": "Hulsur Bazaar"},
-            {"@type": "Place", "name": "Hunasamaranahalli"},
-            {"@type": "Place", "name": "Isro Anthariksha bhavan"},
-            {"@type": "Place", "name": "Immedihalli"},
-            {"@type": "Place", "name": "Indalavadi"},
-            {"@type": "Place", "name": "Indiranagar"},
-            {"@type": "Place", "name": "Indiranagar Com. complex"},
-            {"@type": "Place", "name": "Industrial Estate"},
-            {"@type": "Place", "name": "Ittamadu Layout"},
-            {"@type": "Place", "name": "J P nagar"},
-            {"@type": "Place", "name": "J.C.nagar"},
-            {"@type": "Place", "name": "Jakkur"},
-            {"@type": "Place", "name": "Jalahalli"},
-            {"@type": "Place", "name": "Jalahalli East"},
-            {"@type": "Place", "name": "Jalahalli Village"},
-            {"@type": "Place", "name": "Jalahalli West"},
-            {"@type": "Place", "name": "Jalavayuvihar"},
-            {"@type": "Place", "name": "Jayanagar"},
-            {"@type": "Place", "name": "Jayanagar West"},
-            {"@type": "Place", "name": "Jayanagar East"},
-            {"@type": "Place", "name": "Jayanagar III block"},
-            {"@type": "Place", "name": "Jeevanahalli"},
-            {"@type": "Place", "name": "Jeevanbhimanagar"},
-            {"@type": "Place", "name": "Jigani"},
-            {"@type": "Place", "name": "Jp Nagar iii phase"},
-            {"@type": "Place", "name": "K H b colony"},
-            {"@type": "Place", "name": "K. g. road"},
-            {"@type": "Place", "name": "K.P.west"},
-            {"@type": "Place", "name": "Kacharakanahalli"},
-            {"@type": "Place", "name": "Kadabagere"},
-            {"@type": "Place", "name": "Kadugodi"},
-            {"@type": "Place", "name": "Kalkunte"},
-            {"@type": "Place", "name": "Kalyanagar"},
-            {"@type": "Place", "name": "Kamagondanahalli"},
-            {"@type": "Place", "name": "Kamakshipalya"},
-            {"@type": "Place", "name": "Kannamangala"},
-            {"@type": "Place", "name": "Kannur"},
-            {"@type": "Place", "name": "Kanteeravanagar"},
-            {"@type": "Place", "name": "Kathriguppe"},
-            {"@type": "Place", "name": "Kenchanahalli"},
-            {"@type": "Place", "name": "Kendriya Sadan"},
-            {"@type": "Place", "name": "Kendriya Vihar"},
-            {"@type": "Place", "name": "Kodigehalli"},
-            {"@type": "Place", "name": "Konanakunte"},
-            {"@type": "Place", "name": "Koramangala"},
-            {"@type": "Place", "name": "Koramangala I block"},
-            {"@type": "Place", "name": "Koramangala Vi bk"},
-            {"@type": "Place", "name": "Kothanur"},
-            {"@type": "Place", "name": "Krishnarajapuram"},
-            {"@type": "Place", "name": "Krishnarajapuram R s"},
-            {"@type": "Place", "name": "Kugur"},
-            {"@type": "Place", "name": "Kumaraswamy Layout"},
-            {"@type": "Place", "name": "Kumbalgodu"},
-            {"@type": "Place", "name": "Kundalahalli"},
-            {"@type": "Place", "name": "Lalbagh West"},
-            {"@type": "Place", "name": "Legislators Home"},
-            {"@type": "Place", "name": "Lingarajapuram"},
-            {"@type": "Place", "name": "M S r road"},
-            {"@type": "Place", "name": "Madhavan Park"},
-            {"@type": "Place", "name": "Madivala"},
-            {"@type": "Place", "name": "Magadi Road"},
-            {"@type": "Place", "name": "Mahalakshmipuram Layout"},
-            {"@type": "Place", "name": "Mahatma Gandhi road"},
-            {"@type": "Place", "name": "Malkand Lines"},
-            {"@type": "Place", "name": "Mallathahalli"},
-            {"@type": "Place", "name": "Malleswaram"},
-            {"@type": "Place", "name": "Malleswaram West"},
-            {"@type": "Place", "name": "Mandalay Lines"},
-            {"@type": "Place", "name": "Marathahalli Colony"},
-            {"@type": "Place", "name": "Marsur"},
-            {"@type": "Place", "name": "Maruthi Sevanagar"},
-            {"@type": "Place", "name": "Mathikere"},
-            {"@type": "Place", "name": "Mavalli"},
-            {"@type": "Place", "name": "Mayasandra"},
-            {"@type": "Place", "name": "Medihalli"},
-            {"@type": "Place", "name": "Medimallasandra"},
-            {"@type": "Place", "name": "Mico Layout"},
-            {"@type": "Place", "name": "Milk Colony"},
-            {"@type": "Place", "name": "Mount St joseph"},
-            {"@type": "Place", "name": "Msrit"},
-            {"@type": "Place", "name": "Mundur"},
-            {"@type": "Place", "name": "Museum Road"},
-            {"@type": "Place", "name": "Muthanallur"},
-            {"@type": "Place", "name": "Muthusandra"},
-            {"@type": "Place", "name": "Nal"},
-            {"@type": "Place", "name": "Naduvathi"},
-            {"@type": "Place", "name": "Nagarbhavi"},
-            {"@type": "Place", "name": "Nandini Layout"},
-            {"@type": "Place", "name": "Narayanghatta"},
-            {"@type": "Place", "name": "Narayana Khandi"},
-            {"@type": "Place", "name": "Navanya"},
-            {"@type": "Place", "name": "Old Airport Road"},
-            {"@type": "Place", "name": "Old Madras Road"},
-            {"@type": "Place", "name": "Padmanabhanagar"},
-            {"@type": "Place", "name": "Palanahalli"},
-            {"@type": "Place", "name": "Panathur"},
-            {"@type": "Place", "name": "Pattomraj"},
-            {"@type": "Place", "name": "Periyapatna"},
-            {"@type": "Place", "name": "Pettah"},
-            {"@type": "Place", "name": "Pusa"},
-            {"@type": "Place", "name": "R.t nagar"},
-            {"@type": "Place", "name": "Ramnagari"},
-            {"@type": "Place", "name": "Rajarajeshwari Nagar"},
-            {"@type": "Place", "name": "Ramurthy nagar"},
-            {"@type": "Place", "name": "Richmond Road"}
-        ]
-        }
-    </script>
 </head>
-
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>S N Battery Sales and Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <h1>Welcome to S N battery sales and service</h1>
-    <p>Your one-stop destination for all your Amaron battery needs. Discover the best prices and quick installation in Bengaluru.</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Find Your Perfect Car Battery</h2>
+        <p>Explore top-quality car batteries from trusted brands like Amaron and Exide. Get fast delivery and expert installation in Bengaluru.</p>
+        <a href="#products" class="btn-primary">Browse Our Products</a>
+    </section>
 
-    <!-- Button Linking to Homepage -->
-    <a href="index.html" class="btn-home">Go to Home Page</a>
-  </section>
+    <!-- Product List Section -->
+    <section id="products">
+        <h2>Our Best Selling Car Batteries</h2>
+        <div class="product-card">
+            <img src="https://snbatterysalesandservice.com/images/amaron-battery.jpg" alt="Amaron Car Battery">
+            <h3>Amaron GO 95D26L</h3>
+            <p>Premium quality car battery for better durability and performance. Ideal for your vehicle's energy needs.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://snbatterysalesandservice.com/images/exide-battery.jpg" alt="Exide Car Battery">
+            <h3>Exide Xtreme</h3>
+            <p>Exide's most reliable and powerful car battery. Offers superior performance in all weather conditions.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <!-- Add more product cards as needed -->
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We offer the best Amaron battery prices and fast, reliable service. Our team at S N Battery Sales and Service ensures a hassle-free experience with doorstep delivery and installation services in Bengaluru.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>High-quality Amaron car batteries</li>
-      <li>Inverter battery replacement</li>
-      <li>Doorstep delivery and installation</li>
-      <li>24/7 customer support</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any queries, feel free to reach out to us!</p>
-  </section>
-
-  <!-- Floating Call and WhatsApp Buttons -->
-  <div class="floating-buttons">
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919902555479" target="_blank">
-      <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
-    </a>
-
-    <!-- Call Button -->
-    <a href="tel:+919902555479" class="call">
-      <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
-    </a>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2018 S N Battery Sales and Service. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 S N Battery Sales and Service. All Rights Reserved.</p>
+    </footer>
 
 </body>
-
-
 </html>
