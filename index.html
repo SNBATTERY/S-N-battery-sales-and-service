@@ -853,6 +853,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         margin-top: 15px;
     }
 }
+    .contact-form-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        /* Change the label text color to black */
+        label {
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 90%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-input:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+        .send-message-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 26px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 90%;
+            margin-top: 10px;
+        }
+
+        .send-message-button:hover {
+            background-color: #45a049;
+        }
+
+        .send-message-button:active {
+            background-color: #3e8e41;
+        }
+
+        @media screen and (max-width: 600px) {
+            .contact-form-container {
+                width: 90%;
+            }
+
+            .form-input {
+                width: 100%;
+            }
+
+            .send-message-button {
+                width: 100%;
+            }
+        }
 
 @media screen and (max-width: 480px) {
     .large-button {
@@ -943,6 +1019,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <img src="WhatsApp Image 2024-10-14 at 22.35.53_6078f6f0.jpg"" height="30" width="20" alt="woman licking ice cream and smiling" class="hero-lady-img" loading="lazy">
         </section>
+	<div class="contact-form-container">
+        <h2>Get in Touch</h2>
+
+        <form id="contact-form" action="#" method="GET">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required><br><br>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required><br><br>
+
+            <button type="button" class="send-message-button" onclick="redirectToWhatsapp()">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        function redirectToWhatsapp() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+
+            // Your WhatsApp number
+            var whatsappNumber = "919902555479";
+
+            // Create the WhatsApp URL with query parameters
+            var message = "Name: " + name + "\nPhone: " + phone;
+            var whatsappUrl = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
+
 
         <!-- --- section two --- -->
      
