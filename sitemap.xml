@@ -1,223 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <!-- Home Page -->
     <url>
         <loc>https://snbatterysalesandservice.com/</loc>
-        <lastmod>2025-01-29</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
-    
+
     <!-- Services Pages -->
     <url>
         <loc>https://snbatterysalesandservice.com/car-battery-replacement</loc>
-        <lastmod>2025-01-29</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://snbatterysalesandservice.com/inverter-battery-replacement</loc>
-        <lastmod>2025-01-29</lastmod>
+        <lastmod>2025-03-09</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Car Battery Model Pages -->
+    <url>
+        <loc>https://snbatterysalesandservice.com/honda-jazz-petrol-battery</loc>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://snbatterysalesandservice.com/exide-battery-replacement</loc>
-        <lastmod>2025-01-29</lastmod>
+        <loc>https://snbatterysalesandservice.com/audi-a6-petrol-battery</loc>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/amaron-battery-replacement</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Brand Pages -->
-    <url>
-        <loc>https://snbatterysalesandservice.com/brands/kia</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/brands/mg-hector</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/brands/maruti-suzuki</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/brands/hyundai</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
+
+    <!-- Brand-Specific Pages -->
     <url>
         <loc>https://snbatterysalesandservice.com/brands/honda</loc>
-        <lastmod>2025-01-29</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://snbatterysalesandservice.com/brands/skoda</loc>
-        <lastmod>2025-01-29</lastmod>
+        <loc>https://snbatterysalesandservice.com/brands/audi</loc>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
+
+    <!-- Car Battery Price Pages -->
     <url>
-        <loc>https://snbatterysalesandservice.com/brands/tata-motors</loc>
-        <lastmod>2025-01-29</lastmod>
+        <loc>https://snbatterysalesandservice.com/car-battery-prices</loc>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/brands/ford</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/brands/fiat</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Example Car Models Pages -->
-    <url>
-        <loc>https://snbatterysalesandservice.com/models/kia-carnival</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/models/maruti-suzuki-swift-diesel</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/models/hyundai-creta-petrol</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/models/honda-city-petrol</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- New Car Models Pages -->
-    <url>
-        <loc>https://snbatterysalesandservice.com/models/maruthi-suzuki-alto-800-petrol</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/kia-seltos-battery-replacement</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Additional Pages (About, Contact, etc.) -->
+
+    <!-- About & Contact Pages -->
     <url>
         <loc>https://snbatterysalesandservice.com/about-us</loc>
-        <lastmod>2025-01-29</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://snbatterysalesandservice.com/contact-us</loc>
-        <lastmod>2025-01-29</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <priority>1.0</priority>
     </url>
 
-    <!-- Newly Added Pages -->
-    <url>
-        <loc>https://snbatterysalesandservice.com/car-battery-installation</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/inverter-battery-installation</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-
-    <!-- New URLs Added -->
-    <url>
-        <loc>https://snbatterysalesandservice.com/tata-battery-prices</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/skoda-battery-prices</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/honda-battery-prices</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/hyundai-battery-price-replacement</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/maruthi-suzuki-battery-price</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/mg-hector-battery-price</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/kia-battery-price</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/car-and-inverter-battery-horamavu</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/battery-replacement-service-near-me-exide-amaron</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/car-battery-replacement-near-me-exide-amaron</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/car-battery-near-me-exide-amaron</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/doorstep-car-battery-replacement-exide-and-amaron-battery</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/amaron-battery-price-bengaluru</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/exide-battery-bengaluru</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/get-battery-fitted-at-your-home</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/inverter-batteries-bengaluru</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://snbatterysalesandservice.com/car-battery-prices</loc>
-        <lastmod>2025-01-29</lastmod>
-        <priority>1.0</priority>
-    </url>
 </urlset>
