@@ -713,6 +713,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .location-action-btn {
     padding: 14px 32px; /* Increased padding for better click area */
 }
+ .form-input {
+            width: 90%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-input:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+        .send-message-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 26px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 90%;
+            margin-top: 10px;
+        }
+
+        .send-message-button:hover {
+            background-color: #45a049;
+        }
+
+        .send-message-button:active {
+            background-color: #3e8e41;
+        }
+
+        @media screen and (max-width: 600px) {
+            .contact-form-container {
+                width: 90%;
+            }
+
+            .form-input {
+                width: 100%;
+            }
+
+            .send-message-button {
+                width: 100%;
+            }
+        }
 
 /* Responsive Design - Ensure buttons align on smaller screens */
 @media (max-width: 768px) {
