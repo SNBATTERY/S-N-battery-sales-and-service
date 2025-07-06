@@ -914,180 +914,451 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		  <div class="form-container" id="battery-form" style="display:none;">
             <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
             <form id="order-form" onsubmit="return displayBatteryInfo(event);">
-                <div class="form-toggle-buttons">
-        <button id="carBatteryBtn" class="active" onclick="showForm('car')">Car Battery</button>
-        <button id="inverterBatteryBtn" onclick="showForm('inverter')">Inverter Battery</button>
+                <label for="manufacturer"style="color: black; text-decoration: overline;">Manufacturer:</label>
+                <select id="manufacturer" required>
+                    <option value="">Select Manufacturer</option>
+					<option value="KIA">KIA</option>
+                    <option value="MG HECTOR">MG HECTOR</option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Tata motors">Tata motors</option>
+                    <option value="FORD">FORD</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="BMW">BMW</option>
+                    <option value="MINI">MINI</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="JEEP">JEEP</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="VOLVO">VOLVO</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Renault">Renault</option>
+                    <option value="ICML">ICML</option>
+                    <option value="Force motors">Force motors</option>
+                    <option value="BENTLEY">BENTLEY</option>
+                </select>
+
+                   
+
+                <label for="car-model" style="color: black; text-decoration: overline;">Car Model:</label>
+                <select id="car-model" required>
+                    <option value="">Select Car Model</option>
+                </select>
+
+                <label for="battery-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
+                <select id="battery-brand" required>
+                    <option value="">Select Battery Brand</option>
+					<option value="ALL Brand">ALL Brand</option>
+                    <option value="Amaron">Amaron</option>
+                    <option value="Exide">Exide</option>
+                    <option value="PowerZONE">PowerZONE</option>
+                    <option value="SF Sonic">SF Sonic</option>
+                    <option value="BOSCH">BOSCH</option>
+                    <option value="Livfast">Livfast</option>
+                </select>
+
+                    
+
+                <label for="state" style="color: black; text-decoration: overline;">State:</label>
+                <select id="state" required>
+                    <option value="">Select State</option>
+					
+                    <option value="karnataka">Karnataka</option>
+                    <option value="maharashtra">Maharashtra</option>
+                </select>
+
+
+                <label for="city" style="color: black; text-decoration: overline;">City:</label>
+                <select id="city" required>
+                    <option value="">Select City</option>
+					<option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+
+                    
+
+                <button type="submit">Find</button>
+            </form>
+        </div>
+             
+            <div><br>
+
+  
+</head>
+
+	<body>
+
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV2HGJJF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ5CJQHT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	    <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include"> <script type="application/json"> { "vars": { "gtag_id": "AW-16755709831", "config": { "AW-16755709831": { "groups": "default" } } }, "triggers": { } } </script> </amp-analytics>
+	
+<main id="hero" class="main">
+    <section id="products" class="section section-two container">
+        <h1 style="text-align:center;text-decoration:overline;">SHOP BY CATEGORY</h1>
+        <div class="button-group">
+            <button class="battery-button" onclick="showForm('car')">
+                <img src="car.jpg" alt="Car Battery">
+                Car Battery
+            </button>
+            
+            <button class="battery-button" onclick="showModal('inverter')">
+                <img src="inverter.jpeg" alt="Inverter Battery">
+                Inverter Battery
+            </button>
+           
+        </div>
+    </section>
+	<div id="bikeModal" class="modal">
+        <span class="close" onclick="closeBikeModal()">&times;</span>
+        <div class="modal-content">
+            <img class="main-image" id="modalImage" src="bike.jpg" alt="Bike Battery Image">
+            <div class="modal-details">
+                <h2>Model: Bike Battery X100</h2>
+                <p>This high-performance bike battery offers exceptional reliability and long-lasting power for your rides.</p>
+                <p><strong>Price: $99.99</strong></p>
+                <p><strong>Recommended For:</strong> Mountain bikes, road bikes, and electric bikes.</p>
+            </div>
+            <div class="additional-images">
+                <h3>Additional Images:</h3>
+                <div class="thumbnail-images">
+                    <img src="bike-thumbnail1.jpg" alt="Thumbnail 1" onclick="changeImage('bike-thumbnail1.jpg')">
+                    <img src="bike-thumbnail2.jpg" alt="Thumbnail 2" onclick="changeImage('bike-thumbnail2.jpg')">
+                    <img src="bike-thumbnail3.jpg" alt="Thumbnail 3" onclick="changeImage('bike-thumbnail3.jpg')">
+                    <img src="bike-thumbnail4.jpg" alt="Thumbnail 4" onclick="changeImage('bike-thumbnail4.jpg')">
+                </div>
+            </div>
+            <div class="more-details">
+                <h3>More Information:</h3>
+                <p><strong>Features:</strong> Lightweight, waterproof, quick charging, and eco-friendly.</p>
+                <p><strong>Warranty:</strong> 2 years.</p>
+                <p><strong>Customer Reviews:</strong> "Excellent performance!" - Jane D.</p>
+                <p><strong>Usage Tips:</strong> Charge regularly for optimal performance.</p>
+            </div>
+        </div>
+    </div>
+	<div id="inverterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('inverterModal')">&times;</span>
+            <h2>Select a Brand</h2>
+            <button class="large-button" onclick="showExideDetails()">Exide</button>
+            <button class="large-button" onclick="showAmaronDetails()">Amaron</button>
+            <button class="large-button" onclick="showLuminousDetails()">Luminous</button>
+        </div>
     </div>
 
-    <main>
-        <section>
-            <div class="form-container" id="car-battery-form">
-                <h3>Car Battery Order Form</h3>
-                <form id="car-order-form" onsubmit="return displayCarBatteryInfo(event);">
-                    <label for="manufacturer">Manufacturer:</label>
-                    <select id="manufacturer" required>
-                        <option value="">Select Manufacturer</option>
-                        <option value="KIA">KIA</option>
-                        <option value="MG HECTOR">MG HECTOR</option>
-                        <option value="Maruti Suzuki">Maruti Suzuki</option>
-                        <option value="Hyundai">Hyundai</option>
-                        <option value="Honda">Honda</option>
-                        <option value="Skoda">Skoda</option>
-                        <option value="Tata motors">Tata motors</option>
-                        <option value="FORD">FORD</option>
-                        <option value="Fiat">Fiat</option>
-                        <option value="BMW">BMW</option>
-                        <option value="MINI">MINI</option>
-                        <option value="Audi">Audi</option>
-                        <option value="Jaguar">Jaguar</option>
-                        <option value="Volkswagen">Volkswagen</option>
-                        <option value="JEEP">JEEP</option>
-                        <option value="Chevrolet">Chevrolet</option>
-                        <option value="Toyota">Toyota</option>
-                        <option value="Nissan">Nissan</option>
-                        <option value="VOLVO">VOLVO</option>
-                        <option value="Mahindra">Mahindra</option>
-                        <option value="Renault">Renault</option>
-                        <option value="ICML">ICML</option>
-                        <option value="Force motors">Force motors</option>
-                        <option value="BENTLEY">BENTLEY</option>
-                    </select>
-
-                    <label for="car-model">Car Model:</label>
-                    <select id="car-model" required>
-                        <option value="">Select Car Model</option>
-                    </select>
-
-                    <label for="car-battery-brand">Battery Brand:</label>
-                    <select id="car-battery-brand" required>
-                        <option value="">Select Battery Brand</option>
-                        <option value="ALL Brand">ALL Brand</option>
-                        <option value="Amaron">Amaron</option>
-                        <option value="Exide">Exide</option>
-                        <option value="PowerZONE">PowerZONE</option>
-                        <option value="SF Sonic">SF Sonic</option>
-                        <option value="BOSCH">BOSCH</option>
-                        <option value="Livfast">Livfast</option>
-                    </select>
-
-                    <label for="car-state">State:</label>
-                    <select id="car-state" required>
-                        <option value="">Select State</option>
-                        <option value="karnataka">Karnataka</option>
-                        <option value="maharashtra">Maharashtra</option>
-                    </select>
-
-                    <label for="car-city">City:</label>
-                    <select id="car-city" required>
-                        <option value="">Select City</option>
-                        <option value="Bengaluru">Bengaluru</option>
-                        <option value="Mysuru">Mysuru</option>
-                        <option value="Mumbai">Mumbai</option>
-                    </select>
-
-                    <button type="submit">Find Car Battery</button>
-                </form>
+    <!-- Exide Details Modal -->
+    <div id="inverterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('inverterModal')">&times;</span>
+            <h2>Inverter Battery</h2>
+            <div class="product">
+                <img src="inverter.jpg" alt="Inverter Battery" />
+                <p>Price: $150</p>
+                <p>Description: High capacity inverter battery suitable for home and office use.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Inverter', 'inverter')">Order Now</button>
             </div>
-
-            <div class="form-container" id="inverter-battery-form" style="display:none;">
-                <h3>Inverter Battery Order Form</h3>
-                <form id="inverter-order-form" onsubmit="return displayInverterBatteryInfo(event);">
-                    <label for="inverter-battery-brand">Battery Brand:</label>
-                    <select id="inverter-battery-brand" required>
-                        <option value="">Select Battery Brand</option>
-                        <option value="Amaron">Amaron</option>
-                        <option value="Exide">Exide</option>
-                        <option value="Luminous">Luminous</option>
-                        <option value="Microtek">Microtek</option>
-                        <option value="SF Sonic">SF Sonic</option>
-                    </select>
-
-                    <label for="inverter-capacity">Capacity (Ah):</label>
-                    <select id="inverter-capacity" required>
-                        <option value="">Select Capacity</option>
-                        <option value="100">100 Ah</option>
-                        <option value="120">120 Ah</option>
-                        <option value="150">150 Ah</option>
-                        <option value="180">180 Ah</option>
-                        <option value="200">200 Ah</option>
-                    </select>
-
-                    <label for="inverter-state">State:</label>
-                    <select id="inverter-state" required>
-                        <option value="">Select State</option>
-                        <option value="karnataka">Karnataka</option>
-                        <option value="maharashtra">Maharashtra</option>
-                    </select>
-
-                    <label for="inverter-city">City:</label>
-                    <select id="inverter-city" required>
-                        <option value="">Select City</option>
-                        <option value="Bengaluru">Bengaluru</option>
-                        <option value="Mysuru">Mysuru</option>
-                        <option value="Mumbai">Mumbai</option>
-                    </select>
-
-                    <button type="submit">Find Inverter Battery</button>
-                </form>
+            <div class="product">
+                <img src="inverter2.jpg" alt="Inverter Battery Image 2" />
+                <p>Price: $160</p>
+                <p>Description: Durable and long-lasting battery for all your inverter needs.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Inverter', 'inverter2')">Order Now</button>
             </div>
+        </div>
+    </div>
 
-            <div id="overlay" class="overlay">
-                <div class="overlay-content">
-                    <span class="close" onclick="closeOverlay()">&times;</span>
-                    <div id="battery-info"></div>
-                </div>
+    <!-- Exide Details Modal -->
+    <div id="exideModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('exideModal')">&times;</span>
+            <h2>Exide Battery</h2>
+         
+		<div class="product">
+    <img src="201.jpg" alt="Exide Battery" />
+    <p>EXIDE INVAHOMZ IHST1000 100AH BATTERY (100AH)</p>
+    <p>Price: with exchange: 7200<br> without exchange: 9700</p>
+    <p>Description: Warranty: 24 FOC + 24 Pro-rata. Total = 48 Months.</p>
+    <button class="large-button" onclick="redirectToWhatsApp('EXIDE INVAHOMZ IHST1000 100AH BATTERY (100AH)', 'Price: with exchange: 7200, without exchange: 9700', 'Warranty: 24 FOC + 24 Pro-rata. Total = 48 Months.')">Order Now</button>
+</div><br><br><br><br><br>
+		<div class="product">
+    <img src="202.jfif" alt="Exide Battery" />
+    <p>Exide INVA GOLD IGST1500 (150AH)</p>
+    <p>Price: with exchange: 10130<br> without exchange: 14130</p>
+    <p>Description: Warranty: 48 Months (36 Months Full Replacement + 12 Months Pro Rata).</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Exide INVA GOLD IGST1500 (150AH)', 'Price: with exchange: 10130, without exchange: 14130', 'Warranty: 48 Months (36 Months Full Replacement + 12 Months Pro Rata)')">Order Now</button>
+</div><br><br><br><br><br>
+		<div class="product">
+    <img src="203.jfif" alt="Exide Battery" />
+    <p></p>Exide Invamaster IMTT1500 (150 AH)</p>
+    <p>Price: with exchange:12000 <br> without exchange:16000 </p>
+    <p>Description: Warranty: 60 Months (36 Months Full Replacement + 24 Months Pro Rata).</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Exide Invamaster IMTT1500 (150 AH)', 'Price: with exchange:12000 , without exchange:16000 ', 'Warranty: 60 Months (36 Months Full Replacement + 24 Months Pro Rata)')">Order Now</button>
+</div><br><br><br><br><br>
+		<div class="product">
+    <img src="204.jfif" alt="Exide Battery" />
+    <p>Exide INVAMASTER IMST1500 (150 AH)</p>
+    <p>Price: with exchange: 11800<br> without exchange: 15800</p>
+    <p>Description:Warranty: 60 Months (36 Months Full Replacement + 24 Months Pro Rata)</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Exide INVAMASTER IMST1500 (150 AH)', 'Price: with exchange: 11800, without exchange: 15800', 'Warranty: 60 Months (36 Months Full Replacement + 24 Months Pro Rata).')">Order Now</button>
+</div><br><br><br><br><br>
+		<div class="product">
+    <img src="205.jfif" alt="Exide Battery" />
+    <p>Exide INVAMASTER IMTT2000 (200AH)</p>
+    <p>Price: with exchange: 16300 <br> without exchange:20300 </p>
+    <p>Description:Warranty: 60 Months (36 Months Full Replacement + 24 Months Pro Rata).</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Exide INVAMASTER IMTT2000 (200AH)', 'Price: with exchange: 16300, without exchange: 20300', 'Warranty: 60 Months (36 Months Full Replacement + 24 Months Pro Rata)')">Order Now</button>
+</div><br><br><br><br><br>
+		<div class="product">
+    <img src="206.jfif" alt="Exide Battery" />
+    <p>Exide Inva Homz IHST1350 135Ah Tubular Battery</p>
+    <p>Price: with exchange: 8400<br> without exchange: 12400</p>
+    <p>Description: Warranty: 48 (24+24) Monthss.</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Exide Inva Homz IHST1350 135Ah Tubular Battery', 'Price: with exchange: 8400, without exchange: 12400', 'Warranty: · 48 (24+24) Months')">Order Now</button>
+</div><br><br><br><br><br>
+	 
+           
+        </div>
+    </div>
+
+    <!-- Amaron Details Modal -->
+    <div id="amaronModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('amaronModal')">&times;</span>
+           
+           <div class="product">
+    <img src="301.jfif" alt="Exide Battery" />
+    <p>Amaron Current Short Tubular AR145ST36 (145AH)</p>
+    <p>Price: with exchange:8900 <br> without exchange:12900 </p>
+    <p>Description:Warranty: 36 Months (24 Months Full Replacement + 12 Months Pro Rata).</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Amaron Current Short Tubular AR145ST36 (145AH)', 'Price: with exchange: 8900, without exchange: 12900', 'Warranty: 36 Months (24 Months Full Replacement + 12 Months Pro Rata)')">Order Now</button>
+</div><br><br><br><br><br>
+	 <div class="product">
+    <img src="302.jfif" alt="Exide Battery" />
+    <p>Amaron Current AR150TT54 (150 AH) Tall Tubular Inverter Battery</p>
+    <p>Price: with exchange: 11500<br> without exchange: 15500</p>
+    <p>Description:Warranty: 54 Months (36 Months Full Replacement + 18 Months Pro Rata).</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Amaron Current AR150TT54 (150 AH) Tall Tubular Inverter Battery', 'Price: with exchange: 11500, without exchange: 15500', 'Warranty: 54 Months (36 Months Full Replacement + 18 Months Pro Rata)')">Order Now</button>
+</div><br><br><br><br><br>
+	 <div class="product">
+    <img src="303.jfif" alt="Exide Battery" />
+    <p>Amaron Current AR200TT54 200AH Tall Tubular Inverter Battery</p>
+    <p>Price: with exchange: 13800<br> without exchange: 17800</p>
+    <p>Description:Warranty: 54 Months (36 Months Full Replacement + 18 Months Pro Rata).</p>
+    <button class="large-button" onclick="redirectToWhatsApp('Amaron Current AR200TT54 200AH Tall Tubular Inverter Battery', 'Price: with exchange: 13800, without exchange: 17800', 'Warranty: 54 Months (36 Months Full Replacement + 18 Months Pro Rata)')">Order Now</button>
+</div><br><br><br><br><br>
+	
+	</div>
+	      </div>
+	</div>
+    </div>
+
+    <!-- Luminous Details Modal -->
+    <div id="luminousModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('luminousModal')">&times;</span>
+            <h2>Luminous Battery</h2>
+            <div class="product">
+                <img src="luminous.jpg" alt="Luminous Battery" />
+                <p>Price: $130</p>
+                <p>Description: Reliable battery with exceptional performance.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Luminous', 'luminous')">Order Now</button>
             </div>
-
-            <div id="exideModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('exideModal')">&times;</span>
-                    <h3>Exide Inverter Battery</h3>
-                    <img src="https://via.placeholder.com/200x200?text=Exide+Battery" alt="Exide Battery">
-                    <p><strong>Product:</strong> Exide INVAMASTER IM1500 (150 Ah)</p>
-                    <p><strong>Price:</strong> ₹15,000</p>
-                    <p><strong>Description:</strong> High-performance Exide inverter battery, 150 Ah capacity, ideal for long power backups. Comes with a 36-month warranty.</p>
-                    <button onclick="redirectToWhatsApp('Exide INVAMASTER IM1500', '₹15,000', 'High-performance Exide inverter battery, 150 Ah capacity, ideal for long power backups. Comes with a 36-month warranty.', 'Inverter')">Order on WhatsApp</button>
-                </div>
+            <div class="product">
+                <img src="luminous2.jpg" alt="Luminous Battery Image 2" />
+                <p>Price: $135</p>
+                <p>Description: Long backup time with environment-friendly technology.</p>
+                <button class="large-button" onclick="redirectToWhatsApp('Luminous', 'luminous2')">Order Now</button>
             </div>
+        </div>
+    </div>
+        <div class="form-container" id="battery-form" style="display:none;">
+            <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
+            <form id="order-form" onsubmit="return displayBatteryInfo(event);">
+                <label for="manufacturer"style="color: black; text-decoration: overline;">Manufacturer:</label>
+                <select id="manufacturer" required>
+                    <option value="">Select Manufacturer</option>
+					<option value="KIA">KIA</option>
+                    <option value="MG HECTOR">MG HECTOR</option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Tata motors">Tata motors</option>
+                    <option value="FORD">FORD</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="BMW">BMW</option>
+                    <option value="MINI">MINI</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="JEEP">JEEP</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="VOLVO">VOLVO</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Renault">Renault</option>
+                    <option value="ICML">ICML</option>
+                    <option value="Force motors">Force motors</option>
+                    <option value="BENTLEY">BENTLEY</option>
+                </select>
 
-            <div id="amaronModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('amaronModal')">&times;</span>
-                    <h3>Amaron Inverter Battery</h3>
-                    <img src="https://via.placeholder.com/200x200?text=Amaron+Battery" alt="Amaron Battery">
-                    <p><strong>Product:</strong> Amaron Tall Tubular Battery 165Ah</p>
-                    <p><strong>Price:</strong> ₹16,500</p>
-                    <p><strong>Description:</strong> Durable Amaron tall tubular battery, 165Ah, designed for deep discharge cycles and excellent power output. 48-month warranty.</p>
-                    <button onclick="redirectToWhatsApp('Amaron Tall Tubular Battery 165Ah', '₹16,500', 'Durable Amaron tall tubular battery, 165Ah, designed for deep discharge cycles and excellent power output. 48-month warranty.', 'Inverter')">Order on WhatsApp</button>
-                </div>
+                   
+
+                <label for="car-model" style="color: black; text-decoration: overline;">Car Model:</label>
+                <select id="car-model" required>
+                    <option value="">Select Car Model</option>
+                </select>
+
+                <label for="battery-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
+                <select id="battery-brand" required>
+                    <option value="">Select Battery Brand</option>
+					<option value="ALL Brand">ALL Brand</option>
+                    <option value="Amaron">Amaron</option>
+                    <option value="Exide">Exide</option>
+                    <option value="PowerZONE">PowerZONE</option>
+                    <option value="SF Sonic">SF Sonic</option>
+                    <option value="BOSCH">BOSCH</option>
+                    <option value="Livfast">Livfast</option>
+                </select>
+
+                    
+
+                <label for="state" style="color: black; text-decoration: overline;">State:</label>
+                <select id="state" required>
+                    <option value="">Select State</option>
+					
+                    <option value="karnataka">Karnataka</option>
+                    <option value="maharashtra">Maharashtra</option>
+                </select>
+
+
+                <label for="city" style="color: black; text-decoration: overline;">City:</label>
+                <select id="city" required>
+                    <option value="">Select City</option>
+					<option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+
+                    
+
+                <button type="submit">Find</button>
+            </form>
+        </div>
+
+        <!-- Overlay for Battery Details -->
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="closeOverlay()">&times;</span>
+                <div id="battery-info"></div> <!-- Container for battery images and descriptions -->
             </div>
-
-            <div id="luminousModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('luminousModal')">&times;</span>
-                    <h3>Luminous Inverter Battery</h3>
-                    <img src="https://via.placeholder.com/200x200?text=Luminous+Battery" alt="Luminous Battery">
-                    <p><strong>Product:</strong> Luminous Shakti Charge 12000 (180 Ah)</p>
-                    <p><strong>Price:</strong> ₹18,000</p>
-                    <p><strong>Description:</strong> Robust Luminous inverter battery, 180 Ah, provides reliable power backup for homes and offices. Features fast charging and long life. 42-month warranty.</p>
-                    <button onclick="redirectToWhatsApp('Luminous Shakti Charge 12000 (180 Ah)', '₹18,000', 'Robust Luminous inverter battery, 180 Ah, provides reliable power backup for homes and offices. Features fast charging and long life. 42-month warranty.', 'Inverter')">Order on WhatsApp</button>
-                </div>
+        </div>
+		<div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="closeOverlay()">&times;</span>
+                <img id="battery-image" src="" alt="Battery">
+                <div id="battery-description" class="description"></div>
             </div>
+        </div>
+		
 
-            </section>
-    </main>
+        
+        <!-- Modal for Bike Battery -->
+        <div id="bike-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bike')">&times;</span>
+                <h3>Bike Battery Details</h3>
+                <img src="path/to/bike-battery-image.jpg" alt="Bike Battery">
+                <p>Description of the bike battery goes here.</p>
+            </div>
+        </div>
+    </section>
+</main>
 
----
-
-## JavaScript Logic
-
-The JavaScript now handles showing/hiding the correct form, populating car models, and dynamic content for both car and inverter battery searches.
-
-```javascript
 <script>
-    // Car Models Data (remains unchanged)
+function showBikeModal() {
+    const bikeModal = document.getElementById("bikeModal");
+    bikeModal.style.display = "block"; // Show the modal
+}
+
+function closeBikeModal() {
+    const bikeModal = document.getElementById("bikeModal");
+    bikeModal.style.display = "none"; // Hide the modal
+}
+
+function changeImage(imageSrc) {
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc; // Change the main image to the clicked thumbnail
+}
+function showModal(type) {
+        if (type === 'inverter') {
+            document.getElementById('inverterModal').style.display = 'block';
+        }
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    function showExideDetails() {
+        closeModal('inverterModal');
+        document.getElementById('exideModal').style.display = 'block';
+    }
+
+    function showAmaronDetails() {
+        closeModal('inverterModal');
+        document.getElementById('amaronModal').style.display = 'block';
+    }
+
+    function showLuminousDetails() {
+        closeModal('inverterModal');
+        document.getElementById('luminousModal').style.display = 'block';
+    }
+
+   function redirectToWhatsApp(productName, price, description) {
+    // Construct the message for WhatsApp
+    const message = encodeURIComponent(`Hello! I would like to order the following product:\n\nProduct: ${productName}\nPrice: ${price}\nDescription: ${description}`);
+    
+    // WhatsApp URL format
+    const whatsappURL = `https://wa.me/+919902555479?text=${message}`; // Replace 11234567890 with your WhatsApp business number
+    
+    // Redirect to WhatsApp
+    window.location.href = whatsappURL;
+}
+    window.onclick = function(event) {
+        const modals = ['inverterModal', 'exideModal', 'amaronModal', 'luminousModal'];
+        modals.forEach(modalId => {
+            const modal = document.getElementById(modalId);
+            if (event.target === modal) {
+                closeModal(modalId);
+            }
+        });
+    };
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const modals = ['inverterModal', 'exideModal', 'amaronModal', 'luminousModal'];
+            modals.forEach(modalId => {
+                closeModal(modalId);
+            });
+        }
+    });
+    
     const carModels = {
         "KIA": ["KIA Carnival", "KIA SELTOS DIESEL", "KIA SELTOS PETROL", "KIA SONET PETROL"],
+
         "MG HECTOR": ["MG HECTOR Petrol", "MG HECTOR Diesel", "MG Glowstar"],
         "Maruti Suzuki": ["Maruthi Suzuki Alto 800 Petrol", "Maruthi Suzuki A Star Petrol", "Maruthi Suzuki Celerio Petrol", "Maruthi Suzuki Ciaz Petrol", "Maruthi Suzuki Ciaz Diesel", "Maruthi Suzuki Ciaz Diesel Hybrid", "Maruthi Suzuki Ciaz Petrol Hybrid", "Maruthi Suzuki Swift Diesel", "Maruthi Suzuki Swift Petrol", "Maruthi Suzuki Vitra Brezza Diesel", "Maruthi Suzuki New Baleno Petrol", "Maruthi Suzuki New Baleno Diesel", "Maruthi Suzuki ignis Petrol", "Maruthi Suzuki Ertiga Petrol"],
         "Hyundai": ["Hyundai EON Petrol", "Hyundai Grand i10 Petrol", "Hyundai Grand i10 Diesel", "Hyundai Creta Petrol", "Hyundai Creta Diesel", "Hyundai Getz 1.6 Diesel", "Hyundai i20 Sportz Petrol", "Hyundai i20 Sportz Diesel", "Hyundai Verna 1.4 Diesel", "Hyundai Verna 1.4 Petrol", "Hyundai Xcent Diesel", "Hyundai Xcent Petrol", "Hyundai Elite i20 Petrol", "Hyundai Elite i20 Diesel", "Hyundai Tucson Diesel", "Hyundai Tuscon Petrol", "Hyundai Venue Petrol", "Hyundai Venue Diesel", "Hyundai Venue Petrol", "Hyundai Aura Diesel", "Hyundai Elantra 1.6 Diesel", "Hyundai i20 Sprotz Petrol(After 2015)", "Hyundai Verna CRDi Diesel(after 2017)-Next Gen"],
@@ -1101,45 +1372,24 @@ The JavaScript now handles showing/hiding the correct form, populating car model
         "Audi": ["Audi A3 Diesel", "Audi A3 Petrol", "Audi A4 Petrol", "Audi A4 DIESEL", "Audi A6 Petrol", "Audi A6 Diesel", "Audi A7 3.0 Diesel", "Audi A8 L Diesel", "Audi A8 L Diesel", "Audi Q5 Petrol", "Audi Q5 3.0 Quattaro Diesel"],
         "Jaguar": ["Jaguar XE Diesel", "Jaguar XF Petrol", "Jaguar F TYPE Petrol", "Jaguar XF Petrol", "Jaguar XJ Petrol", "Jaguar XF Diesel", "Jaguar XJ Diesel "],
         "JEEP": ["Jeep Compass Sport Petrol", "Jeep Wrangler Unlimited Diesel", "Jeep Compass Sport Diesel", "Jeep Compass Longitude Diesel", "Jeep Compass Limited Petrol", "Jeep Compass Limited Diesel"],
-        "VOLVO": ["Volvo S60 Diesel", "Volvo S60 Petrol", "Volvo V60 Cross Country Diesel", "Volvo S60 Cross Country DIESEL", "Volvo S60 Petrol", "Volvo XC60 Diesel ", "Volvo S90 Diesel", "Volvo XC90 Petrol", "Volvo XC40 DIESEL"],
-        "Mahindra": ["Mahindra XUV 500 Diesel", "Mahindra Xylo D2 Diesel", "Mahindra Xylo E2 Diesel", "Mahindra TUV 300 Diesel", "Mahindra KUV 100 ESS Diesel", "Mahindra KUV 100 ESS PETROL ", "Mahindra Bolera Diesel", "Mahindra Renault Logan 1.5 Diesel", "Mahindra ALTURAS G4", "Mahindra Renault Logan 1.4 Petrol", "Mahindra Thar Diesel", "Mahindra Scorpio Vlx Diesel", "Mahindra Bolero New Diesel", "Mahindra Quanto Diesel", "Mahindra Verito 1.4 Petrol", "Mahindra Verito 1.5 Diesel", "Mahindra XUV700", "Mahindra Renault XUV 300 PETROL", "Mahindra XUV 300 DIESEL"],
+        "VOLVO": ["Volvo S60 Diesel", "Volvo S60 Petrol", "Volvo V60  Cross Country Diesel", "Volvo S60 Cross Country DIESEL", "Volvo S60 Petrol", "Volvo XC60 Diesel ", "Volvo S90 Diesel", "Volvo XC90 Petrol", "Volvo XC40 DIESEL"],
+        "Mahindra": ["Mahindra XUV 500 Diesel", "Mahindra Xylo  D2 Diesel", "Mahindra Xylo  E2 Diesel", "Mahindra TUV 300 Diesel", "Mahindra KUV 100 ESS Diesel", "Mahindra KUV 100 ESS PETROL ", "Mahindra Bolera Diesel", "Mahindra Renault Logan 1.5 Diesel", "Mahindra ALTURAS G4", "Mahindra Renault Logan 1.4 Petrol", "Mahindra Thar Diesel", "Mahindra Scorpio Vlx Diesel", "Mahindra Bolero New Diesel", "Mahindra Quanto Diesel", "Mahindra Verito 1.4 Petrol", "Mahindra Verito 1.5 Diesel", "Mahindra XUV700", "Mahindra Renault XUV 300 PETROL", "Mahindra XUV 300 DIESEL"],
         "Renault": ["Renault Pulse Diesel", "Renault Scala Petrol", "Renault Scala Diesel", "Renault Kwid", "Renault Lodgy", "Renault Captur Petrol", "Renault Captur Diesel", "Renault Triber Petrol"],
         "ICML": ["ICML Delite Diesel", "ICML Rhino Diesel", "ICML Winner Diesel", "ICML Xcitor Diesel", "ICML Xcitor Diesel"],
         "Force motors": ["Force Motors Minidor", "Force Motors Balwan-330-25Hp", "Force Motors Balwan-400-35Hp", "Force Motors orchard", "Force Motors Balwan-550-52Hp", "Force Motors Balwan-400-35Hp", "Force Motors Balwan-450-40Hp", "Force Motors OX 25", "Force Motors TRAVELLER DIESEL"],
         "BENTLEY": ["Bentley Flying Spur Petrol", "Bentley Continental Petrol", "Bentley Bentayga Petrol", "Bentley Mulsanne Petrol"],
-        "Chevrolet": ["Chevrolet Opel Vectra Diesel", "Chevrolet Opel Vectra Petrol", "Chevrolet Enjoy Diesel", "Chevrolet Cruze Diesel", "Chevrolet Captiva Diesel", "Chevrolet Spark Petrol", "Chevrolet Sail Diesel", "Chevrolet Sail Petrol", "Chevrolet Optra Royal 1.6 Petrol", "Chevrolet Tavera Diesel", "Chevrolet Enjoy Petrol", "Chevrolet Optra 1.6 Petrol", "Chevrolet Beat Petrol", "Chevrolet Optra Magnum Diesel", "Chevrolet Beat Diesel"],
+		"Chevrolet": ["Chevrolet Opel Vectra Diesel", "Chevrolet Opel Vectra Petrol", "Chevrolet Enjoy Diesel", "Chevrolet Cruze Diesel", "Chevrolet Captiva Diesel", "Chevrolet Spark Petrol", "Chevrolet Sail Diesel", "Chevrolet Sail Petrol", "Chevrolet Optra Royal 1.6 Petrol", "Chevrolet Tavera Diesel", "Chevrolet Enjoy Petrol", "Chevrolet Optra 1.6 Petrol", "Chevrolet Beat Petrol", "Chevrolet Optra Magnum Diesel", "Chevrolet Beat Diesel"],                                                
         "Nissan": ["Nissan Evalia Diesel", "Nissan Micra 1.5L Diesel", "Nissan Micra 1.2L Petrol", "Nissan Sunny 1.5L Diesel", "Nissan Sunny 1.5L Petrol", "Nissan Micra 1.5L XV Automatic Petrol", "Nissan Magnite Petrol", "Nissan Teana 250XL Petrol", "Nissan Terrano Diesel", "Nissan Terrano Petrol", "Nissan X Trail Diesel", "Nissan Datsun Go Petrol", "Nissan Evalia Diesel", "Nissan Micra Petrol"],
         "Volkswagen": ["Volkswagen Beetle 2.0L Petrol", "Volkswagen Jetta Diesel New", "Volkswagen Jetta Diesel Old", "Volkswagen Passat Diesel", "Volkswagen Passat Petrol", "Volkswagen Phaeton 3.6 v6", "Volkswagen Polo 1.2 Diesel", "Volkswagen Polo 1.2 Petrol", "Volkswagen Polo 1.6 Petrol", "Volkswagen Vento 1.6 Diesel", "Volkswagen Vento 1.6 Petrol", "Volkswagen Vento Old", "Volkswagen Passat Hybrid", "Volkswagen Vento 1.2 Diesel", "Volkswagen Vento 1.2 Petrol", "Volkswagen Polo 1.5 Diesel", "Volkswagen Tiguan 2.0 Diesel"],
-        "Toyota": ["Toyota Corolla Petrol", "Toyota Camry Petrol", "Toyota Corolla Altis Diesel", "Toyota Corolla Altis Petrol", "Toyota Etios Diesel", "Toyota Etios Liva Petrol", "Toyota Etios Petrol", "Toyota Fortuner D4 Diesel", "Toyota Innova Diesel ", "Toyota Innova Petrol", "Toyota Qualis Diesel", "Toyota Qualis Petrol", "Toyota Lexus Diesel", "Toyota Innova Crysta Diesel", "Toyota Land Cruiser Prado 4.5 Diesel", "Toyota Land Cruiser Petrol", "Toyota New Innova Special Edition Diesel"]
-    };
+        "Toyota": ["Toyota Corolla Petrol", "Toyota Camry Petrol", "Toyota Corolla Altis Diesel", "Toyota Corolla Altis Petrol", "Toyota Etios Diesel", "Toyota Etios Liva Petrol", "Toyota Etios Petrol", "Toyota Fortuner D4 Diesel", "Toyota Innova Diesel ", "Toyota Innova Petrol", "Toyota Qualis Diesel", "Toyota Qualis Petrol", "Toyota Lexus Diesel", "Toyota Innova Crysta Diesel", "Toyota Land Cruiser Prado 4.5 Diesel", "Toyota Land Cruiser Petrol", "Toyota New Innova Special Edition Diesel"] 
+  };
 
-    // Function to show/hide forms
-    function showForm(formType) {
-        const carForm = document.getElementById('car-battery-form');
-        const inverterForm = document.getElementById('inverter-battery-form');
-        const carBtn = document.getElementById('carBatteryBtn');
-        const inverterBtn = document.getElementById('inverterBatteryBtn');
 
-        if (formType === 'car') {
-            carForm.style.display = 'block';
-            inverterForm.style.display = 'none';
-            carBtn.classList.add('active');
-            inverterBtn.classList.remove('active');
-            initializeCarForm(); // Re-initialize car form dropdowns
-        } else if (formType === 'inverter') {
-            carForm.style.display = 'none';
-            inverterForm.style.display = 'block';
-            carBtn.classList.remove('active');
-            inverterBtn.classList.add('active');
-        }
-    }
-
-    // Initialize car battery form (car models dropdown)
-    function initializeCarForm() {
+    function showForm() {
+        document.getElementById('battery-form').style.display = 'block';
         const manufacturerSelect = document.getElementById('manufacturer');
-        const carModelSelect = document.getElementById('car-model');
-
         manufacturerSelect.onchange = function() {
+            const carModelSelect = document.getElementById('car-model');
             const selectedManufacturer = this.value;
             carModelSelect.innerHTML = '<option value="">Select Car Model</option>';
             if (carModels[selectedManufacturer]) {
@@ -1153,164 +1403,10 @@ The JavaScript now handles showing/hiding the correct form, populating car model
         };
     }
 
-    // Display car battery info when form is submitted
-    function displayCarBatteryInfo(event) {
-        event.preventDefault();
-        const manufacturer = document.getElementById('manufacturer').value;
-        const carModel = document.getElementById('car-model').value;
-        const batteryBrand = document.getElementById('car-battery-brand').value;
-        const state = document.getElementById('car-state').value;
-        const city = document.getElementById('car-city').value;
+    function displayBatteryInfo(event) {
+    event.preventDefault();
+    const carModel = document.getElementById('car-model').value;
 
-        // Dummy data for car batteries
-        const carBatteryData = [
-            {
-                name: "Amaron Pro 42B20L",
-                image: "[https://via.placeholder.com/150x150?text=Amaron+Car+Battery](https://via.placeholder.com/150x150?text=Amaron+Car+Battery)",
-                description: `Fits ${manufacturer} ${carModel}. Brand: ${batteryBrand}. Price: ₹4,500. Warranty: 48 months. Location: ${city}, ${state}.`,
-                price: '₹4,500',
-                type: 'Car'
-            },
-            {
-                name: "Exide Mileage 55B24LS",
-                image: "[https://via.placeholder.com/150x150?text=Exide+Car+Battery](https://via.placeholder.com/150x150?text=Exide+Car+Battery)",
-                description: `Suitable for ${manufacturer} ${carModel}. Brand: ${batteryBrand}. Price: ₹5,200. Warranty: 36 months. Location: ${city}, ${state}.`,
-                price: '₹5,200',
-                type: 'Car'
-            }
-        ];
-
-        const batteryInfoContainer = document.getElementById('battery-info');
-        batteryInfoContainer.innerHTML = '';
-
-        carBatteryData.forEach(battery => {
-            const batteryItem = document.createElement('div');
-            batteryItem.classList.add('battery-item');
-            batteryItem.innerHTML = `
-                <img src="${battery.image}" alt="${battery.name}">
-                <h4>${battery.name}</h4>
-                <p>${battery.description}</p>
-                <button onclick="redirectToWhatsApp('${battery.name}', '${battery.price}', '${battery.description}', '${battery.type}')">Order on WhatsApp</button>
-            `;
-            batteryInfoContainer.appendChild(batteryItem);
-        });
-
-        document.getElementById('overlay').style.display = 'flex';
-    }
-
-    // Display inverter battery info when form is submitted
-    function displayInverterBatteryInfo(event) {
-        event.preventDefault();
-        const brand = document.getElementById('inverter-battery-brand').value;
-        const capacity = document.getElementById('inverter-capacity').value;
-        const state = document.getElementById('inverter-state').value;
-        const city = document.getElementById('inverter-city').value;
-
-        const inverterBatteryData = [];
-
-        // Dynamic content based on selected brand for inverter batteries
-        if (brand === 'Exide') {
-            inverterBatteryData.push({
-                name: `Exide INVAMASTER IM${capacity}00 (${capacity} Ah)`,
-                image: "[https://via.placeholder.com/150x150?text=Exide+Inverter](https://via.placeholder.com/150x150?text=Exide+Inverter)",
-                description: `High-performance Exide inverter battery, ${capacity} Ah capacity, ideal for long power backups. Comes with a 36-month warranty. Location: ${city}, ${state}.`,
-                price: '₹' + (parseInt(capacity) * 100).toLocaleString('en-IN'), // Example price calculation
-                type: 'Inverter'
-            });
-        } else if (brand === 'Amaron') {
-            inverterBatteryData.push({
-                name: `Amaron Tall Tubular Battery ${capacity}Ah`,
-                image: "[https://via.placeholder.com/150x150?text=Amaron+Inverter](https://via.placeholder.com/150x150?text=Amaron+Inverter)",
-                description: `Durable Amaron tall tubular battery, ${capacity}Ah, designed for deep discharge cycles and excellent power output. 48-month warranty. Location: ${city}, ${state}.`,
-                price: '₹' + (parseInt(capacity) * 110).toLocaleString('en-IN'),
-                type: 'Inverter'
-            });
-        } else if (brand === 'Luminous') {
-            inverterBatteryData.push({
-                name: `Luminous Shakti Charge ${capacity}000 (${capacity} Ah)`,
-                image: "[https://via.placeholder.com/150x150?text=Luminous+Inverter](https://via.placeholder.com/150x150?text=Luminous+Inverter)",
-                description: `Robust Luminous inverter battery, ${capacity} Ah, provides reliable power backup for homes and offices. Features fast charging and long life. 42-month warranty. Location: ${city}, ${state}.`,
-                price: '₹' + (parseInt(capacity) * 95).toLocaleString('en-IN'),
-                type: 'Inverter'
-            });
-        } else {
-             // Generic for other brands or if "Select Battery Brand" is chosen
-             inverterBatteryData.push({
-                name: `${brand || 'Generic'} Inverter Battery ${capacity}Ah`,
-                image: "[https://via.placeholder.com/150x150?text=Inverter+Battery](https://via.placeholder.com/150x150?text=Inverter+Battery)",
-                description: `A ${brand || 'generic'} inverter battery with ${capacity} Ah capacity. Location: ${city}, ${state}.`,
-                price: '₹' + (parseInt(capacity) * 90).toLocaleString('en-IN'),
-                type: 'Inverter'
-            });
-        }
-
-
-        const batteryInfoContainer = document.getElementById('battery-info');
-        batteryInfoContainer.innerHTML = '';
-
-        inverterBatteryData.forEach(battery => {
-            const batteryItem = document.createElement('div');
-            batteryItem.classList.add('battery-item');
-            batteryItem.innerHTML = `
-                <img src="${battery.image}" alt="${battery.name}">
-                <h4>${battery.name}</h4>
-                <p>${battery.description}</p>
-                <button onclick="redirectToWhatsApp('${battery.name}', '${battery.price}', '${battery.description}', '${battery.type}')">Order on WhatsApp</button>
-            `;
-            batteryInfoContainer.appendChild(batteryItem);
-        });
-
-        document.getElementById('overlay').style.display = 'flex';
-    }
-
-
-    // Generic close overlay/modal function
-    function closeModal(id) {
-        document.getElementById(id).style.display = 'none';
-    }
-
-    function closeOverlay() {
-        document.getElementById('overlay').style.display = 'none';
-    }
-
-    function redirectToWhatsApp(productName, price, description, batteryType) {
-        let additionalDetails = "";
-        if (batteryType === 'Car') {
-            additionalDetails = `\nManufacturer: ${document.getElementById('manufacturer').value}\nCar Model: ${document.getElementById('car-model').value}\nBattery Brand: ${document.getElementById('car-battery-brand').value}\nState: ${document.getElementById('car-state').value}\nCity: ${document.getElementById('car-city').value}`;
-        } else if (batteryType === 'Inverter') {
-            additionalDetails = `\nBattery Brand: ${document.getElementById('inverter-battery-brand').value}\nCapacity: ${document.getElementById('inverter-capacity').value} Ah\nState: ${document.getElementById('inverter-state').value}\nCity: ${document.getElementById('inverter-city').value}`;
-        }
-
-        const message = encodeURIComponent(`Hello! I would like to order the following ${batteryType} battery:\n\nProduct: ${productName}\nPrice: ${price}\nDescription: ${description}${additionalDetails}`);
-        const whatsappURL = `https://wa.me/+919902555479?text=${message}`;
-        window.location.href = whatsappURL;
-    }
-
-    // Close modals when clicking outside or pressing Escape
-    window.onclick = function(event) {
-        const modals = ['overlay', 'exideModal', 'amaronModal', 'luminousModal'];
-        modals.forEach(modalId => {
-            const modal = document.getElementById(modalId);
-            if (event.target === modal) {
-                closeModal(modalId);
-            }
-        });
-    };
-
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            const modals = ['overlay', 'exideModal', 'amaronModal', 'luminousModal'];
-            modals.forEach(modalId => {
-                closeModal(modalId);
-            });
-        }
-    });
-
-    // Initialize the car battery form and display it when the page loads
-    document.addEventListener('DOMContentLoaded', () => {
-        initializeCarForm();
-        showForm('car'); // Display car battery form by default
-    });
     // Enhanced battery details
      let batteryDetails = {
         "KIA Carnival": [
