@@ -902,132 +902,95 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	      <p class="s-two-definition s-definition">
     <h2 class="s-two-slogan" style="color:black; text-decoration:overline;">Long-Lasting Energy For All Your Devices</h2>
 
-    <div class="form-container" id="battery-form" style="display:block;">  
-        <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
-
-        <!-- Category Buttons -->
-        <div class="button-group">
+  <div class="button-group">
             <button class="battery-button" onclick="showForm('car')">
-                <img src="car.jpg" alt="Car Battery" style="width: 70px;">
+                <img src="car.jpg" alt="Car Battery">
                 <div>Car Battery</div>
             </button>
             <button class="battery-button" onclick="showForm('inverter')">
-                <img src="inverter.jpeg" alt="Inverter Battery" style="width: 70px;">
+                <img src="inverter.jpeg" alt="Inverter Battery">
                 <div>Inverter Battery</div>
             </button>
         </div>
 
         <!-- Car Battery Form -->
-        <form id="car-form" onsubmit="return displayBatteryInfo(event);">
-            <label for="manufacturer" style="color: black; text-decoration: overline;">Manufacturer:</label>
-            <select id="manufacturer" required>
-                <option value="">Select Manufacturer</option>
-                <option value="KIA">KIA</option>
-                <option value="MG HECTOR">MG HECTOR</option>
-                <option value="Maruti Suzuki">Maruti Suzuki</option>
-                <option value="Hyundai">Hyundai</option>
-                <option value="Honda">Honda</option>
-                <option value="Skoda">Skoda</option>
-                <option value="Tata motors">Tata motors</option>
-                <option value="FORD">FORD</option>
-                <option value="Fiat">Fiat</option>
-                <option value="BMW">BMW</option>
-                <option value="MINI">MINI</option>
-                <option value="Audi">Audi</option>
-                <option value="Jaguar">Jaguar</option>
-                <option value="Volkswagen">Volkswagen</option>
-                <option value="JEEP">JEEP</option>
-                <option value="Chevrolet">Chevrolet</option>
-                <option value="Toyota">Toyota</option>
-                <option value="Nissan">Nissan</option>
-                <option value="VOLVO">VOLVO</option>
-                <option value="Mahindra">Mahindra</option>
-                <option value="Renault">Renault</option>
-                <option value="ICML">ICML</option>
-                <option value="Force motors">Force motors</option>
-                <option value="BENTLEY">BENTLEY</option>
-            </select>
+        <div id="car-form" class="form-section active">
+            <h3 style="text-decoration: overline;">Car Battery Order Form</h3>
+            <form onsubmit="return false;">
+                <label for="manufacturer">Manufacturer:</label>
+                <select id="manufacturer" required>
+                    <option value="">Select Manufacturer</option>
+                    <option value="KIA">KIA</option>
+                    <option value="MG HECTOR">MG HECTOR</option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <!-- Add all other options as needed -->
+                </select>
 
-            <label for="car-model" style="color: black; text-decoration: overline;">Car Model:</label>
-            <select id="car-model" required>
-                <option value="">Select Car Model</option>
-                <option value="Seltos">Seltos</option>
-                <option value="Creta">Creta</option>
-                <option value="City">City</option>
-                <option value="Swift">Swift</option>
-                <option value="Fortuner">Fortuner</option>
-            </select>
+                <label for="car-model">Car Model:</label>
+                <select id="car-model" required>
+                    <option value="">Select Car Model</option>
+                </select>
 
-            <label for="battery-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
-            <select id="battery-brand" required>
-                <option value="">Select Battery Brand</option>
-                <option value="ALL Brand">ALL Brand</option>
-                <option value="Amaron">Amaron</option>
-                <option value="Exide">Exide</option>
-                <option value="PowerZONE">PowerZONE</option>
-                <option value="SF Sonic">SF Sonic</option>
-                <option value="BOSCH">BOSCH</option>
-                <option value="Livfast">Livfast</option>
-            </select>
+                <label for="battery-brand">Battery Brand:</label>
+                <select id="battery-brand" required>
+                    <option value="">Select Battery Brand</option>
+                    <option value="Amaron">Amaron</option>
+                    <option value="Exide">Exide</option>
+                    <!-- Add other brands -->
+                </select>
 
-            <label for="state" style="color: black; text-decoration: overline;">State:</label>
-            <select id="state" required>
-                <option value="">Select State</option>
-                <option value="karnataka">Karnataka</option>
-                <option value="maharashtra">Maharashtra</option>
-            </select>
+                <label for="state">State:</label>
+                <select id="state" required>
+                    <option value="">Select State</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
 
-            <label for="city" style="color: black; text-decoration: overline;">City:</label>
-            <select id="city" required>
-                <option value="">Select City</option>
-                <option value="Bengaluru">Bengaluru</option>
-                <option value="Mysuru">Mysuru</option>
-                <option value="Mumbai">Mumbai</option>
-            </select>
-
-            <button type="submit">Find</button>
-        </form>
+                <label for="city">City:</label>
+                <select id="city" required>
+                    <option value="">Select City</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+            </form>
+        </div>
 
         <!-- Inverter Battery Form -->
-        <form id="inverter-form" onsubmit="return displayBatteryInfo(event);" style="display:none;">
-            <label for="inverter-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
-            <select id="inverter-brand" required>
-                <option value="">Select Battery Brand</option>
-                <option value="Luminous">Luminous</option>
-                <option value="Exide">Exide</option>
-                <option value="Amaron">Amaron</option>
-                <option value="Livguard">Livguard</option>
-                <option value="Microtek">Microtek</option>
-                <option value="Okaya">Okaya</option>
-            </select>
+        <div id="inverter-form" class="form-section">
+            <h3 style="text-decoration: overline;">Inverter Battery Order Form</h3>
+            <form onsubmit="return false;">
+                <label for="inverter-brand">Inverter Brand:</label>
+                <select id="inverter-brand" required>
+                    <option value="">Select Inverter Brand</option>
+                    <option value="Luminous">Luminous</option>
+                    <option value="Amaron">Amaron</option>
+                    <option value="Exide">Exide</option>
+                    <option value="Microtek">Microtek</option>
+                </select>
 
-            <label for="inverter-capacity" style="color: black; text-decoration: overline;">Battery Capacity:</label>
-            <select id="inverter-capacity" required>
-                <option value="">Select Capacity</option>
-                <option value="100Ah">100Ah</option>
-                <option value="120Ah">120Ah</option>
-                <option value="150Ah">150Ah</option>
-                <option value="180Ah">180Ah</option>
-                <option value="200Ah">200Ah</option>
-            </select>
+                <label for="inverter-capacity">Capacity:</label>
+                <select id="inverter-capacity" required>
+                    <option value="">Select Capacity</option>
+                    <option value="150Ah">150Ah</option>
+                    <option value="180Ah">180Ah</option>
+                    <option value="200Ah">200Ah</option>
+                </select>
 
-            <label for="state2" style="color: black; text-decoration: overline;">State:</label>
-            <select id="state2" required>
-                <option value="">Select State</option>
-                <option value="karnataka">Karnataka</option>
-                <option value="maharashtra">Maharashtra</option>
-            </select>
+                <label for="state2">State:</label>
+                <select id="state2" required>
+                    <option value="">Select State</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
 
-            <label for="city2" style="color: black; text-decoration: overline;">City:</label>
-            <select id="city2" required>
-                <option value="">Select City</option>
-                <option value="Bengaluru">Bengaluru</option>
-                <option value="Mysuru">Mysuru</option>
-                <option value="Mumbai">Mumbai</option>
-            </select>
-
-            <button type="submit">Find</button>
-        </form>
+                <label for="city2">City:</label>
+                <select id="city2" required>
+                    <option value="">Select City</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+            </form>
+        </div>
     </div>
 
     <script>
@@ -1036,21 +999,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             const inverterForm = document.getElementById("inverter-form");
 
             if (type === 'car') {
-                carForm.style.display = "block";
-                inverterForm.style.display = "none";
+                carForm.classList.add("active");
+                inverterForm.classList.remove("active");
             } else {
-                carForm.style.display = "none";
-                inverterForm.style.display = "block";
+                inverterForm.classList.add("active");
+                carForm.classList.remove("active");
             }
         }
-
-        function displayBatteryInfo(event) {
-            event.preventDefault();
-            alert("Form submitted! You can integrate actual logic here.");
-            return false;
-        }
     </script>
-
 
         <!-- --- section two --- -->
      
