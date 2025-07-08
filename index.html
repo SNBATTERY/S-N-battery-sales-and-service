@@ -914,7 +914,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
             <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
 
-  <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
+
+		 <div class="form-container"  style="display:none;">
+            <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
             <form id="order-form" onsubmit="return displayBatteryInfo(event);">
                 <label for="manufacturer"style="color: black; text-decoration: overline;">Manufacturer:</label>
                 <select id="manufacturer" required>
@@ -987,7 +989,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <button type="submit">Find</button>
             </form>
-     
+        </div>
+
+        <!-- Overlay for Battery Details -->
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="closeOverlay()">&times;</span>
+                <div id="battery-info"></div> <!-- Container for battery images and descriptions -->
+            </div>
+        </div>
+		<div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="closeOverlay()">&times;</span>
+                <img id="battery-image" src="" alt="Battery">
+                <div id="battery-description" class="description"></div>
+            </div>
+        </div>
+		
+
+ 
     <div class="action-buttons-container">
   <a href="tel:9902555479">
     <button class="action-btn btn-call btn-primary call-action-btn">
