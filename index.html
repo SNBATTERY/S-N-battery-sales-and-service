@@ -914,98 +914,124 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
             <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
 
+<div class="form-container" id="battery-form">
+    <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
+    <form id="order-form" onsubmit="return displayBatteryInfo(event);">
+        <label for="manufacturer" style="color: black; text-decoration: overline;">Manufacturer:</label>
+        <select id="manufacturer" required>
+            <option value="">Select Manufacturer</option>
+            <option value="KIA">KIA</option>
+            <option value="MG HECTOR">MG HECTOR</option>
+            <option value="Maruti Suzuki">Maruti Suzuki</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Honda">Honda</option>
+            <!-- Add others as needed -->
+        </select>
 
-		 <div class="form-container"  style="display:none;">
-            <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
-            <form id="order-form" onsubmit="return displayBatteryInfo(event);">
-                <label for="manufacturer"style="color: black; text-decoration: overline;">Manufacturer:</label>
-                <select id="manufacturer" required>
-                    <option value="">Select Manufacturer</option>
-					<option value="KIA">KIA</option>
-                    <option value="MG HECTOR">MG HECTOR</option>
-                    <option value="Maruti Suzuki">Maruti Suzuki</option>
-                    <option value="Hyundai">Hyundai</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Skoda">Skoda</option>
-                    <option value="Tata motors">Tata motors</option>
-                    <option value="FORD">FORD</option>
-                    <option value="Fiat">Fiat</option>
-                    <option value="BMW">BMW</option>
-                    <option value="MINI">MINI</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Jaguar">Jaguar</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                    <option value="JEEP">JEEP</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Nissan">Nissan</option>
-                    <option value="VOLVO">VOLVO</option>
-                    <option value="Mahindra">Mahindra</option>
-                    <option value="Renault">Renault</option>
-                    <option value="ICML">ICML</option>
-                    <option value="Force motors">Force motors</option>
-                    <option value="BENTLEY">BENTLEY</option>
-                </select>
+        <label for="car-model" style="color: black; text-decoration: overline;">Car Model:</label>
+        <select id="car-model" required>
+            <option value="">Select Car Model</option>
+        </select>
 
-                   
+        <label for="battery-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
+        <select id="battery-brand" required>
+            <option value="">Select Battery Brand</option>
+            <option value="ALL Brand">ALL Brand</option>
+            <option value="Amaron">Amaron</option>
+            <option value="Exide">Exide</option>
+            <option value="PowerZONE">PowerZONE</option>
+        </select>
 
-                <label for="car-model" style="color: black; text-decoration: overline;">Car Model:</label>
-                <select id="car-model" required>
-                    <option value="">Select Car Model</option>
-                </select>
+        <label for="state" style="color: black; text-decoration: overline;">State:</label>
+        <select id="state" required>
+            <option value="">Select State</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="maharashtra">Maharashtra</option>
+        </select>
 
-                <label for="battery-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
-                <select id="battery-brand" required>
-                    <option value="">Select Battery Brand</option>
-					<option value="ALL Brand">ALL Brand</option>
-                    <option value="Amaron">Amaron</option>
-                    <option value="Exide">Exide</option>
-                    <option value="PowerZONE">PowerZONE</option>
-                    <option value="SF Sonic">SF Sonic</option>
-                    <option value="BOSCH">BOSCH</option>
-                    <option value="Livfast">Livfast</option>
-                </select>
+        <label for="city" style="color: black; text-decoration: overline;">City:</label>
+        <select id="city" required>
+            <option value="">Select City</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
 
-                    
+        <button type="submit">Find</button>
+    </form>
+</div>
 
-                <label for="state" style="color: black; text-decoration: overline;">State:</label>
-                <select id="state" required>
-                    <option value="">Select State</option>
-					
-                    <option value="karnataka">Karnataka</option>
-                    <option value="maharashtra">Maharashtra</option>
-                </select>
+<!-- Overlay for Battery Info -->
+<div id="overlay" class="overlay">
+    <div class="overlay-content">
+        <span class="close" onclick="closeOverlay()">&times;</span>
+        <div id="battery-info"></div>
+    </div>
+</div>
 
+<script>
+const carModels = {
+    "KIA": ["KIA Carnival", "KIA SELTOS DIESEL", "KIA SELTOS PETROL", "KIA SONET PETROL"],
+    "MG HECTOR": ["MG HECTOR Petrol", "MG HECTOR Diesel", "MG Glowstar"],
+    "Maruti Suzuki": ["Alto 800", "Celerio", "Swift", "Baleno"],
+    "Hyundai": ["i20", "Creta", "Verna"],
+    "Honda": ["City", "Amaze", "WR-V"]
+    // Add more as needed
+};
 
-                <label for="city" style="color: black; text-decoration: overline;">City:</label>
-                <select id="city" required>
-                    <option value="">Select City</option>
-					<option value="Bengaluru">Bengaluru</option>
-                    <option value="Mysuru">Mysuru</option>
-                    <option value="Mumbai">Mumbai</option>
-                </select>
+function showForm() {
+    document.getElementById('battery-form').style.display = 'block';
 
-                    
+    const manufacturerSelect = document.getElementById('manufacturer');
+    manufacturerSelect.onchange = function () {
+        const carModelSelect = document.getElementById('car-model');
+        const selectedManufacturer = this.value;
 
-                <button type="submit">Find</button>
-            </form>
-        </div>
+        carModelSelect.innerHTML = '<option value="">Select Car Model</option>';
 
-        <!-- Overlay for Battery Details -->
-        <div id="overlay" class="overlay">
-            <div class="overlay-content">
-                <span class="close" onclick="closeOverlay()">&times;</span>
-                <div id="battery-info"></div> <!-- Container for battery images and descriptions -->
-            </div>
-        </div>
-		<div id="overlay" class="overlay">
-            <div class="overlay-content">
-                <span class="close" onclick="closeOverlay()">&times;</span>
-                <img id="battery-image" src="" alt="Battery">
-                <div id="battery-description" class="description"></div>
-            </div>
-        </div>
-		
+        if (carModels[selectedManufacturer]) {
+            carModels[selectedManufacturer].forEach(model => {
+                const option = document.createElement('option');
+                option.value = model;
+                option.textContent = model;
+                carModelSelect.appendChild(option);
+            });
+        }
+    };
+}
+
+function displayBatteryInfo(event) {
+    event.preventDefault();
+
+    const manufacturer = document.getElementById('manufacturer').value;
+    const model = document.getElementById('car-model').value;
+    const brand = document.getElementById('battery-brand').value;
+    const state = document.getElementById('state').value;
+    const city = document.getElementById('city').value;
+
+    const infoHTML = `
+        <h3>Battery Info</h3>
+        <p><strong>Manufacturer:</strong> ${manufacturer}</p>
+        <p><strong>Model:</strong> ${model}</p>
+        <p><strong>Battery Brand:</strong> ${brand}</p>
+        <p><strong>State:</strong> ${state}</p>
+        <p><strong>City:</strong> ${city}</p>
+    `;
+
+    document.getElementById('battery-info').innerHTML = infoHTML;
+    document.getElementById('overlay').style.display = 'block';
+}
+
+function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+}
+
+// Show form on page load
+window.onload = function () {
+    showForm();
+};
+</script>
+
 
  
     <div class="action-buttons-container">
