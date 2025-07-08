@@ -936,20 +936,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </form>
 </div>
 
-<!-- ✅ FORM B: Shown Only After Button Click -->
-<button onclick="showFormB()">Car Battery</button>
-
-<div class="form-container" id="battery-form-button" style="display:none;">
-  <h3>Car Battery Order Form</h3>
-  <form onsubmit="return displayBatteryInfo('button', event);">
+<!-- ✅ Auto-Visible Form (Form A) -->
+<div class="form-container" id="battery-form-auto">
+  <h3>Battery Order Form (Auto)</h3>
+  <form onsubmit="return displayAutoFormInfo(event);">
     <label>Manufacturer:</label>
-    <select id="manufacturer-button" required>
+    <select id="manufacturer-auto" required onchange="populateAutoCarModels()">
       <option value="">Select</option>
       <option value="KIA">KIA</option>
+      <option value="MG HECTOR">MG HECTOR</option>
     </select>
 
     <label>Car Model:</label>
-    <select id="car-model-button" required>
+    <select id="car-model-auto" required>
       <option value="">Select</option>
     </select>
 
@@ -957,32 +956,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </form>
 </div>
 
-<!-- ✅ Overlay Display -->
-<div id="overlay" class="overlay" style="display:none;">
+<!-- ✅ Overlay for Auto Form -->
+<div id="overlay-auto" class="overlay" style="display:none;">
   <div class="overlay-content">
-    <span class="close" onclick="closeOverlay()">&times;</span>
-    <div id="battery-info"></div>
+    <span class="close" onclick="document.getElementById('overlay-auto').style.display='none'">&times;</span>
+    <div id="battery-info-auto"></div>
   </div>
 </div>
 
 <style>
-  .form-container { max-width: 500px; margin: 20px auto; background: #f9f9f9; padding: 20px; border-radius: 10px; }
-  .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; }
-  .overlay-content { background: white; margin: 50px auto; padding: 20px; border-radius: 10px; max-width: 600px; position: relative; }
-  .close { position: absolute; top: 10px; right: 15px; font-size: 25px; cursor: pointer; color: red; }
+  .form-container { max-width: 500px; margin: 20px auto; background: #f0f0f0; padding: 20px; border-radius: 10px; }
+  .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; }
+  .overlay-content { background: #fff; margin: 100px auto; padding: 20px; border-radius: 10px; max-width: 600px; position: relative; }
+  .close { position: absolute; top: 10px; right: 15px; font-size: 25px; color: red; cursor: pointer; }
 </style>
 
 <script>
-  const carModels = {
-    KIA: ["KIA Carnival", "KIA SELTOS PETROL"]
+  const carModelsAuto = {
+    "KIA": ["KIA Carnival", "KIA SELTOS PETROL"],
+    "MG HECTOR": ["MG HECTOR Diesel", "MG Glowstar"]
   };
 
-  function populateModels(formType) {
-    const manu = document.getElementById(`manufacturer-${formType}`).value;
-    const modelSelect = document.getElementById(`car-model-${formType}`);
+  function populateAutoCarModels() {
+    const manu = document.getElementById("manufacturer-auto").value;
+    const modelSelect = document.getElementById("car-model-auto");
     modelSelect.innerHTML = '<option value="">Select</option>';
-    if (carModels[manu]) {
-      carModels[manu].forEach(model => {
+    if (carModelsAuto[manu]) {
+      carModelsAuto[manu].forEach(model => {
         const option = document.createElement("option");
         option.value = model;
         option.textContent = model;
@@ -991,33 +991,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
 
-  // Bind manufacturer change to both forms
-  document.getElementById('manufacturer-default').onchange = () => populateModels('default');
-  document.getElementById('manufacturer-button').onchange = () => populateModels('button');
-
-  // Show Form B on button click
-  function showFormB() {
-    document.getElementById("battery-form-button").style.display = "block";
-  }
-
-  // Handle submit
-  function displayBatteryInfo(formType, event) {
+  function displayAutoFormInfo(event) {
     event.preventDefault();
-    const manu = document.getElementById(`manufacturer-${formType}`).value;
-    const model = document.getElementById(`car-model-${formType}`).value;
-
-    document.getElementById('battery-info').innerHTML = `
+    const manu = document.getElementById("manufacturer-auto").value;
+    const model = document.getElementById("car-model-auto").value;
+    document.getElementById("battery-info-auto").innerHTML = `
       <h3>Selected Info:</h3>
       <p>Manufacturer: ${manu}</p>
       <p>Model: ${model}</p>
     `;
-    document.getElementById('overlay').style.display = 'block';
-  }
-
-  function closeOverlay() {
-    document.getElementById('overlay').style.display = 'none';
+    document.getElementById("overlay-auto").style.display = 'block';
   }
 </script>
+
     <div class="action-buttons-container">
   <a href="tel:9902555479">
     <button class="action-btn btn-call btn-primary call-action-btn">
