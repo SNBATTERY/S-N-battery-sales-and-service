@@ -6,7 +6,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -904,66 +903,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          
         </div>
       </header>
-<!-- Quote Slideshow Section -->
-<div class="quote-slideshow">
-  <div class="quote-slide fade">"A battery is the heart of your car. Keep it healthy!"</div>
-  <div class="quote-slide fade">"Invest in quality batteries for a smooth ride!"</div>
-  <div class="quote-slide fade">"Don’t let a dead battery ruin your day. Check it regularly!"</div>
+	   <div class="quote-slideshow">
+            <div class="quote-slide fade">"A battery is the heart of your car. Keep it healthy!"</div>
+            <div class="quote-slide fade">"Invest in quality batteries for a smooth ride!"</div>
+            <div class="quote-slide fade">"Don’t let a dead battery ruin your day. Check it regularly!"</div>
+        </div>
+      <main id="hero" class="main">
+        <section class="section section-one">
+         <br>
+            <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
+            <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
+    <div class="action-buttons-container">
+  <a href="tel:9902555479">
+    <button class="action-btn btn-call btn-primary call-action-btn">
+      <i class="bx bx-phone in-btn-icon"></i>CALL
+    </button>
+  </a>
+  
 </div>
 
-<main id="hero" class="main">
-  <section class="section section-one">
-    <br>
-    <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
-    <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">We charge your world.</h2>
-
-    <!-- ✅ AUTO-VISIBLE BATTERY FORM (Displayed First) -->
-    <div class="form-container" id="battery-form-default">
-      <h3>Battery Order Form (Auto)</h3>
-      <form onsubmit="return handleFormSubmit('default', event);">
-        <label for="manufacturer-default">Manufacturer:</label>
-        <select id="manufacturer-default" onchange="populateModels('default')" required>
-          <option value="">Select</option>
-          <option value="KIA">KIA</option>
-          <option value="MG HECTOR">MG HECTOR</option>
-        </select>
-
-        <label for="car-model-default">Car Model:</label>
-        <select id="car-model-default" required>
-          <option value="">Select</option>
-        </select>
-
-        <button type="submit">Find</button>
-      </form>
-    </div>
-
-    <!-- ✅ Button to Show Car Battery Form -->
-    <button onclick="document.getElementById('car-battery-form').style.display='block'" style="margin: 20px 0;">🔋 Car Battery</button>
-
-    <!-- ✅ HIDDEN FORM: Car Battery Form -->
-    <div class="form-container" id="car-battery-form" style="display: none;">
-      <h3>Car Battery Order Form</h3>
-      <form onsubmit="return handleFormSubmit('car', event);">
-        <label for="manufacturer-car">Manufacturer:</label>
-        <select id="manufacturer-car" onchange="populateModels('car')" required>
-          <option value="">Select</option>
-          <option value="KIA">KIA</option>
-          <option value="MG HECTOR">MG HECTOR</option>
-        </select>
-
-        <label for="car-model-car">Car Model:</label>
-        <select id="car-model-car" required>
-          <option value="">Select</option>
-        </select>
-
-        <button type="submit">Find</button>
-      </form>
-    </div>
-
-    <!-- ✅ Output Display -->
-    <div id="output" style="text-align: center; margin-top: 20px;"></div>
-  </section>
-</main>
+          </div>
 
           <img src="WhatsApp Image 2024-10-14 at 22.35.53_6078f6f0.jpg"" height="30" width="20" alt="woman licking ice cream and smiling" class="hero-lady-img" loading="lazy">
         </section>
@@ -8804,42 +8763,6 @@ function closeOverlay() {
     document.getElementById('overlay').style.display = 'none';
 }
 
-
-
-
-
-
-	<script>
-  const carModels = {
-    "KIA": ["KIA Carnival", "KIA SELTOS PETROL"],
-    "MG HECTOR": ["MG HECTOR Diesel", "MG Glowstar"]
-  };
-
-  function populateModels(formType) {
-    const manu = document.getElementById(`manufacturer-${formType}`).value;
-    const modelSelect = document.getElementById(`car-model-${formType}`);
-    modelSelect.innerHTML = '<option value="">Select</option>';
-    if (carModels[manu]) {
-      carModels[manu].forEach(model => {
-        const option = document.createElement("option");
-        option.value = model;
-        option.textContent = model;
-        modelSelect.appendChild(option);
-      });
-    }
-  }
-
-  function handleFormSubmit(formType, event) {
-    event.preventDefault();
-    const manu = document.getElementById(`manufacturer-${formType}`).value;
-    const model = document.getElementById(`car-model-${formType}`).value;
-    document.getElementById("output").innerHTML = `
-      <h3>Selected Info:</h3>
-      <p>Manufacturer: ${manu}</p>
-      <p>Car Model: ${model}</p>
-    `;
-    return false;
-  }
 </script>
 
    <div class="s-two-products">
@@ -9115,8 +9038,6 @@ Open 7AM Closes 10 PM
     <p>Free delivery and installation are available for select products. Customers must ensure someone is available to receive and confirm the delivery...</p>
     <p>We are not liable for delivery delays due to weather, traffic, or other circumstances beyond our control.</p>
   </div>
-
-	
 
   <script>
     function showSection(id) {
