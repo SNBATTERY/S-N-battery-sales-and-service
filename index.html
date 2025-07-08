@@ -914,6 +914,110 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          <br>
             <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
             <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
+
+
+
+
+		<div class="form-container" id="battery-form-default">
+  <h3>Default Battery Order Form</h3>
+  <form onsubmit="return displayBatteryInfo('default', event);">
+    <label>Manufacturer:</label>
+    <select id="manufacturer-default" required>
+      <option value="">Select</option>
+      <option value="KIA">KIA</option>
+    </select>
+
+    <label>Car Model:</label>
+    <select id="car-model-default" required>
+      <option value="">Select</option>
+    </select>
+
+    <button type="submit">Find</button>
+  </form>
+</div>
+
+<!-- ✅ FORM B: Shown Only After Button Click -->
+<button onclick="showFormB()">Car Battery</button>
+
+<div class="form-container" id="battery-form-button" style="display:none;">
+  <h3>Car Battery Order Form</h3>
+  <form onsubmit="return displayBatteryInfo('button', event);">
+    <label>Manufacturer:</label>
+    <select id="manufacturer-button" required>
+      <option value="">Select</option>
+      <option value="KIA">KIA</option>
+    </select>
+
+    <label>Car Model:</label>
+    <select id="car-model-button" required>
+      <option value="">Select</option>
+    </select>
+
+    <button type="submit">Find</button>
+  </form>
+</div>
+
+<!-- ✅ Overlay Display -->
+<div id="overlay" class="overlay" style="display:none;">
+  <div class="overlay-content">
+    <span class="close" onclick="closeOverlay()">&times;</span>
+    <div id="battery-info"></div>
+  </div>
+</div>
+
+<style>
+  .form-container { max-width: 500px; margin: 20px auto; background: #f9f9f9; padding: 20px; border-radius: 10px; }
+  .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; }
+  .overlay-content { background: white; margin: 50px auto; padding: 20px; border-radius: 10px; max-width: 600px; position: relative; }
+  .close { position: absolute; top: 10px; right: 15px; font-size: 25px; cursor: pointer; color: red; }
+</style>
+
+<script>
+  const carModels = {
+    KIA: ["KIA Carnival", "KIA SELTOS PETROL"]
+  };
+
+  function populateModels(formType) {
+    const manu = document.getElementById(`manufacturer-${formType}`).value;
+    const modelSelect = document.getElementById(`car-model-${formType}`);
+    modelSelect.innerHTML = '<option value="">Select</option>';
+    if (carModels[manu]) {
+      carModels[manu].forEach(model => {
+        const option = document.createElement("option");
+        option.value = model;
+        option.textContent = model;
+        modelSelect.appendChild(option);
+      });
+    }
+  }
+
+  // Bind manufacturer change to both forms
+  document.getElementById('manufacturer-default').onchange = () => populateModels('default');
+  document.getElementById('manufacturer-button').onchange = () => populateModels('button');
+
+  // Show Form B on button click
+  function showFormB() {
+    document.getElementById("battery-form-button").style.display = "block";
+  }
+
+  // Handle submit
+  function displayBatteryInfo(formType, event) {
+    event.preventDefault();
+    const manu = document.getElementById(`manufacturer-${formType}`).value;
+    const model = document.getElementById(`car-model-${formType}`).value;
+
+    document.getElementById('battery-info').innerHTML = `
+      <h3>Selected Info:</h3>
+      <p>Manufacturer: ${manu}</p>
+      <p>Model: ${model}</p>
+    `;
+    document.getElementById('overlay').style.display = 'block';
+  }
+
+  function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+</script>
     <div class="action-buttons-container">
   <a href="tel:9902555479">
     <button class="action-btn btn-call btn-primary call-action-btn">
