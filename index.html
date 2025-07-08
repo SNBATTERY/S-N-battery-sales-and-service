@@ -914,123 +914,142 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
             <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
 
-<div class="form-container" id="battery-form">
-    <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
-    <form id="order-form" onsubmit="return displayBatteryInfo(event);">
-        <label for="manufacturer" style="color: black; text-decoration: overline;">Manufacturer:</label>
-        <select id="manufacturer" required>
-            <option value="">Select Manufacturer</option>
-            <option value="KIA">KIA</option>
-            <option value="MG HECTOR">MG HECTOR</option>
-            <option value="Maruti Suzuki">Maruti Suzuki</option>
-            <option value="Hyundai">Hyundai</option>
-            <option value="Honda">Honda</option>
-            <!-- Add others as needed -->
-        </select>
+<div class="form-container">
+  <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
+  <form id="order-form" onsubmit="return displayBatteryInfo(event);">
+    <label for="manufacturer">Manufacturer:</label>
+    <select id="manufacturer" required>
+      <option value="">Select Manufacturer</option>
+      <option value="KIA">KIA</option>
+      <option value="MG HECTOR">MG HECTOR</option>
+    </select>
 
-        <label for="car-model" style="color: black; text-decoration: overline;">Car Model:</label>
-        <select id="car-model" required>
-            <option value="">Select Car Model</option>
-        </select>
+    <label for="car-model">Car Model:</label>
+    <select id="car-model" required>
+      <option value="">Select Car Model</option>
+    </select>
 
-        <label for="battery-brand" style="color: black; text-decoration: overline;">Battery Brand:</label>
-        <select id="battery-brand" required>
-            <option value="">Select Battery Brand</option>
-            <option value="ALL Brand">ALL Brand</option>
-            <option value="Amaron">Amaron</option>
-            <option value="Exide">Exide</option>
-            <option value="PowerZONE">PowerZONE</option>
-        </select>
+    <label for="battery-brand">Battery Brand:</label>
+    <select id="battery-brand" required>
+      <option value="">Select Battery Brand</option>
+      <option value="ALL Brand">ALL Brand</option>
+      <option value="Amaron">Amaron</option>
+      <option value="Exide">Exide</option>
+    </select>
 
-        <label for="state" style="color: black; text-decoration: overline;">State:</label>
-        <select id="state" required>
-            <option value="">Select State</option>
-            <option value="karnataka">Karnataka</option>
-            <option value="maharashtra">Maharashtra</option>
-        </select>
+    <label for="state">State:</label>
+    <select id="state" required>
+      <option value="">Select State</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Maharashtra">Maharashtra</option>
+    </select>
 
-        <label for="city" style="color: black; text-decoration: overline;">City:</label>
-        <select id="city" required>
-            <option value="">Select City</option>
-            <option value="Bengaluru">Bengaluru</option>
-            <option value="Mysuru">Mysuru</option>
-            <option value="Mumbai">Mumbai</option>
-        </select>
+    <label for="city">City:</label>
+    <select id="city" required>
+      <option value="">Select City</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Mumbai">Mumbai</option>
+    </select>
 
-        <button type="submit">Find</button>
-    </form>
+    <button type="submit">Find</button>
+  </form>
 </div>
 
-<!-- Overlay for Battery Info -->
+<!-- Overlay -->
 <div id="overlay" class="overlay">
-    <div class="overlay-content">
-        <span class="close" onclick="closeOverlay()">&times;</span>
-        <div id="battery-info"></div>
-    </div>
+  <div class="overlay-content">
+    <span class="close" onclick="closeOverlay()">&times;</span>
+    <div id="battery-info"></div>
+  </div>
 </div>
 
 <script>
-const carModels = {
-    "KIA": ["KIA Carnival", "KIA SELTOS DIESEL", "KIA SELTOS PETROL", "KIA SONET PETROL"],
-    "MG HECTOR": ["MG HECTOR Petrol", "MG HECTOR Diesel", "MG Glowstar"],
-    "Maruti Suzuki": ["Alto 800", "Celerio", "Swift", "Baleno"],
-    "Hyundai": ["i20", "Creta", "Verna"],
-    "Honda": ["City", "Amaze", "WR-V"]
-    // Add more as needed
-};
+  const carModels = {
+    "KIA": ["KIA Carnival", "KIA SELTOS PETROL", "KIA SELTOS DIESEL", "KIA SONET PETROL"],
+    "MG HECTOR": ["MG HECTOR Diesel", "MG Glowstar"]
+  };
 
-function showForm() {
-    document.getElementById('battery-form').style.display = 'block';
+  let batteryDetails = {
+    "KIA Carnival": [
+      {
+        modelName: "Exide FEY0-EY105D31L(85 AH)",
+        image: "ee.jpg",
+        description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+        price: "With Old Battery exchange(Same Ah): Rs.7640.<br>Without Old Battery: Rs. 9799",
+        features: "Reliable and durable.\nOffers high performance.",
+        recommended: "Best suited for urban driving."
+      },
+      {
+        modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+        image: "ee2.png",
+        description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+        price: "With Old Battery exchange(Same Ah): Rs 6900..<br>Without Old Battery: Rs.9050",
+        features: "Fast recharge. Temperature resistant.",
+        recommended: "Ideal for city driving."
+      }
+    ],
+    "MG Glowstar": [
+      {
+        modelName: "MG Glowstar Battery Special",
+        image: "glowstar.png",
+        description: "Glowstar specific battery with high endurance.",
+        price: "Rs.7000 with exchange",
+        features: "Eco friendly. Long life. Fast recharge.",
+        recommended: "Recommended for MG Glowstar users."
+      }
+    ]
+  };
 
-    const manufacturerSelect = document.getElementById('manufacturer');
-    manufacturerSelect.onchange = function () {
-        const carModelSelect = document.getElementById('car-model');
-        const selectedManufacturer = this.value;
+  function showCarModels() {
+    const manufacturer = document.getElementById("manufacturer").value;
+    const modelSelect = document.getElementById("car-model");
+    modelSelect.innerHTML = '<option value="">Select Car Model</option>';
 
-        carModelSelect.innerHTML = '<option value="">Select Car Model</option>';
+    if (carModels[manufacturer]) {
+      carModels[manufacturer].forEach(model => {
+        const option = document.createElement("option");
+        option.value = model;
+        option.textContent = model;
+        modelSelect.appendChild(option);
+      });
+    }
+  }
 
-        if (carModels[selectedManufacturer]) {
-            carModels[selectedManufacturer].forEach(model => {
-                const option = document.createElement('option');
-                option.value = model;
-                option.textContent = model;
-                carModelSelect.appendChild(option);
-            });
-        }
-    };
-}
+  document.getElementById("manufacturer").addEventListener("change", showCarModels);
 
-function displayBatteryInfo(event) {
+  function displayBatteryInfo(event) {
     event.preventDefault();
 
-    const manufacturer = document.getElementById('manufacturer').value;
-    const model = document.getElementById('car-model').value;
-    const brand = document.getElementById('battery-brand').value;
-    const state = document.getElementById('state').value;
-    const city = document.getElementById('city').value;
+    const selectedModel = document.getElementById("car-model").value;
+    const infoDiv = document.getElementById("battery-info");
+    infoDiv.innerHTML = "";
 
-    const infoHTML = `
-        <h3>Battery Info</h3>
-        <p><strong>Manufacturer:</strong> ${manufacturer}</p>
-        <p><strong>Model:</strong> ${model}</p>
-        <p><strong>Battery Brand:</strong> ${brand}</p>
-        <p><strong>State:</strong> ${state}</p>
-        <p><strong>City:</strong> ${city}</p>
-    `;
+    if (batteryDetails[selectedModel]) {
+      batteryDetails[selectedModel].forEach(battery => {
+        const card = document.createElement("div");
+        card.className = "battery-card";
+        card.innerHTML = `
+          <h4>${battery.modelName}</h4>
+          <img src="${battery.image}" alt="${battery.modelName}" />
+          <p><strong>Description:</strong> ${battery.description}</p>
+          <p><strong>Price:</strong> ${battery.price}</p>
+          <p><strong>Features:</strong><br>${battery.features.replace(/\n/g, "<br>")}</p>
+          <p><strong>Recommended:</strong> ${battery.recommended}</p>
+        `;
+        infoDiv.appendChild(card);
+      });
+    } else {
+      infoDiv.innerHTML = "<p>No battery details available for this model.</p>";
+    }
 
-    document.getElementById('battery-info').innerHTML = infoHTML;
-    document.getElementById('overlay').style.display = 'block';
-}
+    document.getElementById("overlay").style.display = "block";
+  }
 
-function closeOverlay() {
-    document.getElementById('overlay').style.display = 'none';
-}
-
-// Show form on page load
-window.onload = function () {
-    showForm();
-};
+  function closeOverlay() {
+    document.getElementById("overlay").style.display = "none";
+  }
 </script>
+
 
 
  
