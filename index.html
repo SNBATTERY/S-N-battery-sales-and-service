@@ -847,7 +847,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .active {
       display: block;
     }
-  * {
+   * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -855,94 +855,96 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     body {
       font-family: Arial, sans-serif;
-      background-color: white; /* Keep body clean */
+   
     }
 
-    /* Header Container */
+    /* Header */
     .header-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #1c1c1c;
-      padding: 14px 20px;
+      padding: 12px 20px;
       position: relative;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
-    /* Brand Logo + Text */
+    /* Logo + Brand */
     .brand-link {
       display: flex;
       align-items: center;
       text-decoration: none;
-      gap: 16px; /* Space between logo and text */
+      gap: 12px;
     }
 
     .brand-logo-box {
-      width: 48px;
-      height: 48px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       overflow: hidden;
       border: 2px solid #fdd835;
-      box-shadow: 0 0 6px rgba(253, 216, 53, 0.5);
     }
 
     .brand-logo {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
     .brand-name {
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 14px;
+      font-weight: 600;
       color: white;
-      padding: 8px 16px;
-      border-radius: 20px;
+      padding: 6px 12px;
+      border-radius: 16px;
       background: linear-gradient(90deg, #ff9800, #f44336, #9c27b0);
-      background-size: 200% auto;
-      animation: animateBackground 6s ease infinite;
-      box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      background-size: 150% auto;
+      animation: bgSlide 6s ease infinite;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
       white-space: nowrap;
+      transition: transform 0.3s ease;
     }
 
-    @keyframes animateBackground {
+    .brand-name:hover {
+      transform: scale(1.03);
+    }
+
+    @keyframes bgSlide {
       0% { background-position: 0% 50%; }
-      100% { background-position: 200% 50%; }
+      100% { background-position: 150% 50%; }
     }
 
-    /* ☰ Hamburger Icon */
+    /* Hamburger */
     .toggle-icon {
-      font-size: 32px;
+      font-size: 26px;
       color: white;
       cursor: pointer;
       z-index: 1001;
       margin-left: 20px;
-      padding: 8px 14px;
+      padding: 6px 12px;
       border-radius: 50px;
       background: linear-gradient(45deg, #ff9800, #f44336);
-      box-shadow: 0 0 12px rgba(255, 87, 34, 0.6);
+      box-shadow: 0 0 8px rgba(255, 87, 34, 0.6);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .toggle-icon:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+      box-shadow: 0 0 16px rgba(255, 87, 34, 0.8);
     }
 
-    /* Navigation Menu */
+    /* Menu Items */
     .menu-wrapper {
       display: none;
       flex-direction: column;
       background-color: #2c2c2c;
       position: absolute;
       right: 20px;
-      top: 70px;
+      top: 65px;
       border-radius: 10px;
       overflow: hidden;
       z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .menu-item {
@@ -952,7 +954,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .menu-anchor {
       display: block;
       color: white;
-      padding: 14px 20px;
+      padding: 12px 18px;
       text-decoration: overline;
     }
 
@@ -960,12 +962,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-color: #555;
     }
 
-    /* Show on Toggle */
     .menu-open {
       display: flex;
     }
 
-    /* Desktop Style */
+    /* Desktop View */
     @media (min-width: 768px) {
       .toggle-icon {
         display: none;
