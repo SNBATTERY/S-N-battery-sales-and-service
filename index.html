@@ -855,7 +855,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     body {
       font-family: Arial, sans-serif;
-     
+      background-color: white; /* Keep body clean */
     }
 
     /* Header Container */
@@ -869,50 +869,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
-    /* Brand Section */
+    /* Brand Logo + Text */
     .brand-link {
       display: flex;
       align-items: center;
       text-decoration: none;
+      gap: 16px; /* Space between logo and text */
     }
 
     .brand-logo-box {
-      margin-right: 12px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #fdd835;
+      box-shadow: 0 0 6px rgba(253, 216, 53, 0.5);
     }
 
     .brand-logo {
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      border: 2px solid #fdd835;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      display: block;
     }
 
     .brand-name {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       color: white;
-      padding: 6px 14px;
-      border-radius: 12px;
+      padding: 8px 16px;
+      border-radius: 20px;
       background: linear-gradient(90deg, #ff9800, #f44336, #9c27b0);
       background-size: 200% auto;
-      animation: brandglow 6s linear infinite;
+      animation: animateBackground 6s ease infinite;
       box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       white-space: nowrap;
     }
 
-    @keyframes brandglow {
+    @keyframes animateBackground {
       0% { background-position: 0% 50%; }
       100% { background-position: 200% 50%; }
     }
 
-    /* Hamburger */
+    /* ☰ Hamburger Icon */
     .toggle-icon {
-      font-size: 30px;
+      font-size: 32px;
       color: white;
       cursor: pointer;
       z-index: 1001;
+      margin-left: 20px;
+      padding: 8px 14px;
+      border-radius: 50px;
+      background: linear-gradient(45deg, #ff9800, #f44336);
+      box-shadow: 0 0 12px rgba(255, 87, 34, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .toggle-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
     }
 
     /* Navigation Menu */
@@ -944,10 +960,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-color: #555;
     }
 
+    /* Show on Toggle */
     .menu-open {
       display: flex;
     }
 
+    /* Desktop Style */
     @media (min-width: 768px) {
       .toggle-icon {
         display: none;
@@ -973,7 +991,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         background-color: #444;
       }
     }
-
 
 
     </style>
