@@ -854,8 +854,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
+      font-family: Arial, sans-serif;
+      background-color: white; /* Body remains default */
     }
 
     /* Header Container */
@@ -866,10 +866,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-color: #1c1c1c;
       padding: 14px 20px;
       position: relative;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
-    /* Brand */
+    /* Brand Section */
     .brand-link {
       display: flex;
       align-items: center;
@@ -893,30 +893,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-weight: bold;
       color: white;
       padding: 6px 14px;
-      border-radius: 30px;
-      background: linear-gradient(270deg, #ff9800, #f44336, #9c27b0, #3f51b5);
-      background-size: 800% 800%;
-      animation: glow-bg 10s ease infinite;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #ff9800, #f44336, #9c27b0);
+      background-size: 200% auto;
+      animation: brandglow 6s linear infinite;
       box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
       white-space: nowrap;
     }
 
-    @keyframes glow-bg {
+    @keyframes brandglow {
       0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
     }
 
-    /* Hamburger Icon */
+    /* Hamburger */
     .toggle-icon {
-      font-size: 32px;
+      font-size: 30px;
       color: white;
       cursor: pointer;
       z-index: 1001;
     }
 
-    /* Nav Menu */
+    /* Navigation Menu */
     .menu-wrapper {
       display: none;
       flex-direction: column;
@@ -927,7 +926,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 10px;
       overflow: hidden;
       z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     .menu-item {
@@ -939,19 +938,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: white;
       padding: 14px 20px;
       text-decoration: overline;
-      transition: background 0.3s;
     }
 
     .menu-anchor:hover {
       background-color: #555;
     }
 
-    /* Show menu when toggled */
     .menu-open {
       display: flex;
     }
 
-    /* Desktop view */
     @media (min-width: 768px) {
       .toggle-icon {
         display: none;
@@ -971,7 +967,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       .menu-anchor {
         padding: 10px 16px;
-        border-radius: 8px;
       }
 
       .menu-anchor:hover {
