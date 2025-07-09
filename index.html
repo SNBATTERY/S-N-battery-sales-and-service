@@ -848,12 +848,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: block;
     }
 
-
-
-
-
-
-		     * {
+   * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -863,79 +858,96 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: Arial, sans-serif;
     }
 
-    /* Main nav container */
-    .menu-container {
+    /* Header Wrapper */
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background-color: #222;
       padding: 12px 20px;
       position: relative;
     }
 
-    /* Hamburger icon */
-    .menu-button {
-      font-size: 32px;
-      color: #fff;
+    /* Branding Section */
+    .brand-link {
+      display: flex;
+      align-items: center;
+      text-decoration: overline;
+      color: white;
+    }
+
+    .brand-logo-box {
+      margin-right: 10px;
+    }
+
+    .brand-logo {
+      height: 40px;
+    }
+
+    .brand-name {
+      font-size: 16px;
+      color: white;
+    }
+
+    /* Toggle Button */
+    .toggle-icon {
+      font-size: 30px;
+      color: white;
       cursor: pointer;
-      position: absolute;
-      right: 20px;
-      top: 10px;
       z-index: 1001;
     }
 
-    /* Menu items container */
-    .menu-list {
+    /* Menu Section */
+    .menu-wrapper {
       display: none;
       flex-direction: column;
       background-color: #333;
       position: absolute;
       right: 20px;
-      top: 52px;
-      min-width: 180px;
+      top: 60px;
       border-radius: 8px;
       overflow: hidden;
       z-index: 1000;
     }
 
-    /* Menu item */
     .menu-item {
       border-bottom: 1px solid #444;
     }
 
-    .menu-link {
+    .menu-anchor {
       display: block;
       color: white;
       padding: 12px 18px;
       text-decoration: overline;
-      transition: background-color 0.3s;
     }
 
-    .menu-link:hover {
+    .menu-anchor:hover {
       background-color: #555;
     }
 
-    /* Show menu */
-    .menu-visible {
+    /* Show menu on click */
+    .menu-open {
       display: flex;
     }
 
-    /* Desktop mode */
+    /* Desktop Style */
     @media (min-width: 768px) {
-      .menu-button {
+      .toggle-icon {
         display: none;
       }
 
-      .menu-list {
+      .menu-wrapper {
         display: flex !important;
         position: static;
         flex-direction: row;
         background: none;
-        border: none;
       }
 
       .menu-item {
         border: none;
       }
 
-      .menu-link {
+      .menu-anchor {
         padding: 10px 16px;
       }
     }
@@ -964,39 +976,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-      <header class="container">
-       <header class="header-container">
-    <a href="#hero" class="logo clr-transition">
-      <div class="logo-container">
-        <img src="namratha.png" alt="Logo" class="logo-image">
+  <nav class="header-wrapper">
+    <!-- Brand Section -->
+    <a href="#hero" class="brand-link clr-transition">
+      <div class="brand-logo-box">
+        <img src="namratha.png" alt="Logo" class="brand-logo">
       </div>
-      <span class="logo-text">S N BATTERY SALES AND SERVICES</span>
+      <span class="brand-name">S N BATTERY SALES AND SERVICES</span>
     </a>
 
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <!-- Hamburger Button -->
+    <div class="toggle-icon" onclick="showHideMenu()">☰</div>
 
-    <ul class="nav-items" id="navMenu">
-      <li class="nav-item"><a href="#hero" class="nav-link clr-transition" style="text-decoration:overline;">Home</a></li>
-      <li class="nav-item"><a href="#products" class="nav-link clr-transition" style="text-decoration:overline;">Product</a></li>
-      <li class="nav-item"><a href="#about" class="nav-link clr-transition" style="text-decoration:overline;">About</a></li>
-      <li class="nav-item"><a href="#FAQ's" class="nav-link clr-transition" style="text-decoration:overline;">FAQ's</a></li>
-      <li class="nav-item"><a href="#contact" class="nav-link clr-transition" style="text-decoration:overline;">Contact</a></li>
+    <!-- Navigation Menu -->
+    <ul class="menu-wrapper" id="customNav">
+      <li class="menu-item"><a href="#hero" class="menu-anchor clr-transition">Home</a></li>
+      <li class="menu-item"><a href="#products" class="menu-anchor clr-transition">Product</a></li>
+      <li class="menu-item"><a href="#about" class="menu-anchor clr-transition">About</a></li>
+      <li class="menu-item"><a href="#FAQ's" class="menu-anchor clr-transition">FAQ's</a></li>
+      <li class="menu-item"><a href="#contact" class="menu-anchor clr-transition">Contact</a></li>
     </ul>
-  </header>
+  </nav>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("navMenu");
-      menu.classList.toggle("nav-show");
-    }
-  </script>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("navItems");
-      menu.classList.toggle("nav-active");
-    }
-  </script>
 		  
           <div class="social-links">
             <ul>
@@ -1422,6 +1423,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 <script>
+
+	 function showHideMenu() {
+      document.getElementById("customNav").classList.toggle("menu-open");
+    }
 function showBikeModal() {
     const bikeModal = document.getElementById("bikeModal");
     bikeModal.style.display = "block"; // Show the modal
