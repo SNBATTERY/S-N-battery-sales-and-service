@@ -994,6 +994,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
 
+
+
+	
+    .callback-box {
+      background: #fff;
+      padding: 30px 25px;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .callback-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 22px;
+    }
+
+    .callback-input,
+    .callback-area {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .callback-input:focus,
+    .callback-area:focus {
+      border-color: #f44336;
+      outline: none;
+    }
+
+    .callback-button {
+      background: linear-gradient(45deg, #ff9800, #f44336);
+      color: white;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .callback-button:hover {
+      background: linear-gradient(45deg, #f44336, #ff9800);
+    }
+
+
     </style>
 	  
 
@@ -1081,6 +1134,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
 			
             <p class="s-two-definition s-definition">
+		    
+  <div class="callback-box">
+    <h2>Request a Callback</h2>
+    <div id="callbackContainer">
+      <input type="text" id="userName" class="callback-input" placeholder="Full Name" required />
+      <input type="tel" id="userPhone" class="callback-input" placeholder="Mobile Number" required pattern="[0-9]{10}" />
+      <textarea id="userAddress" class="callback-area" rows="3" placeholder="Address" required></textarea>
+      <button class="callback-button" onclick="sendToWhatsApp()">Help Us to Contact You</button>
+    </div>
+  </div>
+
 		     <h2 class="s-two-slogan" style="text-color:white;text-decoration:overline;">Long-Lasting Energy For All Your Devices</h2>
 		  <div class="form-container" id="battery-form" style="display:none;">
             <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
@@ -1459,7 +1523,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 <script>
+   function sendToWhatsApp() {
+      const name = document.getElementById("userName").value.trim();
+      const mobile = document.getElementById("userPhone").value.trim();
+      const address = document.getElementById("userAddress").value.trim();
 
+      if (!name || !mobile || !address) {
+        alert("Please fill all fields.");
+        return;
+      }
+
+      const message = `*Request a Callback*%0A%0A👤 Name: ${name}%0A📞 Mobile: ${mobile}%0A🏠 Address: ${address}`;
+      const whatsappNumber = "919902555479";
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+      window.open(whatsappURL, "_blank");
+    }
 	 function showHideMenu() {
       document.getElementById("customNav").classList.toggle("menu-open");
     }
