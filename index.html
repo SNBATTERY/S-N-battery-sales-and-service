@@ -1046,6 +1046,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: linear-gradient(45deg, #f44336, #ff9800);
     }
 
+		     .sn-call-button-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sn-call-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .sn-call-button i {
+    margin-right: 6px;
+  }
+
+  .sn-callback-box {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 0;
+  }
+
+  .sn-callback-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .sn-callback-input,
+  .sn-callback-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  .sn-callback-send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .sn-callback-send-btn:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .sn-call-button,
+    .sn-callback-send-btn {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+
 
     </style>
 	  
@@ -1117,22 +1183,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h6 class="hook-title clr-transition">"Power your life with our batteries"</h6>
             <h2 class="hook-sub_title clr-transition" style="text-decoration:underline;">"We charge your world.</h2>
    
-   <div class="action-buttons-container" style="margin: 0; padding: 0;">
+<!-- CALL BUTTON -->
+<div class="sn-call-button-container">
   <a href="tel:9902555479" style="text-decoration: none;">
-    <button class="action-btn btn-call btn-primary call-action-btn" style="margin: 0; padding: 10px 20px;">
-      <i class="bx bx-phone in-btn-icon"></i>CALL
+    <button class="sn-call-button">
+      <i class="bx bx-phone"></i> CALL
     </button>
   </a>
 </div>
 
-<!-- NO GAP BELOW -->
-<div class="callback-box" style="margin: 0; padding: 0;">
-  <h2 style="margin-top: 10px;">Request a Callback</h2>
-  <div id="callbackContainer">
-    <input type="text" id="userName" class="callback-input" placeholder="Full Name" required />
-    <input type="tel" id="userPhone" class="callback-input" placeholder="Mobile Number" required pattern="[0-9]{10}" />
-    <textarea id="userAddress" class="callback-area" rows="3" placeholder="Address" required></textarea>
-    <button class="callback-button" onclick="sendToWhatsApp()"><i>Help Us to Contact You </i></button>
+<!-- CALLBACK FORM -->
+<div class="sn-callback-box">
+  <h2 class="sn-callback-title">Request a Callback</h2>
+  <div id="sn-callback-container">
+    <input type="text" id="sn-user-name" class="sn-callback-input" placeholder="Full Name" required />
+    <input type="tel" id="sn-user-phone" class="sn-callback-input" placeholder="Mobile Number" required pattern="[0-9]{10}" />
+    <textarea id="sn-user-address" class="sn-callback-textarea" rows="3" placeholder="Address" required></textarea>
+    <button class="sn-callback-send-btn" onclick="snSendToWhatsApp()">
+      <i>Help Us to Contact You</i>
+    </button>
   </div>
 </div>
 
@@ -1305,8 +1374,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
     <!-- Exide Details Modal -->
     <div id="exideModal" class="modal">
         <div class="modal-content">
@@ -1517,6 +1584,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 <script>
+	 function snSendToWhatsApp() {
+    var name = document.getElementById("sn-user-name").value.trim();
+    var phone = document.getElementById("sn-user-phone").value.trim();
+    var address = document.getElementById("sn-user-address").value.trim();
+
+    if (!name || !phone || !address) {
+      alert("Please fill all the fields.");
+      return;
+    }
+
+    var message = `*Request Callback*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Address:* ${address}`;
+    var whatsappURL = "https://wa.me/919902555479?text=" + encodeURIComponent(message);
+    window.open(whatsappURL, "_blank");
+  }
    function sendToWhatsApp() {
       const name = document.getElementById("userName").value.trim();
       const mobile = document.getElementById("userPhone").value.trim();
