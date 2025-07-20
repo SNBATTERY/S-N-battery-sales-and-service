@@ -9077,19 +9077,21 @@ function closeOverlay() {
 
 <div id="content-wrapper" style="text-align: center;">
   <iframe id="custom-iframe" src="https://snbatterysalesandservice.com/" 
-          style="width:100%; height:500px; border:none;"></iframe>
+          style="width:100%; height:500px; border:none; display:none;"></iframe>
 </div>
 
 <script>
-  // Check if the iframe has already been shown
   if (localStorage.getItem('iframeShown')) {
-    // Hide the entire content forever
+    // Hide container completely on repeated visits
     document.getElementById('content-wrapper').style.display = 'none';
   } else {
-    // Mark as shown so it doesn't show again
+    // Show iframe for the first time only
+    document.getElementById('custom-iframe').style.display = 'block';
+    // Mark as shown
     localStorage.setItem('iframeShown', 'true');
   }
 </script>
+
 
 	
 		
