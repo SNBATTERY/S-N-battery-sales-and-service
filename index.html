@@ -1563,7 +1563,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 
-
+  if (!localStorage.getItem("iframeShown")) {
+    const iframe = document.getElementById("custom-iframe");
+    iframe.style.display = "block"; // Show the iframe
+    localStorage.setItem("iframeShown", "true"); // Mark as shown
+  }
  
 	 function snSendToWhatsApp() {
     var name = document.getElementById("sn-user-name").value.trim();
@@ -9052,7 +9056,10 @@ function closeOverlay() {
 
 </script>
 
-<br><br>
+
+	<div id="iframe-container">
+  <iframe id="custom-iframe" src="https://snbatterysalesandservice.com/"></iframe>
+</div>
 	
 		
 		<br><br><br><br><br><br><br><br>
