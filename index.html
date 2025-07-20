@@ -1129,11 +1129,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-orientation: mixed;
   }
 
-		      #popupImage.hidden {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
-  }
+	
 
 
 
@@ -1602,27 +1598,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-	  const popupImage = document.getElementById('popupImage');
-  const carBatteryBtn = document.querySelector('button#carBatteryBtn, .car-battery-btn, button[data-car-battery]');
-
-  // Hide image function
-  function hideImage() {
-    if (!popupImage.classList.contains('hidden')) {
-      popupImage.classList.add('hidden');
-      popupImage.style.opacity = '0';
-      popupImage.style.pointerEvents = 'none';
-    }
-  }
-
-  // Hide image on scroll
-  window.addEventListener('scroll', hideImage);
-
-  // Hide image on Car Battery button click
-  if (carBatteryBtn) {
-    carBatteryBtn.addEventListener('click', hideImage);
-  } else {
-    console.warn('Car Battery button not found! Please check your button selector.');
-  }
 
 
 
@@ -9124,9 +9099,10 @@ function closeOverlay() {
 		<br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br>
-	<img id="popupImage" src="https://snbatterysalesandservice.com/namratha.png" 
-     alt="Popup Image" 
-     style="position: fixed; bottom: 20px; right: 20px; width: 150px; height: auto; cursor: pointer; z-index: 9999; transition: opacity 0.5s ease;">
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		
+		
 
 	
 		
