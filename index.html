@@ -1113,6 +1113,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
 
+.form-container {
+  display: none;      /* hide initially */
+  margin-top: 20px;   /* space from above */
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  position: static;   /* important: no absolute or fixed */
+}
 
 
 
@@ -1589,6 +1598,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 <script>
+
+	function showForm() {
+  const form = document.getElementById('battery-form');
+  form.style.display = form.style.display === 'block' ? 'none' : 'block';
+}
+
 	 function snSendToWhatsApp() {
     var name = document.getElementById("sn-user-name").value.trim();
     var phone = document.getElementById("sn-user-phone").value.trim();
