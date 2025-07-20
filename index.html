@@ -1113,6 +1113,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
 
+		     .side-text-small {
+    position: fixed;
+    top: 50%;
+    width: 80px;
+    padding: 8px 6px;
+    background: white;
+    color: black;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-style: italic;
+    transform-origin: center;
+    user-select: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .left-text-small {
+    left: 5px;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+  .right-text-small {
+    right: 5px;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+
 
 
 
@@ -9071,10 +9099,8 @@ function closeOverlay() {
 		<br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br>
-		<br>
-		<br>
+		<div class="side-text-small left-text-small">Hii battery</div>
+<div class="side-text-small right-text-small">Hello battery</div>
 		
 
 <div id="content-wrapper" style="text-align: center;">
