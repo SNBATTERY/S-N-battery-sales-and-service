@@ -1113,15 +1113,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
 
-.form-container {
-  display: none;      /* hide initially */
-  margin-top: 20px;   /* space from above */
-  border: 1px solid #ccc;
-  background-color: white;
-  padding: 15px;
-  box-sizing: border-box;
-  position: static;   /* important: no absolute or fixed */
-}
+  .form-container {
+    display: none; /* hidden initially */
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+  }
 
 
 
@@ -1321,10 +1321,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h1 style="text-align:center;text-decoration:overline;">SHOP BY CATEGORY</h1>
 
   <div class="button-group">
-    <button class="battery-button" onclick="showForm('car')">
+  <!--  <button class="battery-button" onclick="showForm('car')">
       <img src="car.jpg" alt="Car Battery">
       Car Battery
-    </button>
+    </button> -->
+	  <button onclick="showForm()">Car Battery</button>
 
     <button class="battery-button" onclick="showModal('inverter')">
       <img src="inverter.jpeg" alt="Inverter Battery">
@@ -1599,11 +1600,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 
-	function showForm() {
-  const form = document.getElementById('battery-form');
-  form.style.display = form.style.display === 'block' ? 'none' : 'block';
-}
-
+  function showForm() {
+    const form = document.getElementById('battery-form');
+    if (form.style.display === 'block') {
+      form.style.display = 'none';
+    } else {
+      form.style.display = 'block';
+      // optionally, scroll to form
+      form.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 	 function snSendToWhatsApp() {
     var name = document.getElementById("sn-user-name").value.trim();
     var phone = document.getElementById("sn-user-phone").value.trim();
