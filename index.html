@@ -1145,16 +1145,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 .product-block {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 1200px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px; /* Ensure there's space below for the form */
 }
 
+		    #car-battery-form {
+  display: none; /* or block, based on toggle */
+  position: relative;
+  z-index: 2;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+		    
 
 
 
@@ -1297,7 +1302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     Car Battery
 	       
     </button>
-
+<div id="car-battery-form">
 		  <div class="form-container" id="battery-form" style="display:none;">
             <h3 style="color: black; text-decoration: overline;">Battery Order Form</h3>
             <form id="order-form" onsubmit="return displayBatteryInfo(event);">
@@ -1373,6 +1378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <button type="submit">Find</button>
             </form>
         </div>
+</div>
 
 	
     
