@@ -92,4 +92,34 @@
           <div class="order-form" id="orderForm${index}">
             <input type="text" placeholder="Your Name" id="name${index}" required>
             <input type="tel" placeholder="Phone Number" id="phone${index}" required>
-            <textarea placeholder="Address" id
+            <textarea placeholder="Address" id="address${index}" required></textarea>
+            <button onclick="submitOrder('${battery.modelName}', '${model}', ${index})">Submit</button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    } else {
+      container.innerHTML = "<p>No battery details found. Please go back and select a car model.</p>";
+    }
+
+    function showOrderForm(index) {
+      document.querySelectorAll('.order-form').forEach(form => form.style.display = 'none');
+      document.getElementById(`orderForm${index}`).style.display = 'block';
+    }
+
+    function submitOrder(batteryModel, carModel, index) {
+      const name = document.getElementById(`name${index}`).value.trim();
+      const phone = document.getElementById(`phone${index}`).value.trim();
+      const address = document.getElementById(`address${index}`).value.trim();
+
+      if (!name || !phone || !address) {
+        alert("Please fill all fields before submitting.");
+        return;
+      }
+
+      const message = `New Battery Order:%0aCar Model: ${carModel}%0aBattery: ${batteryModel}%0aName: ${name}%0aPhone: ${phone}%0aAddress: ${address}`;
+      window.open(`https://wa.me/919902555479?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>
