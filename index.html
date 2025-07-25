@@ -1402,91 +1402,6 @@ nav {
     margin-bottom: 10px;
   }
 }
-	  .animated-nav {
-  background: linear-gradient(to right, #141e30, #243b55);
-  padding: 15px 20px;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.nav-brand {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.nav-links li a:hover {
-  color: #00ffc8;
-}
-
-/* Hamburger icon */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #1b2a3a;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    gap: 15px;
-    padding: 20px 0;
-    z-index: 999;
-  }
-
-  .nav-links.show {
-    display: flex;
-    animation: slideDown 0.4s ease;
-  }
-
-  @keyframes slideDown {
-    0% {
-      transform: translateY(-10px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-}
-
 
 
   
@@ -1535,16 +1450,9 @@ nav {
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20"> 9902555479
       </a>
    
-   <nav class="animated-nav">
+     <nav class="power-nav">
   <div class="nav-brand"></div>
-
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <ul class="nav-links" id="nav-links">
+  <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#product">Product</a></li>
     <li><a href="#about">About</a></li>
@@ -1552,7 +1460,6 @@ nav {
     <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
   </ul>
 </nav>
-
 
   </header>
 
