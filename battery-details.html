@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battery Details | S N Battery Sales and Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .battery-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .battery-card img {
+      width: 120px;
+      height: auto;
+    }
+    .battery-card h2 {
+      color: #1e3c72;
+    }
+    .battery-card p {
+      font-size: 14px;
+    }
+    .order-button {
+      margin-top: 10px;
+      background-color: #1e3c72;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .order-form {
+      display: none;
+      margin-top: 15px;
+    }
+    .order-form input,
+    .order-form textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+    }
+    .order-form button {
+      background-color: #28a745;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Battery Details</h1>
+  <div id="batteryContainer"></div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("batteryData") || "[]");
+    const model = localStorage.getItem("carModel");
+
+    const container = document.getElementById("batteryContainer");
+
+    if (data.length && model) {
+      data.forEach((battery, index) => {
+        const div = document.createElement("div");
+        div.className = "battery-card";
+        div.innerHTML = `
+          <h2>${battery.modelName}</h2>
+          <img src="images/${battery.image}" alt="${battery.modelName}">
+          <p><strong>Description:</strong> ${battery.description}</p>
+          <p><strong>Price:</strong><br>${battery.price}</p>
+          <p><strong>Features:</strong><br>${battery.features.replace(/\n/g, "<br>")}</p>
+          <p><strong>Recommended:</strong> ${battery.recommended}</p>
+          <button class="order-button" onclick="showOrderForm(${index})">Order Now</button>
+
+          <div class="order-form" id="orderForm${index}">
+            <input type="text" placeholder="Your Name" id="name${index}" required>
+            <input type="tel" placeholder="Phone Number" id="phone${index}" required>
+            <textarea placeholder="Address" id="address${index}" required></textarea>
+            <button onclick="submitOrder('${battery.modelName}', '${model}', ${index})">Submit</button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    } else {
+      container.innerHTML = "<p>No battery details found. Please go back and select a car model.</p>";
+    }
+
+    function showOrderForm(index) {
+      document.querySelectorAll('.order-form').forEach(form => form.style.display = 'none');
+      document.getElementById(`orderForm${index}`).style.display = 'block';
+    }
+
+    function submitOrder(batteryModel, carModel, index) {
+      const name = document.getElementById(`name${index}`).value.trim();
+      const phone = document.getElementById(`phone${index}`).value.trim();
+      const address = document.getElementById(`address${index}`).value.trim();
+
+      if (!name || !phone || !address) {
+        alert("Please fill all fields before submitting.");
+        return;
+      }
+
+      const message = `New Battery Order:%0aCar Model: ${carModel}%0aBattery: ${batteryModel}%0aName: ${name}%0aPhone: ${phone}%0aAddress: ${address}`;
+      window.open(`https://wa.me/919902555479?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>

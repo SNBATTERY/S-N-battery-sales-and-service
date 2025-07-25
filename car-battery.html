@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Battery Models | S N Battery Sales and Service</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .model-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffffff;
+    }
+
+    .model-section h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .model-btn {
+      text-decoration: none;
+      background: #f9f9f9;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .model-btn img {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 8px;
+    }
+
+    .model-btn span {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .model-btn:hover {
+      transform: scale(1.07);
+      background-color: #e6f0ff;
+    }
+
+    @media (max-width: 600px) {
+      .model-btn {
+        width: 100px;
+        height: 100px;
+      }
+
+      .model-btn img {
+        width: 36px;
+        height: 36px;
+      }
+
+      .model-btn span {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="model-section">
+    <h2>Select Your Car Battery Model</h2>
+    <div class="model-grid">
+      <a href="swift-battery.html" class="model-btn">
+        <img src="swift.png" alt="Swift">
+        <span>Swift</span>
+      </a>
+      <a href="creta-battery.html" class="model-btn">
+        <img src="creta.png" alt="Creta">
+        <span>Creta</span>
+      </a>
+      <a href="baleno-battery.html" class="model-btn">
+        <img src="baleno.png" alt="Baleno">
+        <span>Baleno</span>
+      </a>
+      <a href="i20-battery.html" class="model-btn">
+        <img src="i20.png" alt="i20">
+        <span>Hyundai i20</span>
+      </a>
+      <a href="ciaz-battery.html" class="model-btn">
+        <img src="ciaz.png" alt="Ciaz">
+        <span>Ciaz</span>
+      </a>
+      <a href="innova-battery.html" class="model-btn">
+        <img src="innova.png" alt="Innova">
+        <span>Innova</span>
+      </a>
+      <!-- Add more models -->
+    </div>
+  </section>
+
+</body>
+</html>

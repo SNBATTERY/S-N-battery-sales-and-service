@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inverter Battery Details | S N BATTERY SALES AND SERVICES</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      color: #1e3c72;
+    }
+    .battery-card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .battery-card img {
+      max-width: 150px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .battery-card h4 {
+      margin: 10px 0 5px;
+      color: #1e3c72;
+    }
+    .battery-card p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .order-button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #1e3c72;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="page-title">Inverter Battery Details</h2>
+  <div id="battery-list"></div>
+
+  <script>
+    const batteryList = JSON.parse(localStorage.getItem("batteryData"));
+    const carModel = localStorage.getItem("carModel");
+
+    document.getElementById("page-title").innerText = carModel;
+
+    const container = document.getElementById("battery-list");
+    if (!batteryList || batteryList.length === 0) {
+      container.innerHTML = '<p>No battery data available.</p>';
+    } else {
+      batteryList.forEach(battery => {
+        const card = document.createElement("div");
+        card.className = "battery-card";
+
+        card.innerHTML = `
+          <img src="${battery.image}" alt="${battery.modelName}" />
+          <h4>${battery.modelName}</h4>
+          <p><strong>Price:</strong> ${battery.price}</p>
+          <p><strong>Description:</strong> ${battery.description}</p>
+          <button class="order-button" onclick="orderNow('${battery.modelName}', '${battery.price}', '${battery.description}')">Order Now</button>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function orderNow(model, price, description) {
+      const message = `Hi, I want to order:\n\nModel: ${model}\nPrice: ${price}\nDescription: ${description}`;
+      const encodedMessage = encodeURIComponent(message);
+      const phoneNumber = "919902555479"; // Update this if needed
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
