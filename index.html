@@ -1406,19 +1406,7 @@ nav {
 
   
   /* Mobile optimization */
-   header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      padding: 0 15px;
-      z-index: 1000;
-    }
+ 
 
     .menu-toggle {
       font-size: 24px;
@@ -1806,9 +1794,19 @@ nav {
 
   <script>
    
+  const sidebar = document.getElementById('sidebar');
+    const links = sidebar.querySelectorAll('a');
+
     function toggleMenu() {
-        document.getElementById("nav-links").classList.toggle("show");
-      }
+      sidebar.classList.toggle('active');
+    }
+
+    // Close sidebar when any nav link is clicked
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+      });
+    });
    
       
    
