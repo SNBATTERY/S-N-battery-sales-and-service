@@ -1403,7 +1403,123 @@ nav {
   }
 }
 
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      display: flex;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    .power-nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 220px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      transition: all 0.3s ease;
+      z-index: 999;
+      animation: slideIn 0.6s ease-out;
+    }
+
+    .nav-brand {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      width: 100%;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 220px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    /* Slide animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Mobile Styles */
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      padding: 10px 15px;
+      color: white;
+      font-size: 20px;
+      z-index: 1001;
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .power-nav {
+        width: 180px;
+        transform: translateX(-100%);
+      }
+
+      .power-nav.active {
+        transform: translateX(0);
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
   
   /* Mobile optimization */
 
@@ -1450,16 +1566,18 @@ nav {
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20"> 9902555479
       </a>
    
-     <nav class="power-nav">
-  <div class="nav-brand"></div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#product">Product</a></li>
-    <li><a href="#about">About</a></li>
-  
-    <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
-  </ul>
-</nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Glass Sidebar -->
+  <nav class="power-nav" id="sidebar">
+    <div class="nav-brand">S.N. Battery</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
+    </ul>
+  </nav>
 
   </header>
 
@@ -1715,10 +1833,10 @@ nav {
 
 
   <script>
-   
-    function toggleMenu() {
-        document.getElementById("nav-links").classList.toggle("show");
-      }
+     function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  
    
       
    
