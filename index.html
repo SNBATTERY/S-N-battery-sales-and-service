@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17328007529">
 </script>
 <script>
@@ -1406,80 +1408,42 @@ nav {
 
   
   /* Mobile optimization */
- 
+.fixed-contact-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-    .menu-toggle {
-      font-size: 24px;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
+.contact-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
 
-    .brand-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-left: 15px;
-    }
+.contact-btn:hover {
+  transform: scale(1.1);
+}
 
-    /* Sidebar */
-    .power-nav {
-      position: fixed;
-      top: 0;
-      left: -220px;
-      width: 220px;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      transition: left 0.3s ease;
-      z-index: 999;
-      padding-top: 60px;
-    }
+.phone-btn {
+  background-color: #34af23; /* Green for call */
+}
 
-    .power-nav.active {
-      left: 0;
-    }
+.whatsapp-btn {
+  background-color: #25d366; /* WhatsApp green */
+}
 
-    .nav-links {
-      list-style: none;
-      padding: 0;
-    }
-
-    .nav-links li {
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      display: block;
-      padding: 10px;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-    }
-
-    /* Main Content */
-    .main-content {
-      margin-top: 60px;
-      padding: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .power-nav {
-        width: 180px;
-      }
-
-      .brand-title {
-        font-size: 18px;
-      }
-    }
   
       
       
@@ -1522,22 +1486,32 @@ nav {
       <a class="whatsapp-button" href="https://wa.me/919902555479" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20"> 9902555479
       </a>
-	      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <div class="brand-title">SN Battery</div>
    
- <nav class="power-nav" id="sidebar">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#product">Product</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
-    </ul>
-  </nav>
+     <nav class="power-nav">
+  <div class="nav-brand"></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#product">Product</a></li>
+    <li><a href="#about">About</a></li>
+  
+    <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
   </ul>
 </nav>
 
   </header>
-	
+
+
+
+
+	<!-- Fixed WhatsApp & Call Buttons -->
+<div class="fixed-contact-buttons">
+  <a href="tel:+9902555479" class="contact-btn phone-btn" title="Call Now">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="https://wa.me/9902555479" target="_blank" class="contact-btn whatsapp-btn" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
 
   <div class="quote-slider">
     <p>⚡ Exide – Long-lasting Power for Every Drive! ⚡ Amaron – Go the Distance with Confidence! ⚡ Luminous – Reliable Energy for Your Home & Car! ⚡</p>
@@ -1792,19 +1766,9 @@ nav {
 
   <script>
    
-  const sidebar = document.getElementById('sidebar');
-    const links = sidebar.querySelectorAll('a');
-
     function toggleMenu() {
-      sidebar.classList.toggle('active');
-    }
-
-    // Close sidebar when any nav link is clicked
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        sidebar.classList.remove('active');
-      });
-    });
+        document.getElementById("nav-links").classList.toggle("show");
+      }
    
       
    
