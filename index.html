@@ -1458,6 +1458,47 @@ nav {
   background-color: #25d366; /* WhatsApp green */
 }
 
+	  /*hii*/
+	  .block-container {
+  padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  padding: 10px 0;
+  width: fit-content; /* prevent stretching on mobile */
+}
+
+.carousel img {
+  width: 80vw; /* Responsive: 80% of viewport width on mobile */
+  max-width: 300px; /* Prevent images from growing too large on desktop */
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Hide horizontal scrollbar in WebKit (optional) */
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .carousel img {
+    width: 90vw;
+  }
+}
+
+
   
       
       
@@ -1616,7 +1657,7 @@ nav {
     <div class="carousel-wrapper">
       <div class="carousel">
         <img src="roll1.jpg" alt="Battery 1">
-    <!--    <img src="roll2.jpg" alt="Battery 2">-->
+       <img src="roll2.jpg" alt="Battery 2">
         <img src="roll3.jpg" alt="Battery 3">
       </div>
     </div>
