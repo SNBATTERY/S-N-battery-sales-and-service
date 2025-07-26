@@ -49,11 +49,23 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
-    body {
+/*
+	  body {
       background: #f4f4f4;
       color: #333;
       scroll-behavior: smooth;
-    }
+    }  
+	  */
+	  body {
+  background: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal shift */
+  perspective: none;   /* Disable 3D depth */
+  transform: none;     /* Disable 3D transforms */
+  animation: none !important; /* Cancel any global animation */
+}
+
 
     header {
       background: linear-gradient(to right, #001f3f, #0074D9);
@@ -1505,10 +1517,10 @@ nav {
 
 	<!-- Fixed WhatsApp & Call Buttons -->
 <div class="fixed-contact-buttons">
-  <a href="tel:+9902555479" class="contact-btn phone-btn" title="Call Now">
+  <a href="tel:+919902555479" class="contact-btn phone-btn" title="Call Now">
     <i class="fas fa-phone"></i>
   </a>
-  <a href="https://wa.me/9902555479" target="_blank" class="contact-btn whatsapp-btn" title="Chat on WhatsApp">
+  <a href="https://wa.me/+919902555479" target="_blank" class="contact-btn whatsapp-btn" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 </div>
