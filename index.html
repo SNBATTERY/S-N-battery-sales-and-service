@@ -1834,54 +1834,21 @@ nav {
 
 
 
+window.onload = function() {
+  fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(data => {
+      const area = data.city || data.region || data.country_name || "bengaluru";
+      const areaSlug = area.toLowerCase().replace(/\s+/g, '-');
+      window.location.href = `/location/${areaSlug}`;
+    })
+    .catch(error => {
+      console.error('IP location error:', error);
+      window.location.href = '/location/bengaluru'; // fallback
+    });
+};
 
   // Wait until the page fully loads
-  window.onload = function () {
-    // Check if geolocation is supported
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-      console.log("Geolocation is not supported by this browser.");
-    }
-  };
-
-  function showPosition(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-
-    // Call reverse geocoding API (OpenStreetMap Nominatim)
-    fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`)
-      .then(response => response.json())
-      .then(data => {
-        // Try to get the most specific area name
-        const address = data.address;
-        const area = address.suburb ||
-                     address.neighbourhood ||
-                     address.village ||
-                     address.town ||
-                     address.city ||
-                     address.county ||
-                     "bengaluru"; // fallback
-
-        // Create URL-friendly version
-        const areaSlug = area.toLowerCase().replace(/\s+/g, '-');
-
-        // ✅ Redirect to your area-specific page
-        window.location.href = `/location/${areaSlug}`;
-      })
-      .catch(error => {
-        console.error("Error fetching location info:", error);
-        // Optional fallback
-        window.location.href = "/location/bengaluru";
-      });
-  }
-
-  function showError(error) {
-    console.warn("Geolocation error:", error.message);
-    // Optional fallback if user blocks location
-    window.location.href = "/location/bengaluru";
-  }
-
 
    
     function toggleMenu() {
@@ -9510,6 +9477,7 @@ function updateCarModels() {
   </script>
 </body>
 </html>
+
 
 
 
