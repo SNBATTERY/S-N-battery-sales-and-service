@@ -1834,19 +1834,7 @@ nav {
 
 
 
-window.onload = function() {
-  fetch('https://ipapi.co/json/')
-    .then(response => response.json())
-    .then(data => {
-      const area = data.city || data.region || data.country_name || "bengaluru";
-      const areaSlug = area.toLowerCase().replace(/\s+/g, '-');
-      window.location.href = `/location/${areaSlug}`;
-    })
-    .catch(error => {
-      console.error('IP location error:', error);
-      window.location.href = '/location/bengaluru'; // fallback
-    });
-};
+
 
   // Wait until the page fully loads
 
@@ -9477,6 +9465,7 @@ function updateCarModels() {
   </script>
 </body>
 </html>
+
 
 
 
