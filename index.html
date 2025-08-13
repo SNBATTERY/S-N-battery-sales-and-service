@@ -1623,6 +1623,49 @@ a {
     }
 
 
+.main-header {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push nav left & button right */
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Space between nav items */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #25D366;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.whatsapp-btn img {
+  width: 20px;
+  height: 20px;
+}
 
   
       
@@ -1667,22 +1710,23 @@ a {
 	  <br>
 	  <br>
 
-    <div class="header-right">
-      <a href="https://wa.me/919902555479" class="whatsapp-link" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-      </a>
+<header class="main-header">
+  <!-- Left side - Nav items -->
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
+    </ul>
+  </nav>
 
-    
+  <!-- Right side - WhatsApp button -->
+  <a href="https://wa.me/919902555479" class="whatsapp-btn" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
 
-      <nav class="mobile-nav" id="mobileNav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+
 
 
   </header>
@@ -10038,6 +10082,7 @@ function updateCarModels() {
   </script>
 </body>
 </html>
+
 
 
 
