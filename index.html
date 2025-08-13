@@ -1821,6 +1821,75 @@ a {
   .small-nav ul {
     flex-wrap: wrap;
   }
+	 .floating-nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(34, 34, 34, 0.9);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-toggle {
+    background: #25D366;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .small-nav-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-5px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  .small-nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .small-nav-menu li {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .small-nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .small-nav-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .small-nav-menu a:hover {
+    background: #f0f0f0;
+  }
+
+  .small-whatsapp img {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 
@@ -1865,21 +1934,22 @@ a {
     <h1 class="small-brand">S N BATTERY SALES AND SERVICE</h1>
   </div>
 
-  <div class="small-header-block">
-    <nav class="small-nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
-      </ul>
-    </nav>
+<div class="floating-nav">
+  <button id="navToggle" class="nav-toggle">☰ Menu</button>
 
-    <a href="https://wa.me/919902555479" class="small-whatsapp" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-      Chat
-    </a>
-  </div>
+  <nav id="smallNav" class="small-nav-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a href="https://wa.me/919902555479" class="small-whatsapp" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+</div>
 </header>
 
 
@@ -2164,28 +2234,21 @@ We provide cost-effective and competitively priced solutions, working with all m
 
   <script>
 
-  document.addEventListener("DOMContentLoaded", function () {
-      const menuToggle = document.getElementById("menuToggle");
-      const mobileNav = document.getElementById("mobileNav");
+	   const navToggle = document.getElementById('navToggle');
+  const smallNav = document.getElementById('smallNav');
 
-      menuToggle.addEventListener("click", function () {
-        mobileNav.classList.toggle("show");
-      });
+  navToggle.addEventListener('click', () => {
+    smallNav.style.display = smallNav.style.display === 'block' ? 'none' : 'block';
+  });
 
-      // Close menu when clicking a link
-      mobileNav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-          mobileNav.classList.remove("show");
-        });
-      });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.floating-nav')) {
+      smallNav.style.display = 'none';
+    }
+  });
 
-      // Close menu when clicking outside
-      document.addEventListener("click", function(e) {
-        if (!menuToggle.contains(e.target) && !mobileNav.contains(e.target)) {
-          mobileNav.classList.remove("show");
-        }
-      });
-    });
+
+
 
 	
 const bengaluruLocalities = [
@@ -10239,6 +10302,7 @@ function updateCarModels() {
   </script>
 </body>
 </html>
+
 
 
 
