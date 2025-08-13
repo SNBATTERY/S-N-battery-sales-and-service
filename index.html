@@ -1737,6 +1737,93 @@ a {
   }
 }
 
+	  .small-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  color: white;
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.small-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.small-logo {
+  height: 35px;
+}
+
+.small-brand {
+  font-size: 14px;
+  margin: 0;
+}
+
+.small-header-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.small-nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.small-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.small-nav a:hover {
+  color: #25D366;
+}
+
+.small-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #25D366;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.small-whatsapp img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .small-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .small-header-block {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .small-nav ul {
+    flex-wrap: wrap;
+  }
+}
+
+
 
   
       
@@ -1771,36 +1858,35 @@ a {
 
 </head>
 <body>
-  <header class="responsive-header">
-    <div class="header-left">
-      <img src="https://snbatterysalesandservice.com/namratha.png" alt="Logo" class="logo" />
-      <h1 class="brand-name">S N BATTERY SALES AND SERVICE</h1>
-    </div>
-    <br>
-	  <br>
-	  <br>
-	  <br>
-<div class="header-block">
-  <nav class="nav-links">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#product">Product</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
-    </ul>
-  </nav>
 
-  <a href="https://wa.me/919902555479" class="whatsapp-btn" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-    Chat
-  </a>
-</div>
+<header class="small-header">
+  <div class="small-header-left">
+    <img src="https://snbatterysalesandservice.com/namratha.png" alt="Logo" class="small-logo" />
+    <h1 class="small-brand">S N BATTERY SALES AND SERVICE</h1>
+  </div>
 
+  <div class="small-header-block">
+    <nav class="small-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://snbatterysalesandservice.com/contact-us">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/919902555479" class="small-whatsapp" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      Chat
+    </a>
+  </div>
+</header>
 
 
 
 
-  </header>
+
+
 
 
 
@@ -10153,6 +10239,7 @@ function updateCarModels() {
   </script>
 </body>
 </html>
+
 
 
 
