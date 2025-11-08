@@ -9538,3 +9538,1602 @@ function searchLocality() {
                 modelName: "Amaron FLO DIN66 (60AH) 566112060",
                 image: "5.jpg",
                 description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+				price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Volkswagen Vento 1.2 Petrol": [
+            {
+                modelName: "EXIDE MILEAGE MLDIN44LH(45AH)",
+                image: "6.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:5650.<br>Without Old Battery: Rs:7270 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN45 (545106036)45AH",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:5170..<br>Without Old Battery: Rs:6780 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		  {
+                modelName: "ELITO BY AMARON ETDIN45(45 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 4640..<br>Without Old Battery: Rs.6230 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Volkswagen Polo 1.5 Diesel": [
+            {
+              modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Volkswagen Tiguan 2.0 Diesel": [
+            {
+              modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		        {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+
+	  "Volkswagen Tiguan Petrol": [
+            {
+              modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+
+	    "Volkswagen Virtus Diesel": [
+		      
+		     {
+                modelName: "EXIDE MILEAGE(MLDIN66)(66AH)",
+                image: "32.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7300.<br>Without Old Battery: Rs.9450<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+             modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+		       {
+                modelName: "Amaron FLO DIN65 (565106590)(65AH)",
+                image: "33.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6710.<br>Without Old Battery: Rs.8850.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+
+	     "Volkswagen Virtus Petrol": [
+		      
+		     {
+                modelName: "EXIDE MILEAGE(MLDIN66)(66AH)",
+                image: "32.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7300.<br>Without Old Battery: Rs.9450<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+             modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+		       {
+                modelName: "Amaron FLO DIN65 (565106590)(65AH)",
+                image: "33.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6710.<br>Without Old Battery: Rs.8850.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Nissan Evalia Diesel": [
+            {
+              modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Nissan Micra 1.5L Diesel": [
+            {
+              modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                 modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		        {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+
+	     "Nissan Micra 1.2L Petrol": [
+        {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	      "Nissan Sunny 1.5L Diesel": [
+            {
+             modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Nissan Sunny 1.5L Petrol": [
+          {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	      "Nissan Micra 1.5L XV Automatic Petrol": [
+            {
+              modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Nissan Magnite Petrol": [
+            {
+              modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "Exide Mileage MLN55 (ISS) - 45AH",
+                image: "28.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6480.<br>Without Old Battery: Rs.8120<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00050B24L (50Ah)",
+                image: "29.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.5560..<br>Without Old Battery: Rs. 7180<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+        
+            {
+                modelName: "AMARON Go 38B20L(35AH)",
+                image: "24.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580.<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Nissan Teana 250XL Petrol": [
+            {
+             modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	       "Nissan Terrano Diesel": [
+            {
+             modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Nissan Terrano Petrol": [
+           {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		 {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+		 
+        ],
+
+	   "Nissan Kicks Diesel": [
+           {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		 {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+		 
+        ],
+
+	    "Nissan Kicks Petrol": [
+           {
+                modelName: "EXIDE MILEAGE MLDIN60 (60AH)",
+                image: "n.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7270.<br>Without Old Battery: Rs.9420 <br> Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving",
+            },
+            {
+                modelName: "Amaron FLO DIN66 (60AH) 566112060",
+                image: "5.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:6700..<br>Without Old Battery: Rs.8840 <br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		 {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+		 
+        ],
+	     "Nissan X Trail Diesel": [
+            {
+              modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		     {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Nissan Datsun Go Petrol": [
+          {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	     "Nissan Evalia Diesel": [
+            {
+             modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		     {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Nissan Micra Petrol": [
+        {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],  
+	      "Toyota Corolla Petrol": [
+          {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	       "Toyota Camry Petrol": [
+            {
+              modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota Corolla Altis Diesel": [
+            {
+               modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota Corolla Altis Petrol": [
+            {
+             modelName: "Exide Matrix Red MTRED45L(45AH)",
+                image: "63.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7310.<br>Without Old Battery: Rs.8960<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO 55B24LS(45AH)",
+                image: "64.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6599.<br>Without Old Battery: Rs.8230.<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota Etios Diesel": [
+            {
+              modelName: "Exide Mileage ML75D23LBH(68AH)",
+                image: "38.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.6830.<br>Without Old Battery: Rs.8970<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO BH90D23L(70AH)",
+                image: "39.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6120.<br>Without Old Battery: Rs.8250.<br><br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET90D23LBH(70 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5470..<br>Without Old Battery: Rs.7580 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota Etios Liva Petrol": [
+         {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	     "Toyota Etios Petrol": [
+            {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	     "Toyota Fortuner D4 Diesel": [
+            {
+              modelName: "Exide FEY0-EY105D31L(85 AH)",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7640.<br>Without Old Battery: Rs. 9799 <br> Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6900..<br>Without Old Battery: Rs.9050 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		     {
+                modelName: "ELITO BY AMARON ET105D31L(85 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6350..<br>Without Old Battery: Rs.8480 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota Innova Diesel ": [
+            {
+               modelName: "Exide EEZY EGRID 700L (65AH)",
+                image: "21.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7040.<br>Without Old Battery: Rs.8980<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON GO - 95D26L (AAM-GO-00095D26L) (65Ah)",
+                image: "22.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6410.<br>Without Old Battery: Rs.8340.<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET95D26L(65 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5730..<br>Without Old Battery: Rs.7840 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	       "Toyota Innova Petrol": [
+     {
+                modelName: "Exide Mileage ML38B20L (35AH)",
+                image: "23.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3820.<br>Without Old Battery: Rs.4900<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		     {
+                modelName: "Exide EPIQ 35L (35AH)",
+                image: "EPIQ35L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4430.<br>Without Old Battery: Rs.5520<br>Warranty: 77 Months (42 Months Full Replacement + 35 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		        {
+                modelName: "Exide Matrix MT40b20L (35AH)",
+                image: "E40B20L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.4010.<br>Without Old Battery: Rs.5090<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		       {
+                modelName: "Exide Eezy 34B19L (35AH)",
+                image: "EY34B19L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3490.<br>Without Old Battery: Rs.4560<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON GO 38B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3510.<br>Without Old Battery: Rs.4580<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "AMARON FLO 40B20L (35AH)",
+                image: "AM38B20L.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3800.<br>Without Old Battery: Rs.4880<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET38B20L (35AH)",
+                image: "ELITO40B20L.jpeg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.3060.<br>Without Old Battery: Rs.4130<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            }
+          
+        ],
+	     "Toyota Qualis Diesel": [
+            {
+              modelName: "Exide EEZY EGRID 700L (65AH)",
+                image: "21.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7040.<br>Without Old Battery: Rs.8980<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON GO - 95D26R (AAM-GO-00095D26R) (65Ah)",
+                image: "22.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6410.<br>Without Old Battery: Rs.8340.<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET95D26L(65 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5730..<br>Without Old Battery: Rs.7840 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Toyota Qualis Petrol": [
+            {
+              modelName: "Exide EEZY EGRID 700L (65AH)",
+                image: "21.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7040.<br>Without Old Battery: Rs.8980<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON GO - 95D26R (AAM-GO-00095D26R) (65Ah)",
+                image: "22.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6410.<br>Without Old Battery: Rs.8340.<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		      {
+                modelName: "ELITO BY AMARON ET95D26L(65 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5730..<br>Without Old Battery: Rs.7840 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota Lexus Diesel": [
+            {
+              modelName: "Exide Matrix Red MTREDDIN100",
+                image: "41.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs:16590.<br>Without Old Battery: Rs:19930<br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron PRO DIN100",
+                image: "42.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs:16070..<br>Without Old Battery: Rs:19400 <br>Warranty: 72 Months (36 Months Full Replacement + 36 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	       "Toyota Innova Crysta Diesel": [
+            {
+             modelName: "EXIDE MILEAGE(MLDIN66)(66AH)",
+                image: "32.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7300.<br>Without Old Battery: Rs.9450<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN65 (565106590)(65AH)",
+                image: "33.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6710.<br>Without Old Battery: Rs.8850.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		     {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	     "Toyota Land Cruiser Prado 4.5 Diesel": [
+            {
+              modelName: "Exide FEY0-EY105D31L(85 AH)",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7640.<br>Without Old Battery: Rs. 9799 <br> Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6900..<br>Without Old Battery: Rs.9050 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		     {
+                modelName: "ELITO BY AMARON ET105D31L(85 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6350..<br>Without Old Battery: Rs.8480 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ], 
+	     "Toyota Land Cruiser Petrol": [
+            {
+             modelName: "Exide FEY0-EY105D31L(85 AH)",
+                image: "ee.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7640.<br>Without Old Battery: Rs. 9799 <br> Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron AAM-GO-00105D31L(85 AH)",
+                image: "ee2.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6900..<br>Without Old Battery: Rs.9050 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		     {
+                modelName: "ELITO BY AMARON ET105D31L(85 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6350..<br>Without Old Battery: Rs.8480 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+	      "Toyota New Innova Special Edition Diesel": [
+            {
+              modelName: "EXIDE MILEAGE(MLDIN66)(66AH)",
+                image: "32.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7300.<br>Without Old Battery: Rs.9450<brWarranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "Amaron FLO DIN65 (565106590)(65AH)",
+                image: "33.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6710.<br>Without Old Battery: Rs.8850.<br>Warranty: 60 Months (30 Months Full Replacement + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		       {
+                modelName: "ELITO BY AMARON ETDIN65(65 AH)",
+                image: "EDIN60.png",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 6020..<br>Without Old Battery: Rs.8140 <br>Warranty: 60 Months(30 Months Free Of Cost + 30 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+		      
+        ],
+	     
+	     
+	     
+	     
+	     
+	    
+        "MG HECTOR Petrol": [
+            {
+                modelName: "Exide EEZY EGRID 700L (65AH)",
+                image: "21.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours.",
+                price: "With Old Battery exchange(Same Ah): Rs.7040.<br>Without Old Battery: Rs.8940<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "Reliable and durable.\nOffers high performance under various conditions.\nDesigned for longevity and efficiency.",
+                recommended: "Best suited for urban and highway driving.",
+            },
+            {
+                modelName: "AMARON GO - 95D26R (AAM-GO-00095D26R) (65Ah)",
+                image: "22.jfif",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours..",
+                price: "With Old Battery exchange(Same Ah): Rs.6410.<br>Without Old Battery: Rs.8340.<br>Warranty: 48 Months (24 Months Full Replacement + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures.",
+                recommended: "Ideal for city driving and daily commutes.",
+            },
+		  {
+                modelName: "ELITO BY AMARON ET95D26L(65 AH)",
+                image: "E105D31L.jpg",
+                description: "Car battery replacement in Bangalore. Express Delivery. And installation in 1-2 hours",
+                price: "With Old Battery exchange(Same Ah): Rs 5730..<br>Without Old Battery: Rs.7840 <br>Warranty: 48 Months(24 Months Free Of Cost + 24 Months Pro Rata)",
+                features: "High performance with fast recharge.\nResistant to extreme temperatures",
+                recommended: "Ideal for city driving and daily commutes.",
+            }
+        ],
+    };
+
+  function updateCarModels() {
+    const modelSelect = document.getElementById("car-model");
+    modelSelect.innerHTML = '<option value="">Select Car Model</option>';
+    const kiaModels = ["KIA Carnival"];
+    kiaModels.forEach(model => {
+      const option = document.createElement("option");
+      option.value = model;
+      option.textContent = model;
+      modelSelect.appendChild(option);
+    });
+  }
+
+  document.getElementById("carBatteryForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const selectedModel = document.getElementById("car-model").value;
+    if (batteryDetails[selectedModel]) {
+      localStorage.setItem("batteryData", JSON.stringify(batteryDetails[selectedModel]));
+      localStorage.setItem("carModel", selectedModel);
+      window.location.href = "battery-details.html";
+    } else {
+      alert("No battery data available for the selected model.");
+    }
+  });
+  function showOrderForm(model, index) {
+    document.getElementById(`orderForm${model.replace(/\s/g, '')}${index}`).style.display = 'block';
+  }
+
+  function submitOrder(batteryModel, carModel, index) {
+    const name = document.getElementById(`name${carModel.replace(/\s/g, '')}${index}`).value;
+    const phone = document.getElementById(`phone${carModel.replace(/\s/g, '')}${index}`).value;
+    const address = document.getElementById(`address${carModel.replace(/\s/g, '')}${index}`).value;
+    const message = `New Battery Order:%0aCar Model: ${carModel}%0aBattery: ${batteryModel}%0aName: ${name}%0aPhone: ${phone}%0aAddress: ${address}`;
+    window.open(`https://wa.me/919902555479?text=${message}`, '_blank');
+  }
+
+  function showOrderForm(model, index) {
+    document.getElementById(`orderForm${model.replace(/\s/g, '')}${index}`).style.display = 'block';
+  }
+
+  function submitOrder(batteryModel, carModel, index) {
+    const name = document.getElementById(`name${carModel.replace(/\s/g, '')}${index}`).value;
+    const phone = document.getElementById(`phone${carModel.replace(/\s/g, '')}${index}`).value;
+    const address = document.getElementById(`address${carModel.replace(/\s/g, '')}${index}`).value;
+    const message = `New Battery Order:%0aCar Model: ${carModel}%0aBattery: ${batteryModel}%0aName: ${name}%0aPhone: ${phone}%0aAddress: ${address}`;
+    window.open(`https://wa.me/919902555479?text=${message}`, '_blank');
+  }
+function showForm(type) {
+  document.getElementById('car-form').classList.remove('active');
+  document.getElementById('inverter-form').classList.remove('active');
+  document.querySelectorAll('.form-toggle button').forEach(btn => btn.classList.remove('active'));
+
+  if (type === 'car') {
+    document.getElementById('car-form').classList.add('active');
+    document.querySelector('.form-toggle button:nth-child(1)').classList.add('active');
+  } else {
+    document.getElementById('inverter-form').classList.add('active');
+    document.querySelector('.form-toggle button:nth-child(2)').classList.add('active');
+  }
+}
+
+function updateCarModels() {
+  const manufacturer = document.getElementById("manufacturer").value;
+  const modelSelect = document.getElementById("car-model");
+
+  modelSelect.innerHTML = '<option value="">Select Car Model</option>';
+
+  if (manufacturer && carModels[manufacturer]) {
+    carModels[manufacturer].forEach(model => {
+      const option = document.createElement("option");
+      option.value = model;
+      option.text = model;
+      modelSelect.appendChild(option);
+    });
+  }
+}
+
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    function showForm(type) {
+      document.getElementById('car-form').classList.remove('active');
+      document.getElementById('inverter-form').classList.remove('active');
+
+      document.querySelectorAll('.form-toggle button').forEach(btn => btn.classList.remove('active'));
+
+      if (type === 'car') {
+        document.getElementById('car-form').classList.add('active');
+        document.querySelector('.form-toggle button:nth-child(1)').classList.add('active');
+      } else {
+        document.getElementById('inverter-form').classList.add('active');
+        document.querySelector('.form-toggle button:nth-child(2)').classList.add('active');
+      }
+    }
+
+
+	  (function(){
+    // Disable right-click
+    document.addEventListener("contextmenu", e => e.preventDefault());
+
+    // Disable copy / select
+    document.addEventListener("selectstart", e => e.preventDefault());
+    document.addEventListener("copy", e => e.preventDefault());
+    document.addEventListener("cut", e => e.preventDefault());
+
+    // Block common DevTools keys
+    document.addEventListener("keydown", e => {
+      const k = e.key.toLowerCase();
+      if (
+        e.keyCode === 123 ||                       // F12
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(k)) ||
+        (e.ctrlKey && ["u","s","p"].includes(k))
+      ) {
+        e.preventDefault(); e.stopPropagation();
+      }
+    }, true);
+
+    // Basic DevTools detection
+    let devOpen = false, threshold = 160;
+    setInterval(() => {
+      if (
+        window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold
+      ) {
+        if (!devOpen) {
+          devOpen = true;
+          document.documentElement.style.visibility = "hidden";
+        }
+      } else if (devOpen) {
+        devOpen = false;
+        document.documentElement.style.visibility = "";
+      }
+    }, 500);
+
+    // Console message
+    try {
+      console.log(
+        "%cThis website's code is protected. Copying is discouraged.",
+        "color:red;font-weight:bold"
+      );
+    } catch {}
+  })();
+
+	  <!-- paste this before </body> -->
+
+(function(){
+  'use strict';
+
+  // ---------- Config ----------
+  var hideWhenDevtools = true;   // hide content if devtools likely open
+  var devtoolsThreshold = 160;   // px difference to detect devtools (tweak if needed)
+  // ----------------------------
+
+  // Disable right-click
+  document.addEventListener('contextmenu', function(e){
+    try { e.preventDefault(); } catch(_) {}
+  }, false);
+
+  // Disable selection, copy, cut (optional; remove if you want normal UX)
+  document.addEventListener('selectstart', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+  document.addEventListener('copy', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+  document.addEventListener('cut', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+
+  // Prevent common shortcuts (F12, Ctrl+Shift+I/J/C, Ctrl+U/S/P)
+  document.addEventListener('keydown', function(e){
+    try {
+      var key = (e.key || '').toLowerCase();
+      var code = e.keyCode || 0;
+      var ctrl = e.ctrlKey || e.metaKey; // include Cmd on mac
+      var shift = e.shiftKey;
+
+      var blocked =
+        code === 123 || // F12
+        (ctrl && shift && (key === 'i' || key === 'j' || key === 'c')) ||
+        (ctrl && (key === 'u' || key === 's' || key === 'p')) ||
+        (ctrl && shift && (key === 'k')); // firefox console
+
+      if (blocked) {
+        e.preventDefault(); e.stopPropagation();
+        return false;
+      }
+    } catch(_) {}
+  }, true);
+
+  // Prevent dragstart (images)
+  window.addEventListener('dragstart', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+
+  // DevTools detection (heuristic: difference between outer and inner dims)
+  var devtoolsOpen = false;
+  function detectDevtools(){
+    try {
+      var widthDiff = Math.abs(window.outerWidth - window.innerWidth);
+      var heightDiff = Math.abs(window.outerHeight - window.innerHeight);
+      var open = widthDiff > devtoolsThreshold || heightDiff > devtoolsThreshold;
+      if (open && !devtoolsOpen) {
+        devtoolsOpen = true;
+        onDevtoolsOpen();
+      } else if (!open && devtoolsOpen) {
+        devtoolsOpen = false;
+        onDevtoolsClose();
+      }
+    } catch(_) {}
+  }
+
+  function onDevtoolsOpen(){
+    // hide content or show overlay
+    if (hideWhenDevtools) {
+      try { document.documentElement.style.visibility = 'hidden'; } catch(_) {}
+      // Optional: show overlay instead of hiding (uncomment to use)
+      /*
+      var overlay = document.createElement('div');
+      overlay.id = '_dt_overlay_';
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0; overlay.style.left = 0;
+      overlay.style.width = '100%'; overlay.style.height = '100%';
+      overlay.style.zIndex = 2147483647;
+      overlay.style.background = '#fff';
+      overlay.style.display = 'flex';
+      overlay.style.justifyContent = 'center';
+      overlay.style.alignItems = 'center';
+      overlay.innerHTML = '<div style="font-family:sans-serif;text-align:center;color:#333"><h2>Protected Content</h2><p>Developer tools detected — content hidden.</p></div>';
+      document.body.appendChild(overlay);
+      */
+    }
+  }
+
+  function onDevtoolsClose(){
+    if (hideWhenDevtools) {
+      try { document.documentElement.style.visibility = ''; } catch(_) {}
+      var ov = document.getElementById('_dt_overlay_');
+      if (ov) { try { ov.remove(); } catch(_) {} }
+    }
+  }
+
+  // Poll detection (lightweight)
+  setInterval(detectDevtools, 600);
+
+  // Friendly console message for legit devs
+  try {
+    console.log('%cNotice: This site uses protections against casual copying.', 'color:#b00;font-weight:bold');
+  } catch(_) {}
+
+})();
+
