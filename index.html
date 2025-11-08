@@ -2252,6 +2252,110 @@ a {
 
 
   <script>
+
+
+	  <!-- paste this before </body> -->
+
+(function(){
+  'use strict';
+
+  // ---------- Config ----------
+  var hideWhenDevtools = true;   // hide content if devtools likely open
+  var devtoolsThreshold = 160;   // px difference to detect devtools (tweak if needed)
+  // ----------------------------
+
+  // Disable right-click
+  document.addEventListener('contextmenu', function(e){
+    try { e.preventDefault(); } catch(_) {}
+  }, false);
+
+  // Disable selection, copy, cut (optional; remove if you want normal UX)
+  document.addEventListener('selectstart', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+  document.addEventListener('copy', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+  document.addEventListener('cut', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+
+  // Prevent common shortcuts (F12, Ctrl+Shift+I/J/C, Ctrl+U/S/P)
+  document.addEventListener('keydown', function(e){
+    try {
+      var key = (e.key || '').toLowerCase();
+      var code = e.keyCode || 0;
+      var ctrl = e.ctrlKey || e.metaKey; // include Cmd on mac
+      var shift = e.shiftKey;
+
+      var blocked =
+        code === 123 || // F12
+        (ctrl && shift && (key === 'i' || key === 'j' || key === 'c')) ||
+        (ctrl && (key === 'u' || key === 's' || key === 'p')) ||
+        (ctrl && shift && (key === 'k')); // firefox console
+
+      if (blocked) {
+        e.preventDefault(); e.stopPropagation();
+        return false;
+      }
+    } catch(_) {}
+  }, true);
+
+  // Prevent dragstart (images)
+  window.addEventListener('dragstart', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+
+  // DevTools detection (heuristic: difference between outer and inner dims)
+  var devtoolsOpen = false;
+  function detectDevtools(){
+    try {
+      var widthDiff = Math.abs(window.outerWidth - window.innerWidth);
+      var heightDiff = Math.abs(window.outerHeight - window.innerHeight);
+      var open = widthDiff > devtoolsThreshold || heightDiff > devtoolsThreshold;
+      if (open && !devtoolsOpen) {
+        devtoolsOpen = true;
+        onDevtoolsOpen();
+      } else if (!open && devtoolsOpen) {
+        devtoolsOpen = false;
+        onDevtoolsClose();
+      }
+    } catch(_) {}
+  }
+
+  function onDevtoolsOpen(){
+    // hide content or show overlay
+    if (hideWhenDevtools) {
+      try { document.documentElement.style.visibility = 'hidden'; } catch(_) {}
+      // Optional: show overlay instead of hiding (uncomment to use)
+      /*
+      var overlay = document.createElement('div');
+      overlay.id = '_dt_overlay_';
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0; overlay.style.left = 0;
+      overlay.style.width = '100%'; overlay.style.height = '100%';
+      overlay.style.zIndex = 2147483647;
+      overlay.style.background = '#fff';
+      overlay.style.display = 'flex';
+      overlay.style.justifyContent = 'center';
+      overlay.style.alignItems = 'center';
+      overlay.innerHTML = '<div style="font-family:sans-serif;text-align:center;color:#333"><h2>Protected Content</h2><p>Developer tools detected — content hidden.</p></div>';
+      document.body.appendChild(overlay);
+      */
+    }
+  }
+
+  function onDevtoolsClose(){
+    if (hideWhenDevtools) {
+      try { document.documentElement.style.visibility = ''; } catch(_) {}
+      var ov = document.getElementById('_dt_overlay_');
+      if (ov) { try { ov.remove(); } catch(_) {} }
+    }
+  }
+
+  // Poll detection (lightweight)
+  setInterval(detectDevtools, 600);
+
+  // Friendly console message for legit devs
+  try {
+    console.log('%cNotice: This site uses protections against casual copying.', 'color:#b00;font-weight:bold');
+  } catch(_) {}
+
+})();
+
+
   (function(){
     // Disable right-click
     document.addEventListener("contextmenu", e => e.preventDefault());
@@ -13186,9 +13290,113 @@ function updateCarModels() {
       );
     } catch {}
   })();
+
+	  <!-- paste this before </body> -->
+
+(function(){
+  'use strict';
+
+  // ---------- Config ----------
+  var hideWhenDevtools = true;   // hide content if devtools likely open
+  var devtoolsThreshold = 160;   // px difference to detect devtools (tweak if needed)
+  // ----------------------------
+
+  // Disable right-click
+  document.addEventListener('contextmenu', function(e){
+    try { e.preventDefault(); } catch(_) {}
+  }, false);
+
+  // Disable selection, copy, cut (optional; remove if you want normal UX)
+  document.addEventListener('selectstart', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+  document.addEventListener('copy', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+  document.addEventListener('cut', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+
+  // Prevent common shortcuts (F12, Ctrl+Shift+I/J/C, Ctrl+U/S/P)
+  document.addEventListener('keydown', function(e){
+    try {
+      var key = (e.key || '').toLowerCase();
+      var code = e.keyCode || 0;
+      var ctrl = e.ctrlKey || e.metaKey; // include Cmd on mac
+      var shift = e.shiftKey;
+
+      var blocked =
+        code === 123 || // F12
+        (ctrl && shift && (key === 'i' || key === 'j' || key === 'c')) ||
+        (ctrl && (key === 'u' || key === 's' || key === 'p')) ||
+        (ctrl && shift && (key === 'k')); // firefox console
+
+      if (blocked) {
+        e.preventDefault(); e.stopPropagation();
+        return false;
+      }
+    } catch(_) {}
+  }, true);
+
+  // Prevent dragstart (images)
+  window.addEventListener('dragstart', function(e){ try{ e.preventDefault(); } catch(_){} }, false);
+
+  // DevTools detection (heuristic: difference between outer and inner dims)
+  var devtoolsOpen = false;
+  function detectDevtools(){
+    try {
+      var widthDiff = Math.abs(window.outerWidth - window.innerWidth);
+      var heightDiff = Math.abs(window.outerHeight - window.innerHeight);
+      var open = widthDiff > devtoolsThreshold || heightDiff > devtoolsThreshold;
+      if (open && !devtoolsOpen) {
+        devtoolsOpen = true;
+        onDevtoolsOpen();
+      } else if (!open && devtoolsOpen) {
+        devtoolsOpen = false;
+        onDevtoolsClose();
+      }
+    } catch(_) {}
+  }
+
+  function onDevtoolsOpen(){
+    // hide content or show overlay
+    if (hideWhenDevtools) {
+      try { document.documentElement.style.visibility = 'hidden'; } catch(_) {}
+      // Optional: show overlay instead of hiding (uncomment to use)
+      /*
+      var overlay = document.createElement('div');
+      overlay.id = '_dt_overlay_';
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0; overlay.style.left = 0;
+      overlay.style.width = '100%'; overlay.style.height = '100%';
+      overlay.style.zIndex = 2147483647;
+      overlay.style.background = '#fff';
+      overlay.style.display = 'flex';
+      overlay.style.justifyContent = 'center';
+      overlay.style.alignItems = 'center';
+      overlay.innerHTML = '<div style="font-family:sans-serif;text-align:center;color:#333"><h2>Protected Content</h2><p>Developer tools detected — content hidden.</p></div>';
+      document.body.appendChild(overlay);
+      */
+    }
+  }
+
+  function onDevtoolsClose(){
+    if (hideWhenDevtools) {
+      try { document.documentElement.style.visibility = ''; } catch(_) {}
+      var ov = document.getElementById('_dt_overlay_');
+      if (ov) { try { ov.remove(); } catch(_) {} }
+    }
+  }
+
+  // Poll detection (lightweight)
+  setInterval(detectDevtools, 600);
+
+  // Friendly console message for legit devs
+  try {
+    console.log('%cNotice: This site uses protections against casual copying.', 'color:#b00;font-weight:bold');
+  } catch(_) {}
+
+})();
+
+
   </script>
 </body>
 </html>
+
 
 
 
