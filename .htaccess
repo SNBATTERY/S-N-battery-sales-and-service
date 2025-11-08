@@ -1,9 +1,10 @@
 # Block known source-viewing or scraping referrers
 RewriteEngine On
-RewriteCond %{HTTP_REFERER} view-source [NC,OR]
+RewriteCond %{HTTP_REFERER} view-page-source\.com [NC,OR]
 RewriteCond %{HTTP_REFERER} webdev [NC,OR]
 RewriteCond %{HTTP_REFERER} inspect [NC]
 RewriteRule .* - [F,L]
+
 
 # Disable directory listing
 Options -Indexes
@@ -12,3 +13,5 @@ Options -Indexes
 <FilesMatch "\.(html|htm)$">
   Header set Cache-Control "no-store, no-cache, must-revalidate"
 </FilesMatch>
+
+
