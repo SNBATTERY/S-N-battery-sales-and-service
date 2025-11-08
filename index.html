@@ -2252,7 +2252,52 @@ a {
 
 
   <script>
+  (function(){
+    // Disable right-click
+    document.addEventListener("contextmenu", e => e.preventDefault());
 
+    // Disable copy / select
+    document.addEventListener("selectstart", e => e.preventDefault());
+    document.addEventListener("copy", e => e.preventDefault());
+    document.addEventListener("cut", e => e.preventDefault());
+
+    // Block common DevTools keys
+    document.addEventListener("keydown", e => {
+      const k = e.key.toLowerCase();
+      if (
+        e.keyCode === 123 ||                       // F12
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(k)) ||
+        (e.ctrlKey && ["u","s","p"].includes(k))
+      ) {
+        e.preventDefault(); e.stopPropagation();
+      }
+    }, true);
+
+    // Basic DevTools detection
+    let devOpen = false, threshold = 160;
+    setInterval(() => {
+      if (
+        window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold
+      ) {
+        if (!devOpen) {
+          devOpen = true;
+          document.documentElement.style.visibility = "hidden";
+        }
+      } else if (devOpen) {
+        devOpen = false;
+        document.documentElement.style.visibility = "";
+      }
+    }, 500);
+
+    // Console message
+    try {
+      console.log(
+        "%cThis website's code is protected. Copying is discouraged.",
+        "color:red;font-weight:bold"
+      );
+    } catch {}
+  })();
 
 document.addEventListener("contextmenu", e => e.preventDefault());
 document.onkeydown = e => {
@@ -13093,9 +13138,58 @@ function updateCarModels() {
         document.querySelector('.form-toggle button:nth-child(2)').classList.add('active');
       }
     }
+
+
+	  (function(){
+    // Disable right-click
+    document.addEventListener("contextmenu", e => e.preventDefault());
+
+    // Disable copy / select
+    document.addEventListener("selectstart", e => e.preventDefault());
+    document.addEventListener("copy", e => e.preventDefault());
+    document.addEventListener("cut", e => e.preventDefault());
+
+    // Block common DevTools keys
+    document.addEventListener("keydown", e => {
+      const k = e.key.toLowerCase();
+      if (
+        e.keyCode === 123 ||                       // F12
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(k)) ||
+        (e.ctrlKey && ["u","s","p"].includes(k))
+      ) {
+        e.preventDefault(); e.stopPropagation();
+      }
+    }, true);
+
+    // Basic DevTools detection
+    let devOpen = false, threshold = 160;
+    setInterval(() => {
+      if (
+        window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold
+      ) {
+        if (!devOpen) {
+          devOpen = true;
+          document.documentElement.style.visibility = "hidden";
+        }
+      } else if (devOpen) {
+        devOpen = false;
+        document.documentElement.style.visibility = "";
+      }
+    }, 500);
+
+    // Console message
+    try {
+      console.log(
+        "%cThis website's code is protected. Copying is discouraged.",
+        "color:red;font-weight:bold"
+      );
+    } catch {}
+  })();
   </script>
 </body>
 </html>
+
 
 
 
