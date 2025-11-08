@@ -2253,6 +2253,22 @@ a {
 
   <script>
 
+
+document.addEventListener("contextmenu", e => e.preventDefault());
+document.onkeydown = e => {
+  if (e.keyCode === 123 || // F12
+      (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) // Ctrl+Shift+I or J
+  ) {
+    e.preventDefault();
+    return false;
+  }
+};
+
+
+
+
+	  
+
 	   const navToggle = document.getElementById('navToggle');
   const smallNav = document.getElementById('smallNav');
 
@@ -13080,6 +13096,7 @@ function updateCarModels() {
   </script>
 </body>
 </html>
+
 
 
 
